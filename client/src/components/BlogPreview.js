@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import BlogCard from "./BlogCard";
+import PreviewCard from "./PreviewCard";
 
-function Blogs () {
+function BlogPreview ( ) {
     const [blogs, setBlogs] = useState([])
 
     useEffect(() => {
@@ -10,18 +10,17 @@ function Blogs () {
         .then(data => setBlogs(data))
     }, [])
 
-    const createBlogCards = blogs.map((b) => { 
-        return ( < BlogCard b={b} key={b.id} /> )
+    const blogPreviews = blogs.map((b) => {
+        return <PreviewCard b={b} key= {b.id}/>
     })
-
-    console.log(blogs)
-
+    
+    
     return (
         <div>
-            <h2>See whats new!</h2>
-            {createBlogCards}
+            <h2>Blogs</h2>
+            {blogPreviews}
         </div>
     )
 }
 
-export default Blogs;
+export default BlogPreview;
