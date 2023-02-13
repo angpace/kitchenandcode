@@ -3,7 +3,6 @@ function About () {
 
     return (
         <div>
-            <h3>Welcome to Kitchen & Code.</h3>
             <p>Before making the swtich to becoming a software engineer, I was a Pastry Chef,
                 working in Michelin Starred restaurants. Many people have troble understanding 
                 the switch, but for me it made sense. After a while in the hospitality industry,
