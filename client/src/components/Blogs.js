@@ -19,7 +19,9 @@ function Blogs () {
     return (
         <div>
             <h2>See whats new!</h2>
-            {createBlogCards}
+            <div className="blogContainer">
+             {createBlogCards}
+            </div>
         </div>
     )
 }
