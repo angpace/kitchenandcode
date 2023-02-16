@@ -14,8 +14,6 @@ function Blogs () {
         return ( < BlogCard b={b} key={b.id} /> )
     })
 
-    console.log(blogs)
-
     return (
         <div>
             <h2>See whats new!</h2>
