@@ -1,6 +1,6 @@
 import About from "./About";
 import BlogPreview from "./BlogPreview";
-import { ScrollContainer, ScrollPage, Animator, Sticky, Zoom, batch, Fade, MoveOut, StickyIn, FadeIn, ZoomIn} from 'react-scroll-motion';
+import { ScrollContainer, ScrollPage, Animator, Sticky, batch, Fade, MoveOut, StickyIn, FadeIn, ZoomIn} from 'react-scroll-motion';
 
 const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
 
