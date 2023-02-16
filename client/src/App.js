@@ -4,6 +4,8 @@ import { Routes, Route, Link } from "react-router-dom";
 import Blogs from './components/Blogs';
 import Login from './components/Login'
 import { useEffect, useState } from 'react';
+import SampleLogo from './SampleLogo.png'
+
 
 
 
@@ -41,29 +43,30 @@ function App() {
 
   return (
     <div>
-      <h1>Kitchen and Code</h1> 
-      {currentUser? 
+      <img alt="logo" src={SampleLogo} className="logo" />
+        {currentUser? 
 
-        <div>
-          <h3>Hi ang!</h3>
-          <button onClick={handleLogOut}>Log out</button>
-        </div>
+          <div>
+            <h3>Hi ang!</h3>
+            <button onClick={handleLogOut}>Log out</button>
+          </div>
 
-      :
+        :
 
-      <></>
+        <></>
 
-      }
-      <nav>
+        }
+
+  
             <ul className='navlist'>
-              <li><Link to="/">
-                <img src="https://www.iconpacks.net/icons/1/free-home-icon-1235-thumb.png" alt="houseIcon" className='houseIcon'></img>
+              <li><Link to="/">Home
+                {/* <img src="https://www.iconpacks.net/icons/1/free-home-icon-1235-thumb.png" alt="houseIcon" className='houseIcon'></img> */}
                 </Link></li>
-              <li><Link to="/blogs">
-                <img src="https://cdn-icons-png.flaticon.com/512/16/16294.png" alt="quill" className='quill'></img>
+              <li><Link to="/blogs"> Blogs
+                {/* <img src="https://cdn-icons-png.flaticon.com/512/16/16294.png" alt="quill" className='quill'></img> */}
                 </Link></li>
             </ul>
-          </nav>  
+        
 
      
 
