@@ -21,7 +21,7 @@ function Home () {
           </ScrollPage>
 
           <ScrollPage >
-                <Animator animation={ZoomInScrollOut}>
+                <Animator >
                 <BlogPreview/>
                 </Animator>
            </ScrollPage>

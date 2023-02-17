@@ -73,7 +73,7 @@ function App() {
         {/* Routes */}
         <Routes>
           <Route path="/" element={<Home/>} />
-          <Route path="/blogs" element={<Blogs/>} />
+          <Route path="/blogs" element={<Blogs currentUser={currentUser}/>} />
           <Route path="/login" element={<Login onLogin={onLogin}/>} />
         </Routes>
     </div>
