@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import BlogCard from "./BlogCard";
+import PostBlog from "./PostBlog";
 
-function Blogs () {
+function Blogs ({currentUser}) {
     const [blogs, setBlogs] = useState([])
+
 
     useEffect(() => {
         fetch("/blogs")
@@ -14,8 +16,15 @@ function Blogs () {
         return ( < BlogCard b={b} key={b.id} /> )
     })
 
+
     return (
         <div>
+            {currentUser? 
+            
+            <PostBlog />
+            :
+            <></>
+            }
             <h2>See whats new!</h2>
             <div className="blogContainer">
              {createBlogCards}

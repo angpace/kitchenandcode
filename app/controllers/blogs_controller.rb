@@ -9,4 +9,16 @@ class BlogsController < ApplicationController
         render json: blog
     end
 
+    def create
+        blog = Blog.create!(blog_params)
+    end
+
+    private
+
+    def blog_params
+        params.permit(:title, :author, :preview, :paragraph_one, :paragraph_two, 
+        :paragraph_three, :date, :feature, :image_one)
+    end
+
+
 end
