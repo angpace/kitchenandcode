@@ -14,6 +14,10 @@ angela = User.create(name: "angela", email: "angpace13@gmail.com", password: "ki
 
 test = Blog.create(title: "This is a test", author: "Angela Pace", preview: "fihwfoweoiu kjsdf oisdfgis hsf ousgu sugso.", paragraph_one: "fshf hdog sidos
 sdgjjkjl ig ous ufu ufs pf9090f  ilkjf.", feature: "https://www.tastingtable.com/img/gallery/20-different-types-of-coffee-explained/intro-1659544996.jpg",
- paragraph_two: "thats not all I am a monkey who lives on the moon. I am writing to you with a phine.", date: "Sept. 11, 1996")
+ paragraph_two: "thats not all I am a monkey who lives on the moon. I am writing to you with a phine.", date: "Feburary 17th")
+
+test2 = Blog.create(title: "This is also test", author: "Angela Pace", preview: "fihwfoweoiu kjsdf oisdfgis hsf ousgu sugso.", paragraph_one: "fshf hdog sidos
+sdgjjkjl ig ous ufu ufs pf9090f  ilkjf.", feature: "https://www.tastingtable.com/img/gallery/20-different-types-of-coffee-explained/intro-1659544996.jpg",
+ paragraph_two: "thats not all I am a monkey who lives on the moon. I am writing to you with a phine.", date: "Feburary 19th")
 
 puts "Done seeding!"
