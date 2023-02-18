@@ -13,12 +13,15 @@ function BlogLay (){
     }, [])
 
 
-
     return(
         <div>
             <h3>{blogPost.title}</h3>
             <p>{blogPost.author}</p>
-            {/* <p>hello</p> */}
+            <img src={blogPost.feature} />
+            <p>{blogPost.paragraph_one}</p>
+            <p>{blogPost.paragraph_two}</p>
+            <img src={blogPost.image_one} />
+            <p>{blogPost.paragraph_three}</p>
         </div>
     )
 }
