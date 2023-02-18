@@ -11,6 +11,7 @@ function PostBlog ({rerender, currentUser}) {
         date: "",
         feature: "",
         image_one: "",
+        category: "",
     })
 
     function handleChange(e) {
@@ -33,6 +34,8 @@ function PostBlog ({rerender, currentUser}) {
             date: newPost.date,
             feature: newPost.feature,
             image_one: newPost.image_one,
+            category:  newPost.category,
+            likes: 0
            })
         })
            .then(r => {
@@ -92,7 +95,12 @@ function PostBlog ({rerender, currentUser}) {
                               placeholder="image"
                               name="image_one"
                           />
-                          <button type="submit">Create Event</button>
+                           <input
+                              onChange={handleChange}
+                              placeholder="Category"
+                              name="category"
+                          />
+                          <button type="submit">Post Blog</button>
                       </form> 
         </div>
     )
