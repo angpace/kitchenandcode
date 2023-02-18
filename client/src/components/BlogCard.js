@@ -25,7 +25,7 @@ function BlogCard ({b}) {
                             <h3 className="card__title">{b.title}</h3>
                             <span className="card__by">by {b.author}</span>
                             <br/>
-                            <span className="card__by">{b.preview}</span>
+                            <p className="card__by">{b.preview}</p>
                         </div>
                         </article>
                      </section>                  
