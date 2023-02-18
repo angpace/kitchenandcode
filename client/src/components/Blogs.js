@@ -16,12 +16,16 @@ function Blogs ({currentUser}) {
         return ( < BlogCard b={b} key={b.id} /> )
     })
 
+    function rerender (data){
+        console.log("I was triggered!")
+        setBlogs([...blogs, data])
+    }
 
     return (
         <div>
             {currentUser? 
             
-            <PostBlog />
+            <PostBlog rerender={rerender} currentUser={currentUser}/>
             :
             <></>
             }

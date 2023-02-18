@@ -5,6 +5,7 @@ import Blogs from './components/Blogs';
 import Login from './components/Login'
 import { useEffect, useState } from 'react';
 import SampleLogo from './SampleLogo.png'
+import BlogLay from './components/BlogLay';
 
 
 
@@ -75,6 +76,7 @@ function App() {
           <Route path="/" element={<Home/>} />
           <Route path="/blogs" element={<Blogs currentUser={currentUser}/>} />
           <Route path="/login" element={<Login onLogin={onLogin}/>} />
+          <Route path="/:id" element={<BlogLay />} />
         </Routes>
     </div>
   );
