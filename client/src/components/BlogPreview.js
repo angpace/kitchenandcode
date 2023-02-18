@@ -20,7 +20,7 @@ function BlogPreview ( ) {
             <div className="main-container">
             <div class="heading">
                                 <h1 class="heading__title">Check out recent Blog Posts!</h1>
-                                <p class="heading__credits"><a class="heading__link" target="_blank" href="https://www.linkedin.com/in/angpace/
+                                <p class="heading__credits"><a class="heading__link" href="https://www.linkedin.com/in/angpace/
                                 ">by Angela Pace</a></p>
                             </div>
             {blogPreviews}

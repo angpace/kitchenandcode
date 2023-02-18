@@ -1,11 +1,7 @@
 import { useNavigate} from "react-router-dom";
-import BlogLay from "./BlogLay";
-import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
 
 function BlogCard ({b}) {
     const navigate = useNavigate();
-    const [blogPost, setBlogPost] = useState([])
 
     function getBlogPost (b) {
         navigate(`/${b.id}`)
@@ -23,13 +19,11 @@ function BlogCard ({b}) {
                             </div>
                         </div>
                         <div  className="card__img"></div>
-                        <a className="card_link">
                             <img alt="feature" src={b.feature} className="card__img--hover"/>
-                        </a>
                         <div className="card__info">
                             <span className="card__category">Recipe</span>
                             <h3 className="card__title">{b.title}</h3>
-                            <span className="card__by">by <a className="card__author" title="author">{b.author}</a></span>
+                            <span className="card__by">by {b.author}</span>
                             <br/>
                             <span className="card__by">{b.preview}</span>
                         </div>
