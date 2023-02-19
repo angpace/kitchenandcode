@@ -14,6 +14,12 @@ class BlogsController < ApplicationController
         render json: blog
     end
 
+    def update
+        blog = Blog.find(params[:id])
+        blog.update(blog_params)
+        render json: blog
+    end
+
     private
 
     def blog_params
