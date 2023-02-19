@@ -6,6 +6,7 @@ import Login from './components/Login'
 import { useEffect, useState } from 'react';
 import SampleLogo from './SampleLogo.png'
 import BlogLay from './components/BlogLay';
+import Portfolio from './components/Portfolio';
 
 
 
@@ -58,12 +59,9 @@ function App() {
 
   
             <ul className='navlist'>
-              <li><Link to="/">Home
-                {/* <img src="https://www.iconpacks.net/icons/1/free-home-icon-1235-thumb.png" alt="houseIcon" className='houseIcon'></img> */}
-                </Link></li>
-              <li><Link to="/blogs"> Blogs
-                {/* <img src="https://cdn-icons-png.flaticon.com/512/16/16294.png" alt="quill" className='quill'></img> */}
-                </Link></li>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/blogs"> Blog</Link></li>
+              <li><Link to="/portfolio">Portfolio</Link></li>
             </ul>
         
 
@@ -75,6 +73,7 @@ function App() {
           <Route path="/blogs" element={<Blogs currentUser={currentUser}/>} />
           <Route path="/login" element={<Login onLogin={onLogin}/>} />
           <Route path="/:id" element={<BlogLay />} />
+          <Route path="/portfolio" element={<Portfolio />} />
         </Routes>
     </div>
   );
