@@ -177,3 +177,20 @@ color: #868686;
 .heading__credits .heading__link {
   color: inherit;
 }
+
+.previews{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+
+.previews img{
+  max-width: 20%;
+  float:right;
+}
+
+.title_card{
+  max-width: 80%;
+  overflow: scroll;
+}
+

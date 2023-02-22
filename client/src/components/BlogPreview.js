@@ -23,7 +23,9 @@ function BlogPreview ( ) {
                                 <p class="heading__credits"><a class="heading__link" href="https://www.linkedin.com/in/angpace/
                                 ">by Angela Pace</a></p>
                             </div>
-            {blogPreviews}
+                            <div className="previews">
+                            {blogPreviews}
+                            </div>
             </div>
         </div>
     )

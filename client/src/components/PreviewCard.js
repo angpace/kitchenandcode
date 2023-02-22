@@ -2,8 +2,10 @@ function PreviewCard ({b}) {
 
     return (
 
-                  <div class="previews">
-                     <h3>{b.title}</h3>
+                  <div className="title_card">
+                     <h3 className="preview_title"> {b.title}</h3>
+                     <img alt="feature" src={b.feature}></img>
+                     <p>{b.preview}</p>
                     </div>
     
     )
