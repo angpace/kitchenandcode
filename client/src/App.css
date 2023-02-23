@@ -194,3 +194,25 @@ color: #868686;
   overflow: scroll;
 }
 
+/* Blog lay */
+
+.blogLay{
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  padding: 60px;
+}
+
+.feature{
+width: 80%;
+height: 80%;
+padding-left: 10%;
+}
+
+.title{
+  float: left;
+  border-bottom: 1px solid #000000 !important;
+    color: #000000 !important; 
+    font-weight: bold !important;
+    text-decoration: none !important; 
+}
