@@ -60,7 +60,7 @@ function App() {
   
             <ul className='navlist'>
               <li><Link to="/">Home</Link></li>
-              <li><Link to="/blogs"> Blog</Link></li>
+              <li><Link to="/blogs"> Blogs</Link></li>
               <li><Link to="/portfolio">Portfolio</Link></li>
             </ul>
         
