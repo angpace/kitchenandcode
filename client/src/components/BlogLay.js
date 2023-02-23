@@ -29,10 +29,10 @@ function BlogLay (){
             <button onClick={addLikesToPost}>❤️ {blogPost.likes}</button>
             <h3>{blogPost.title}</h3>
             <p>{blogPost.author}</p>
-            <img src={blogPost.feature} />
+            <img alt="feature" src={blogPost.feature} />
             <p>{blogPost.paragraph_one}</p>
             <p>{blogPost.paragraph_two}</p>
-            <img src={blogPost.image_one} />
+            <img alt="imageOne" src={blogPost.image_one} />
             <p>{blogPost.paragraph_three}</p>
         </div>
     )
