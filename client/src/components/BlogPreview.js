@@ -19,9 +19,7 @@ function BlogPreview ( ) {
         <div>
             <div className="main-container">
             <div class="heading">
-                                <h1 class="heading__title">Check out recent Blog Posts!</h1>
-                                <p class="heading__credits"><a class="heading__link" href="https://www.linkedin.com/in/angpace/
-                                ">by Angela Pace</a></p>
+                                <h1 className="heading__title">Check out recent Blog Posts!</h1>
                             </div>
                             <div className="previews">
                             {blogPreviews}

@@ -4,6 +4,7 @@ import PostBlog from "./PostBlog";
 
 function Blogs ({currentUser}) {
     const [blogs, setBlogs] = useState([])
+    const [search, setSearch] = useState("")
 
 
     useEffect(() => {
@@ -12,7 +13,10 @@ function Blogs ({currentUser}) {
         .then(data => setBlogs(data))
     }, [])
 
-    const createBlogCards = blogs.map((b) => { 
+
+    const filteredBlogs = blogs.filter((b) => b.category.toLowerCase().includes(search.toLowerCase()))
+
+    const createBlogCards = filteredBlogs.map((b) => { 
         return ( < BlogCard b={b} key={b.id} /> )
     })
 
@@ -30,6 +34,9 @@ function Blogs ({currentUser}) {
             <></>
             }
             <h2>See whats new!</h2>
+            <div className="search">
+            <input className="bar" onChange={(e) => setSearch(e.target.value)} placeholder="Sort by Category"></input>
+            </div>
             <div className="blogContainer">
              {createBlogCards}
             </div>
