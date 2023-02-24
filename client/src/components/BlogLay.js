@@ -25,32 +25,34 @@ function BlogLay (){
     }
 
     return(
-        <div className="blogLay">
-            
-            <div className='title'>
-                <h1 style={{float: 'left'}}>{blogPost.title}</h1>
-            </div>
-            <div>
-            <p style={{float: 'right'}}>by: {blogPost.author}</p>
-            </div>
-            <div>
-                <img className="feature" alt="feature" src={blogPost.feature} />
-            </div>
-            <div>
-                <p>{blogPost.paragraph_one}</p>
-            </div>
-            <div>
-                <p>{blogPost.paragraph_two}</p>
-            </div>
-            <div>
-                <img className="image_one" style={{float: 'left', width: '50%'}} alt="imageOne" src={blogPost.image_one} />
-                <p style={{float: 'right', width: '40%'}}>{blogPost.paragraph_three}</p>
-            </div>
-            <br/>
-            <div>
-                <p>Like this post? Show {blogPost.author} some love! <br/>
-                <button onClick={addLikesToPost}>❤️ {blogPost.likes}</button>
-                </p>
+        <div className='blogLayContainer'>
+            <div className="blogLay">
+                
+                <div className='title'>
+                    <h1 style={{float: 'left'}}>{blogPost.title}</h1>
+                </div>
+                <div>
+                <p style={{float: 'right'}}>by: {blogPost.author}</p>
+                </div>
+                <div>
+                    <img className="feature" alt="feature" src={blogPost.feature} />
+                </div>
+                <div className='paragraph'>
+                    <p>{blogPost.paragraph_one}</p>
+                </div>
+                <div className='paragraph'>
+                    <p>{blogPost.paragraph_two}</p>
+                </div>
+                <div>
+                    <img className="image_one" style={{float: 'left', width: '55%'}} alt="imageOne" src={blogPost.image_one} />
+                    <p style={{float: 'right', width: '40%'}}>{blogPost.paragraph_three}</p>
+                </div>
+                <br/>
+                <div>
+                    <p>Like this post? Show some love! <br/>
+                    <button onClick={addLikesToPost}>❤️ {blogPost.likes}</button>
+                    </p>
+                </div>
             </div>
         </div>
     )

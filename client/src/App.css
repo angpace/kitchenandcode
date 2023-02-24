@@ -201,6 +201,11 @@ color: #868686;
   flex-direction: column;
   max-width: 80%;
   padding: 60px;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 20px;
+  border-color: #888888;
+  
 }
 
 .feature{
@@ -209,10 +214,19 @@ height: 80%;
 padding-left: 10%;
 }
 
+.blogLay img{
+  border-radius: 20px;
+}
+
 .title{
   float: left;
   border-bottom: 1px solid #000000 !important;
     color: #000000 !important; 
     font-weight: bold !important;
     text-decoration: none !important; 
+}
+
+.blogLayContainer{
+  padding: 100px;
+  margin: auto;
 }
