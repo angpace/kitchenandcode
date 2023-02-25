@@ -18,7 +18,7 @@ function BlogPreview ( ) {
     return (
         <div>
             <div className="main-container">
-            <div class="heading">
+            <div className="heading">
                                 <h1 className="heading__title">Check out recent Blog Posts!</h1>
                             </div>
                             <div className="previews">

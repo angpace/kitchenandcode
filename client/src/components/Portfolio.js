@@ -20,18 +20,20 @@ function Portfolio() {
                         <h1>Smoothie Maker</h1>
                         <img alt="smoothie" src={Smoothie}></img>
                         <p >The first ever project I worked on! Create a custom smoothie with fruit of your choice. Blend and recieve the nutritional value.
-                            <br/> 
+                             </p>
                             <p><strong><a href="https://github.com/angpace/smoothiemaster.git">Technical:</a></strong>
-                            </p>Completely Vanilla Javascript. Fetching external APIs. 
+                            <br/>
+                            <br/>
+                            Completely Vanilla Javascript. Fetching external APIs. 
                         </p>
                     </li>
                     <li>
                         <h1>Synodic</h1>
                         <br/>
                         <img alt="synodic" src={Synodic}></img>
-                        <p >A morning/night wellness planner. 
+                        <p >A morning/night wellness planner. </p>
                         <p><strong><a href="https://github.com/angpace/Synodic.git">Technical:</a></strong></p> 
-                        React.js front end, fetching external APIs.</p>
+                        <p>React.js front end, fetching external APIs.</p>
                     </li>
                     <li>
                         <h1>Reminiscent</h1>

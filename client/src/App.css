@@ -185,13 +185,14 @@ color: #868686;
   }
 
 .previews img{
-  max-width: 20%;
+  max-width: 25%;
   float:right;
+  border-radius: 10px;
 }
 
 .title_card{
-  max-width: 80%;
-  overflow: scroll;
+  max-width: 70%;
+  /* overflow: scroll; */
 }
 
 /* Blog lay */
