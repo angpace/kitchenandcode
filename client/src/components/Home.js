@@ -17,7 +17,7 @@ function Home () {
                     <img alt="knife" className="knifeThrow" src={knife}></img>
                     <h1 className="movetxt">Kitchen and Code</h1>
                     <div className="heading">
-                        <p class="heading__credits"><a class="heading__link" href="https://www.linkedin.com/in/angpace/
+                        <p className="heading__credits"><a className="heading__link" href="https://www.linkedin.com/in/angpace/
                                 ">by Angela Pace</a></p>
                      </div>
                 </Animator>
