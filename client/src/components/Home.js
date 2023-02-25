@@ -1,5 +1,6 @@
 import About from "./About";
 import BlogPreview from "./BlogPreview";
+import knife from './knife.gif'
 
 
 import { ScrollContainer, ScrollPage, Animator, Sticky, batch, Fade, MoveOut} from 'react-scroll-motion';
@@ -13,8 +14,9 @@ function Home () {
             <ScrollContainer>
             <ScrollPage >
                 <Animator animation={batch(Sticky(), Fade(), MoveOut(0, -200))}>
+                    <img alt="knife" className="knifeThrow" src={knife}></img>
+                    <h1 className="movetxt">Kitchen and Code</h1>
                     <div className="heading">
-                        <h2 className="heading__title" >Welcome to Kitchen & Code!</h2>
                         <p class="heading__credits"><a class="heading__link" href="https://www.linkedin.com/in/angpace/
                                 ">by Angela Pace</a></p>
                      </div>

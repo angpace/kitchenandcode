@@ -230,3 +230,32 @@ padding-left: 10%;
   padding: 100px;
   margin: auto;
 }
+
+.knifeThrow{
+  max-width: 70%;
+  padding-top: 20px;
+}
+
+.movetxt{
+  -webkit-animation: moving 0s infinite;
+  animation: moving 0s infinite;
+}
+@keyframes moving {
+  from {transform: translateX(250px);}
+  to {transform: translateX(0px);}
+}
+
+.portfolio{
+  display: inline-block;
+  /* flex-direction: column;
+  flex-wrap: wrap;
+  overflow: scroll; */
+}
+
+.container{
+  text-align: center;
+}
+
+.portDescription{
+  max-width: 650px;
+}
