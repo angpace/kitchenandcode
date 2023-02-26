@@ -14,7 +14,6 @@ function Home () {
             <ScrollContainer>
             <ScrollPage >
                 <Animator animation={batch(Sticky(), Fade(), MoveOut(0, -200))}>
-                    <img alt="knife" className="knifeThrow" src={knife}></img>
                     <h1 className="movetxt">Kitchen and Code</h1>
                     <div className="heading">
                         <p className="heading__credits"><a className="heading__link" href="https://www.linkedin.com/in/angpace/
