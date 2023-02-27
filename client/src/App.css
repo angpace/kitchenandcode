@@ -1,4 +1,4 @@
-ul {
+ol {
   display: flex;
   justify-content: right;
   padding-right: 50px;
@@ -34,6 +34,7 @@ max-width: 390px;
   -webkit-justify-content: center;
   max-width: 820px;
   padding: 10px;
+  padding-top: 20px;
 }
 
 .card__clock {
@@ -219,13 +220,13 @@ padding-left: 10%;
   border-radius: 20px;
 }
 
-.title{
+/* .title{
   float: left;
   border-bottom: 1px solid #000000 !important;
     color: #000000 !important; 
     font-weight: bold !important;
     text-decoration: none !important; 
-}
+} */
 
 .blogLayContainer{
   padding: 100px;
@@ -255,3 +256,16 @@ padding-left: 10%;
   text-shadow: 0px 0px 5px #b393d3, 0px 0px 10px #b393d3, 0px 0px 10px #b393d3,
     0px 0px 20px #b393d3;
 }
+
+.blog_title{
+  padding-left: 5%;
+  font-size: 40px;
+  font-family: "Times New Roman", Times, serif;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid  grey;
+    max-width: 70%;
+    margin: auto;
+}
+
+

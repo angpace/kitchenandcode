@@ -11,13 +11,13 @@ function Portfolio() {
 
     return(
         <div >
-            <div className="heading">
-                <h1>Portfolio</h1>
+            <div>
+                <h1 className="blog_title">Portfolio</h1>
             </div>
             <div className="container">
-                <ul className="portfolio">
+                <ol type="1" className="portfolio">
                     <li>
-                        <h1>Smoothie Maker</h1>
+                        <h1> Smoothie Maker</h1>
                         <br/>
                         <img alt="smoothie" src={Smoothie}></img>
                         <div className="portDescription">
@@ -74,7 +74,7 @@ function Portfolio() {
                             <p>Rails Backend, React.js Frontend, Postgres database, Deployed on Render, SendGrid for Email services.</p>
                         </div>
                     </li>
-                </ul>
+                </ol>
             </div>
             
         
