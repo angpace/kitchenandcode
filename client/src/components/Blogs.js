@@ -34,8 +34,7 @@ function Blogs ({currentUser}) {
             <></>
             }
             <div className="search">
-            <input className="bar" onChange={(e) => setSearch(e.target.value)} placeholder="Sort by Category"></input>
-            <button>Go</button>
+            <input className="bar" onChange={(e) => setSearch(e.target.value)} placeholder="Search by Category..."></input>
             </div>
             <div>
                 <h2 className="blog_title">Blogs</h2>
