@@ -35,7 +35,10 @@ function BlogLay (){
                 <p style={{float: 'right'}}>by: {blogPost.author}</p>
                 </div>
                 <div>
-                    <img className="feature" alt="feature" src={blogPost.feature} />
+                <p>{blogPost.preview}</p>
+                </div>
+                <div className="feature">
+                    <img  className="feature_image" alt="feature" src={blogPost.feature} />
                 </div>
                 <div className='paragraph'>
                     <p>{blogPost.paragraph_one}</p>
@@ -43,14 +46,15 @@ function BlogLay (){
                 <div className='paragraph'>
                     <p>{blogPost.paragraph_two}</p>
                 </div>
-                <div>
-                    <img className="image_one" style={{float: 'left', width: '55%'}} alt="imageOne" src={blogPost.image_one} />
+                <div className='side_by_side'>
+                    <img className="image_one" style={{float: 'left', width: '50%'}} alt="imageOne" src={blogPost.image_one} />
                     <p style={{float: 'right', width: '40%'}}>{blogPost.paragraph_three}</p>
                 </div>
                 <br/>
-                <div>
-                    <p>Like this post? Show some love! <br/>
-                    <button onClick={addLikesToPost}>❤️ {blogPost.likes}</button>
+                <div className='like_this_post'>
+                    <p>Like this post? Show some love!
+                    <br/>
+                    <button className="like_btn" onClick={addLikesToPost}>❤️ {blogPost.likes}</button>
                     </p>
                 </div>
             </div>
