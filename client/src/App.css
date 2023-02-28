@@ -231,10 +231,18 @@ padding-top: 2%;
 
 .title{
   float: left;
+  color: #4b4d4b;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
   border-bottom: 1px solid #000000 !important;
     color: #000000 !important; 
     font-weight: bold !important;
     text-decoration: none !important; 
+    
+}
+
+.author{
+  font-style: italic;
 }
 
 .blogLayContainer{
@@ -259,20 +267,21 @@ padding-top: 2%;
 }
 
 .portfolio h1{
+  font-family: "Times New Roman", Times, serif;
   font-size: 40px;
   float: left;
   font-weight: 400;
-  color: #fdfdfe;
-  text-shadow: 0px 0px 5px #b393d3, 0px 0px 10px #b393d3, 0px 0px 10px #b393d3,
-    0px 0px 20px #b393d3;
 }
 
 .blog_title{
   padding-left: 5%;
-  font-size: 40px;
+  font-weight: 400;
+  font-size: 45px;
+  letter-spacing: 2px;
   font-family: "Times New Roman", Times, serif;
   padding-top: 20px;
   padding-bottom: 10px;
+  color: #4b4d4b;
   border-bottom: 1px solid  grey;
     max-width: 70%;
     margin: auto;
@@ -280,8 +289,12 @@ padding-top: 2%;
 
 .search{
   float: right;
-  padding-right: 10%;
-  padding-top: 4%;
+  padding-right: 12%;
+  padding-top: 4.5%;
+}
+.bar{
+  border: none;
+  font-style: italic; 
 }
 
 .like_this_post{
@@ -292,6 +305,5 @@ padding-top: 2%;
   background-color: whitesmoke;
   border: none;
   border-radius: 50%;
-  padding: 6px;
-  
+  padding: 6px; 
 }

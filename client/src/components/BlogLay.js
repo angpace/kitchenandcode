@@ -32,7 +32,7 @@ function BlogLay (){
                     <h1 style={{float: 'left'}}>{blogPost.title}</h1>
                 </div>
                 <div>
-                <p style={{float: 'right'}}>by: {blogPost.author}</p>
+                <p className="author" style={{float: 'right'}}>by: {blogPost.author}</p>
                 </div>
                 <div>
                 <p>{blogPost.preview}</p>

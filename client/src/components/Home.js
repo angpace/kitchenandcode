@@ -3,6 +3,7 @@ import BlogPreview from "./BlogPreview";
 import knife from './knife.gif'
 
 
+
 import { ScrollContainer, ScrollPage, Animator, Sticky, batch, Fade, MoveOut} from 'react-scroll-motion';
 
 // const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());

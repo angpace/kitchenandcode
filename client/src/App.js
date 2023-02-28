@@ -11,6 +11,7 @@ import Portfolio from './components/Portfolio';
 
 
 
+
 function App() {
   const [currentUser, setCurrentUser] = useState(null)
 
@@ -59,9 +60,11 @@ function App() {
 
   
             <ol className='navlist'>
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/blogs"> Blogs</Link></li>
-              <li><Link to="/portfolio">Portfolio</Link></li>
+            
+
+              <li><Link to="/"><i class="fa-solid fa-house-chimney"></i></Link></li>
+              <li><Link to="/blogs"><i class="fa-regular fa-pen-to-square"></i></Link></li>
+              <li><Link to="/portfolio"><i class="fa-regular fa-folder-open"></i></Link></li>
             </ol>
         
 
