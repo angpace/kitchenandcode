@@ -24,6 +24,7 @@ max-width: 390px;
   justify-content: space-evenly;
   justify-content: center;
   flex-wrap: wrap;
+  padding-top: 5%;
 }
 
 .cards {
@@ -268,4 +269,8 @@ padding-left: 10%;
     margin: auto;
 }
 
-
+.search{
+  float: right;
+  padding-right: 10%;
+  padding-top: 4%;
+}

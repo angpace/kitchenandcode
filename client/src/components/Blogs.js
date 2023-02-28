@@ -33,13 +33,13 @@ function Blogs ({currentUser}) {
             :
             <></>
             }
-            <div>
-                <h2 className="blog_title">Blogs</h2>
-                <div class="line-2"></div>
-            </div>
             <div className="search">
             <input className="bar" onChange={(e) => setSearch(e.target.value)} placeholder="Sort by Category"></input>
             <button>Go</button>
+            </div>
+            <div>
+                <h2 className="blog_title">Blogs</h2>
+                <div class="line-2"></div>
             </div>
             <div className="blogContainer">
              {createBlogCards}
