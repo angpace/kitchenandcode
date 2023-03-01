@@ -26,7 +26,7 @@ function Blogs ({currentUser}) {
     }
 
     return (
-        <div>
+        <div className="padding">
             {currentUser? 
             
             <PostBlog rerender={rerender} currentUser={currentUser}/>

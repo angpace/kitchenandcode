@@ -1,6 +1,6 @@
 import About from "./About";
 import BlogPreview from "./BlogPreview";
-import knife from './knife.gif'
+import logovideo from './logovideo.mp4'
 
 
 
@@ -11,15 +11,18 @@ import { ScrollContainer, ScrollPage, Animator, Sticky, batch, Fade, MoveOut} fr
 function Home () {
 
     return (
-        <div>
+        <div className="padding">
             <ScrollContainer>
             <ScrollPage >
                 <Animator animation={batch(Sticky(), Fade(), MoveOut(0, -200))}>
-                    <h1 className="movetxt">Kitchen and Code</h1>
+                    <video  width="800" autoPlay muted loop>
+                        <source src={logovideo} type="video/mp4"/>
+                    </video>
+                    {/* <h1 className="movetxt">Kitchen and Code</h1>
                     <div className="heading">
                         <p className="heading__credits"><a className="heading__link" href="https://www.linkedin.com/in/angpace/
                                 ">by Angela Pace</a></p>
-                     </div>
+                     </div> */}
                 </Animator>
           </ScrollPage>
           <ScrollPage >
