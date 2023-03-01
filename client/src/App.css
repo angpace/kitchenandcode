@@ -1,16 +1,33 @@
 ol {
   display: flex;
   justify-content: right;
-  padding-right: 50px;
-  gap: 25px;
+  padding-right: 40px;
+  gap: 15px;
   align-items: center;
 }
 
 li {
   margin-top: 15px;
-  display: inline;
+  /* display: inline; */
   list-style: none;
 
+}
+
+.navbar{
+  position: fixed;
+  width: 100%;
+}
+
+.fa-solid{
+color: #a3a8a3;
+}
+
+.fa-regular{
+  color: #a3a8a3;
+}
+
+.padding{
+  padding-top: 7%;
 }
 
 .logo {

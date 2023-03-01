@@ -10,7 +10,7 @@ import privee from "./privee.gif"
 function Portfolio() {
 
     return(
-        <div >
+        <div className="padding">
             <div>
                 <h1 className="blog_title">Portfolio</h1>
             </div>

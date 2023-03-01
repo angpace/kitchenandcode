@@ -44,7 +44,6 @@ function App() {
 
   return (
     <div>
-      <img alt="logo" src={SampleLogo} className="logo" />
         {currentUser? 
 
           <div>
@@ -58,14 +57,15 @@ function App() {
 
         }
 
-  
+          <nav className='navbar'>
             <ol className='navlist'>
             
 
-              <li><Link to="/"><i class="fa-solid fa-house-chimney"></i></Link></li>
+              <li><Link to="/"><i className="fa-solid fa-house-chimney"></i></Link></li>
               <li><Link to="/blogs"><i class="fa-regular fa-pen-to-square"></i></Link></li>
               <li><Link to="/portfolio"><i class="fa-regular fa-folder-open"></i></Link></li>
             </ol>
+            </nav>
         
 
      
