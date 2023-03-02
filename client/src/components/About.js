@@ -13,8 +13,8 @@ function About () {
             <center className="bio_preview">Hello, there!  
                 <br/>
                  I'm Angela Pace and I'm a Software Engineer with 
-                a background in Hospitality. In 2022 I decided to switch careers, I was no longer passionate about being in the Restaurant Industry. 
-                I attended the Software Engineering program at the FlatIron School and taken a shine to engineering. 
+                a background in Hospitality. In 2022, I decided to switch careers from Pastry Chef to Software Engineer. 
+                I attended the Software Engineering program at the FlatIron School and immediately took a liking to it. 
                 Creativity, collaboration and innovation are some of my core values and are mirrored in both kitchen and code. 
                 I hope you'll join me while I blog about the journey of being a Software Engineer with the past of a Pastry Chef. 
             </center>

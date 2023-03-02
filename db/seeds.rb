@@ -18,7 +18,7 @@ Whether you're a tech enthusiast, a food lover, or both, this blog has something
  I aim to deliver content that's informative, insipring, and fun.", 
  feature: "https://agfundernews.com/wp-content/uploads/2019/04/iStock-939213984-768x499.jpg",
  paragraph_two: "If you already took a look around, you'll see that K&C is also my portfolio. I intend to continue updating this site by adding more features and functionality and Im excited
- to hear what you guys. At the moment I'm adding the ability for readers (like you!) to add comments to blog posts so we can interact easily! Until that feature is in place, 
+ to hear what you guys think! At the moment I'm adding the ability for readers (like you!) to add comments to blog posts so we can interact easily! Until that feature is in place, 
  please feel free to reach out via any social platform that is linked in the About Me page. 
  ", image_one: "https://grist.org/wp-content/uploads/2013/06/apple-food-technology-hp.jpg", 
 paragraph_three: "So, grab a cup of coffee or tea, sit back, and join me on this journey of culinary and technological exploration.",
