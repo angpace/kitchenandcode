@@ -4,9 +4,9 @@ import { Routes, Route, Link } from "react-router-dom";
 import Blogs from './components/Blogs';
 import Login from './components/Login'
 import { useEffect, useState } from 'react';
-import SampleLogo from './SampleLogo.png'
 import BlogLay from './components/BlogLay';
 import Portfolio from './components/Portfolio';
+import AboutMe from './components/AboutMe';
 
 
 
@@ -44,28 +44,26 @@ function App() {
 
   return (
     <div>
-        {currentUser? 
-
-          <div>
-            <h3>Hi ang!</h3>
-            <button onClick={handleLogOut}>Log out</button>
-          </div>
-
-        :
-
-        <></>
-
-        }
 
           <nav className='navbar'>
             <ol className='navlist'>
-            
-
-              <li><Link to="/"><i className="fa-solid fa-house-chimney"></i></Link></li>
-              <li><Link to="/blogs"><i class="fa-regular fa-pen-to-square"></i></Link></li>
-              <li><Link to="/portfolio"><i class="fa-regular fa-folder-open"></i></Link></li>
+              <li><Link to="/"><i className="fa-solid fa-house-chimney fa-lg"></i></Link></li>
+              <li><Link to="/blogs"><i className="fa-regular fa-pen-to-square fa-lg"></i></Link></li>
+              <li><Link to="/portfolio"><i className="fa-regular fa-folder-open fa-lg"></i></Link></li>
+              <li><Link to="/about"><i className="fa-regular fa-address-card fa-lg"></i></Link></li>
             </ol>
             </nav>
+            {currentUser? 
+
+              <div className='padding'>
+                <button onClick={handleLogOut}>Log out</button>
+              </div>
+
+              :
+
+              <></>
+
+            }
         
 
      
@@ -77,7 +75,8 @@ function App() {
           <Route path="/login" element={<Login onLogin={onLogin}/>} />
           <Route path="/:id" element={<BlogLay />} />
           <Route path="/portfolio" element={<Portfolio />} />
-        </Routes>
+          <Route path="/about" element={<AboutMe/>} />
+          </Routes>
     </div>
   );
 }

@@ -38,7 +38,7 @@ function Blogs ({currentUser}) {
             </div>
             <div>
                 <h2 className="blog_title">Blogs</h2>
-                <div class="line-2"></div>
+                <div className="line-2"></div>
             </div>
             <div className="blogContainer">
              {createBlogCards}

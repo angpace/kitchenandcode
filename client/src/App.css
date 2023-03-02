@@ -16,14 +16,45 @@ li {
 .navbar{
   position: fixed;
   width: 100%;
+
+}
+
+.navbar i:active {
+  color: #0c6c6d;
+}
+
+.navbar i:focus {
+  color: #0c6c6d;
 }
 
 .fa-solid{
-color: #a3a8a3;
+  color: #2dba9bb0;
 }
 
 .fa-regular{
-  color: #a3a8a3;
+  color: #2dba9bb0;;
+}
+
+.fa-brands{
+  color: #2dba9bb0;;
+}
+
+
+.social_link{
+  text-decoration: none;
+  font-family: "Times New Roman", Times, serif;
+
+}
+
+.socials{
+display: flex;
+}
+
+.socials_flex{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
 }
 
 .padding{
@@ -247,12 +278,12 @@ padding-top: 2%;
 }
 
 .title{
-  float: left;
+  /* float: left; */
+  margin: auto;
   color: #4b4d4b;
   font-family: "Times New Roman", Times, serif;
   font-size: 20px;
-  border-bottom: 1px solid #000000 !important;
-    color: #000000 !important; 
+  border-bottom: 1px solid #4b4d4b; 
     font-weight: bold !important;
     text-decoration: none !important; 
     
@@ -285,9 +316,10 @@ padding-top: 2%;
 
 .portfolio h1{
   font-family: "Times New Roman", Times, serif;
-  font-size: 40px;
+  font-size: 37px;
   float: left;
-  font-weight: 400;
+  font-weight: 700;
+  color: #8bba8b;
 }
 
 .blog_title{
@@ -306,8 +338,8 @@ padding-top: 2%;
 
 .search{
   float: right;
-  padding-right: 12%;
-  padding-top: 4.5%;
+  padding-right: 15%;
+  padding-top: 4.3%;
 }
 .bar{
   border: none;
@@ -323,4 +355,34 @@ padding-top: 2%;
   border: none;
   border-radius: 50%;
   padding: 6px; 
+}
+
+/* Me */
+.me{
+  border-radius: 50%;
+  width: 30%;
+  display: block;
+  margin: auto;
+}
+
+.welcome_first{
+  font-family: "Times New Roman", Times, serif;
+  font-size: large;
+}
+
+.more_about_me{
+  font-style: italic;
+}
+
+.about_me{
+  max-width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.bio{
+  max-width: 80%;
+  padding-bottom: 5%;
+  margin: auto;
 }

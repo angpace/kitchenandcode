@@ -41,10 +41,10 @@ function Login ({onLogin}){
         
 
     return (
-        <div className="form-container sign-in-container">
+        <div className="padding">
           <div>
         <h3>Login below</h3>
-        <div>
+        <div >
             <form action="#" onSubmit={handleLogin}>
                 <input
                     onChange={handleChange}
