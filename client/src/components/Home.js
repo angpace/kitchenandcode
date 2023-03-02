@@ -13,9 +13,9 @@ function Home () {
     return (
         <div className="padding">
             <ScrollContainer>
-            <ScrollPage >
+            <ScrollPage>
                 <Animator animation={batch(Sticky(), Fade(), MoveOut(0, -200))}>
-                    <video  width="800" autoPlay muted loop>
+                    <video width="100%" autoPlay muted loop>
                         <source src={logovideo} type="video/mp4"/>
                     </video>
                     {/* <h1 className="movetxt">Kitchen and Code</h1>
@@ -25,8 +25,8 @@ function Home () {
                      </div> */}
                 </Animator>
           </ScrollPage>
-          <ScrollPage >
-                <Animator animation={batch(Sticky(), Fade(), MoveOut(0, -200))}>
+          <ScrollPage style={{backgroundColor: "whitesmoke"}}>
+                <Animator animation={batch(Sticky(),Fade())}>
                     <About/>
                 </Animator>
           </ScrollPage>
