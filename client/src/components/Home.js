@@ -4,7 +4,7 @@ import logovideo from './logovideo.mp4'
 
 
 
-import { ScrollContainer, ScrollPage, Animator, Sticky, batch, Fade, MoveOut} from 'react-scroll-motion';
+import { ScrollContainer, ScrollPage, Animator, Sticky, batch, Fade, Move, MoveOut, FadeIn, FadeOut} from 'react-scroll-motion';
 
 // const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
 
@@ -14,7 +14,7 @@ function Home () {
         <div className="padding">
             <ScrollContainer>
             <ScrollPage>
-                <Animator animation={batch(Sticky(), Fade(), MoveOut(0, -200))}>
+                <Animator animation={batch(Sticky())}>
                     <video width="100%" autoPlay muted loop>
                         <source src={logovideo} type="video/mp4"/>
                     </video>
@@ -26,12 +26,12 @@ function Home () {
                 </Animator>
           </ScrollPage>
           <ScrollPage style={{backgroundColor: "whitesmoke"}}>
-                <Animator animation={batch(Sticky(),Fade())}>
+                <Animator animation={batch(Sticky(), Fade())}>
                     <About/>
                 </Animator>
           </ScrollPage>
 
-          <ScrollPage >
+          <ScrollPage>
                 <Animator >
                 <BlogPreview/>
                 </Animator>

@@ -4,7 +4,7 @@ import AboutMe from "./AboutMe";
 function About () {
 
     return (
-        <div >
+        <div style={{backgroundColor: "white", padding: "20px", borderRadius: "30px"}}>
             
             <center className="title">Welcome to Kitchen and Code! </center>
             <br/>
