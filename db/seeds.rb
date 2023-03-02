@@ -12,23 +12,18 @@ Blog.destroy_all
 
 angela = User.create(name: "angela", email: "angpace13@gmail.com", password: "kitchcode", image: "https://www.gannett-cdn.com/presto/2020/03/17/USAT/c0eff9ec-e0e4-42db-b308-f748933229ee-XXX_ThinkstockPhotos-200460053-001.jpg?crop=1170%2C658%2Cx292%2Cy120&width=1200")
 
-test = Blog.create(title: "This is a test", author: "Angela Pace", preview: "fihwfoweoiu kjsdf oisdfgis hsf ousgu sugso.", paragraph_one: "They decided to find the end of the rainbow. 
-While they hoped they would find a pot of gold, neither of them truly believed that the mythical pot would actually be there.
- Nor did they believe they could actually find the end of the rainbow. Still, it seemed like a fun activity for the day, and pictures of them chasing rainbows would look great on their Instagram accounts. 
- They would have never believed they would actually find the end of a rainbow, and when they did, what they actually found there. sdgjjkjl ig ous ufu ufs pf9090f  ilkjf.", 
- feature: "https://www.tastingtable.com/img/gallery/20-different-types-of-coffee-explained/intro-1659544996.jpg",
- paragraph_two: "thats not all I am a monkey who lives on the moon. I am writing to you with a phine.
- She put the pen to paper but she couldn't bring herself to actually write anything. 
- She just stared at the blank card and wondered what words she could write that would help in even a small way. 
- She thought of a dozen ways to begin but none seemed to do justice to the situation. 
-There were no words that could help and she knew it.", image_one: "https://images.unsplash.com/photo-1498804103079-a6351b050096?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8OHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60", 
-paragraph_three: "The opened package of potato chips held the answer to the mystery. 
-Both detectives looked at it but failed to realize it was the key to solve the crime. 
-They passed by it assuming it was random trash ensuring that the case would never be solved.",
- date: "Feburary 17th", category: "Food")
+test = Blog.create(title: "Welcome!", author: "Angela Pace", preview: "I'm excited to share my insights with you and hope to inspire you to try something new, be it a new recipe or a new npm package.", paragraph_one: " 
+Welcome to my blog where I blend my passion for technology and cooking! As someone who loves to experiment in the kitchen and explore the latest advancements in technology, I created this space to share my insights, tips, and experiences with you. 
+Whether you're a tech enthusiast, a food lover, or both, this blog has something for everyone. From recipes and cooking techniques to the latest AI and React plugins, 
+ I aim to deliver content that's informative, insipring, and fun.", 
+ feature: "https://agfundernews.com/wp-content/uploads/2019/04/iStock-939213984-768x499.jpg",
+ paragraph_two: "If you already took a look around, you'll see that K&C is also my portfolio. I intend to continue updating this site by adding more features and functionality and Im excited
+ to hear what you guys. At the moment I'm adding the ability for readers (like you!) to add comments to blog posts so we can interact easily! Until that feature is in place, 
+ please feel free to reach out via any social platform that is linked in the About Me page. 
+ ", image_one: "https://grist.org/wp-content/uploads/2013/06/apple-food-technology-hp.jpg", 
+paragraph_three: "So, grab a cup of coffee or tea, sit back, and join me on this journey of culinary and technological exploration.",
+ date: "March 2nd, 2023", category: "Tech")
 
-test2 = Blog.create(title: "This is also test", author: "Angela Pace", preview: "fihwfoweoiu kjsdf oisdfgis hsf ousgu sugso.", paragraph_one: "fshf hdog sidos
-sdgjjkjl ig ous ufu ufs pf9090f  ilkjf.", feature: "https://www.tastingtable.com/img/gallery/20-different-types-of-coffee-explained/intro-1659544996.jpg",
- paragraph_two: "thats not all I am a monkey who lives on the moon. I am writing to you with a phine.", date: "Feburary 19th", category: "Tech")
+
 
 puts "Done seeding!"

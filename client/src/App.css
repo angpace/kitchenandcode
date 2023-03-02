@@ -32,11 +32,11 @@ li {
 }
 
 .fa-regular{
-  color: #2dba9bb0;;
+  color: #2dba9bb0;
 }
 
 .fa-brands{
-  color: #2dba9bb0;;
+  color: #2dba9bb0;
 }
 
 
@@ -53,9 +53,14 @@ display: flex;
 .socials_flex{
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
   justify-content: center;
 }
+
+.socials_flex a{
+  color:#0c6c6d;
+}
+
 
 .padding{
   padding-top: 7%;
@@ -199,7 +204,9 @@ color: #868686;
 /* Finished- Blog cards on the Blog Page  */
 
 .main-container {
-  padding: 30px;
+  padding-right: 15%;
+  padding-left: 15%;
+  padding-top: 7%;
 }
 
 /* HEADING */
@@ -327,10 +334,11 @@ padding-top: 2%;
   font-weight: 400;
   font-size: 45px;
   letter-spacing: 2px;
+  text-transform: uppercase;
   font-family: "Times New Roman", Times, serif;
   padding-top: 20px;
   padding-bottom: 10px;
-  color: #4b4d4b;
+  color: #272a2b;
   border-bottom: 1px solid  grey;
     max-width: 70%;
     margin: auto;
