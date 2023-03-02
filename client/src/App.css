@@ -285,14 +285,14 @@ padding-top: 2%;
 }
 
 .title{
-  /* float: left; */
+  font-weight: 400;
+  font-size: 45px;
+  letter-spacing: 2px;
   margin: auto;
   color: #4b4d4b;
   font-family: "Times New Roman", Times, serif;
   font-size: 20px;
   border-bottom: 1px solid #4b4d4b; 
-    font-weight: bold !important;
-    text-decoration: none !important; 
     
 }
 
@@ -301,7 +301,8 @@ padding-top: 2%;
 }
 
 .blogLayContainer{
-  padding: 60px;
+  padding-top: 10%;
+  padding-bottom: 5%;
   margin: auto;
   max-width: 80%;
 }

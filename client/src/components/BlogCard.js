@@ -22,7 +22,7 @@ function BlogCard ({b}) {
                         <div className="card__info">
                             <span className="card__category">{b.category}</span>
                             <h3 className="card__title">{b.title}</h3>
-                            <span className="card__by">by {b.author}</span>
+                            <span className="card__by">{b.date}</span>
                             <br/>
                             <p className="card__by">{b.preview}</p>
                         </div>
