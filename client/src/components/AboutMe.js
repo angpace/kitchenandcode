@@ -21,8 +21,9 @@ function AboutMe () {
                 </div>
                 <br/>
                 <div className="socials_flex">
+                    <br/>
                         <div>
-                            <center>Hospitality</center>
+                            <center className="title">Hospitality</center>
                             <br/>
                             <center className="bio">Born and raised in NYC, I've always had a passion for 
                                 diverse food, creativity and art. 
@@ -37,7 +38,7 @@ function AboutMe () {
                         </div>
                         
                         <div>
-                             <center>Technology</center>
+                             <center className="title">Technology</center>
                              <br/>
                             <center className="bio" >
                                 In September 2022, I attended the <strong>FlatIron School</strong> for their <strong>Software Engineering</strong> Program. 
