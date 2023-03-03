@@ -8,9 +8,7 @@ ol {
 
 li {
   margin-top: 15px;
-  /* display: inline; */
   list-style: none;
-
 }
 
 .navbar{
@@ -47,7 +45,7 @@ li {
 }
 
 .socials{
-display: flex;
+  display: flex;
 }
 
 .socials_flex{
@@ -56,6 +54,7 @@ display: flex;
   gap: 20px;
   justify-content: center;
 }
+
 
 .socials_flex a{
   color:#0c6c6d;
@@ -285,18 +284,6 @@ padding-top: 2%;
   
 }
 
-.title{
-  font-weight: 400;
-  font-size: 45px;
-  letter-spacing: 2px;
-  margin: auto;
-  color: #4b4d4b;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 20px;
-  border-bottom: 1px solid #4b4d4b; 
-    
-}
-
 .author{
   font-style: italic;
 }
@@ -330,20 +317,31 @@ padding-top: 2%;
 
 .portfolio h1{
   font-family: "Times New Roman", Times, serif;
-  font-size: 37px;
-  float: left;
-  font-weight: 700;
-  color: #8bba8b;
+  font-size: 25px;
+  float: center;
+  font-weight: 600;
+  color: #598059;
 }
+
+@media (min-width: 40em){
+  .portfolio h1{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 37px;
+    float: left;
+    font-weight: 700;
+    color: #8bba8b;
+  }
+}
+
 
 .blog_title{
   padding-left: 5%;
-  font-weight: 400;
-  font-size: 40px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 25px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
   font-family: "Times New Roman", Times, serif;
-  padding-top: 3%;
+  padding-top: 20%;
   padding-bottom: 10px;
   color: #272a2b;
   border-bottom: 1px solid  grey;
@@ -351,14 +349,45 @@ padding-top: 2%;
     margin: auto;
 }
 
+@media (min-width: 40em){
+  .blog_title{
+    padding-left: 5%;
+    font-weight: 400;
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: "Times New Roman", Times, serif;
+    padding-top: 3%;
+    padding-bottom: 10px;
+    color: #272a2b;
+    border-bottom: 1px solid  grey;
+      max-width: 70%;
+      margin: auto;
+  }
+}
+
+.search{
+  float: right;
+  padding-top: 22%;
+  padding-right: 6%;
+}
+.bar{
+  border: none;
+  font-style: italic;
+  font-size: 10px;
+}
+
+@media (min-width: 40em){
 .search{
   float: right;
   padding-right: 15%;
-  padding-top: 5.2%;
+  padding-top: 5.7%;
 }
 .bar{
   border: none;
   font-style: italic; 
+  font-size: 14px;
+}
 }
 
 .like_this_post{
@@ -380,11 +409,6 @@ padding-top: 2%;
   margin: auto;
 }
 
-.welcome_first{
-  font-family: "Times New Roman", Times, serif;
-  font-size: large;
-}
-
 .more_about_me{
   font-style: italic;
 }
@@ -401,3 +425,7 @@ padding-top: 2%;
   padding-bottom: 5%;
   margin: auto;
 }
+
+
+
+
