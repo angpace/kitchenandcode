@@ -12,7 +12,8 @@ function PreviewCard ({b}) {
                   <div className="title_card" onClick={() => getBlogPost(b)}>
                      <h3 className="preview_title"> {b.title}</h3>
                      <img alt="feature" src={b.feature}></img>
-                     <p>{b.preview}</p>
+                     <p style={{width: "70%"}}>{b.preview}</p>
+                     <button onClick={() => getBlogPost(b)}>Read More</button>
                     </div>
     
     )

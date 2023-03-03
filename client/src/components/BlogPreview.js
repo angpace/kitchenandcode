@@ -17,14 +17,13 @@ function BlogPreview ( ) {
     
     return (
         <div>
-            <div className="main-container">
-            <div className="heading">
-                                <h1 className="blog_title">Blogs</h1>
-                            </div>
-                            <div className="previews">
-                            {blogPreviews}
-                            </div>
+            <div>
+              <h1 className="blog_title">Blogs</h1>
             </div>
+            <div className="previews">
+                {blogPreviews}
+            </div>
+            
         </div>
     )
 }
