@@ -16,7 +16,7 @@ function Portfolio() {
             </div>
             <div className="container">
                 <ol type="1" className="portfolio">
-                    <li>
+                    <li >
                         <h1>Smoothie Maker</h1>
                         <br/>
                         <img alt="smoothie" src={Smoothie}></img>

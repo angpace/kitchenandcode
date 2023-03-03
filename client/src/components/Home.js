@@ -31,7 +31,7 @@ function Home () {
                 </Animator>
           </ScrollPage>
 
-          <ScrollPage>
+          <ScrollPage style={{backgroundColor: "whitesmoke"}}>
                 <Animator >
                 <BlogPreview/>
                 </Animator>
