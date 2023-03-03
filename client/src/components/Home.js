@@ -25,7 +25,7 @@ function Home () {
                      </div> */}
                 </Animator>
           </ScrollPage >
-          <ScrollPage style={{backgroundColor: "whitesmoke", paddingTop: "25%"}}>
+          <ScrollPage style={{backgroundColor: "whitesmoke", paddingTop: "6%"}}>
                 <Animator >
                     <About/>
                 </Animator>
