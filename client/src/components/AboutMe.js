@@ -10,17 +10,17 @@ function AboutMe () {
             <div className="about_me">
                 <br/>
                 <div className="socials">
-                    <img style={{width: "27%"}} src={ME} alt="Angela Pace" className="me"></img>
-                    <div style={{width: "40%"}} className="socials_flex">
-                        <i class="fa-brands fa-instagram fa-lg"><a className="social_link" href="https://www.instagram.com/heyitspastry/?hl=en">  @heyitspacey</a></i>
-                        <i class="fa-brands fa-linkedin fa-lg"><a className="social_link" href="https://www.linkedin.com/in/angpace/"> Angela Pace</a></i>
-                        <i class="fa-brands fa-github fa-lg" ><a className="social_link" href="https://github.com/angpace"> @angpace</a></i>
-                        <i class="fa-regular fa-envelope fa-lg"><a className="social_link" href="https://mail.google.com/"> Angpace13@gmail.com</a></i>
-                        <i class="fa-brands fa-medium fa-lg"><a className="social_link" href="https://medium.com/@angpace13"> @angpace13</a></i>
+                    <img style={{width: "37%"}} src={ME} alt="Angela Pace" className="me"></img>
+                    <div style={{width: "30%"}} className="socials_flex">
+                        <i className="fa-brands fa-instagram fa-lg"><span className="social_link" href="https://www.instagram.com/heyitspastry/?hl=en"> heyitspastry</span></i>
+                        <i className="fa-brands fa-linkedin fa-lg"><span className="social_link" href="https://www.linkedin.com/in/angpace/">Angela Pace</span></i>
+                        <i className="fa-brands fa-github fa-lg" ><span className="social_link" href="https://github.com/angpace"> @angpace</span></i>
+                        <i className="fa-regular fa-envelope fa-lg"><span className="social_link" href="https://mail.google.com/">Angpace13@gmail.com</span></i>
+                        <i className="fa-brands fa-medium fa-lg"><span className="social_link" href="https://medium.com/@angpace13">@angpace13</span></i>
                     </div>
                 </div>
                 <br/>
-                <div className="socials_flex">
+                <div >
                     <br/>
                         <div>
                             <center className="blog_title" style={{fontSize: "20px"}}>Hospitality</center>

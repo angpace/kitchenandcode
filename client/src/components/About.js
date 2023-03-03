@@ -1,12 +1,10 @@
 import ME from "./ME.jpg"
-import AboutMe from "./AboutMe";
 
 function About () {
 
     return (
         <div className="about" style={{backgroundColor: "white", padding: "10px", borderRadius: "30px"}}>
-            
-            <center className="blog_title" style={{fontSize: "30px"}}>Welcome to Kitchen and Code! </center>
+            <center className="blog_title" style={{fontSize: "30px"}}>Welcome! </center>
             <br/>
             <img src={ME} alt="Angela Pace" className="me"></img>
             <br/>
