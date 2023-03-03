@@ -28,8 +28,8 @@ function BlogLay (){
         <div className='blogLayContainer'>
             <div className="blogLay">
                 
-                <div className='title'>
-                    <h1 style={{float: 'left'}}>{blogPost.title}</h1>
+                <div>
+                    <h1 className='blog_title' style={{textAlign: "center"}}>{blogPost.title}</h1>
                 </div>
                 <div>
                 <p className="author" style={{float: 'right'}}>by: {blogPost.author}</p>
