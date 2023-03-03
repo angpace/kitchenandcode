@@ -5,18 +5,18 @@ function AboutMe () {
 
     return (
         <div className="padding">
-            <p className="blog_title">About me</p>
+            <center className="blog_title">About me</center>
              <br/>
             <div className="about_me">
                 <br/>
                 <div className="socials">
-                    <img style={{width: "37%"}} src={ME} alt="Angela Pace" className="me"></img>
-                    <div style={{width: "30%"}} className="socials_flex">
-                        <i className="fa-brands fa-instagram fa-lg"><span className="social_link" href="https://www.instagram.com/heyitspastry/?hl=en"> heyitspastry</span></i>
-                        <i className="fa-brands fa-linkedin fa-lg"><span className="social_link" href="https://www.linkedin.com/in/angpace/">Angela Pace</span></i>
-                        <i className="fa-brands fa-github fa-lg" ><span className="social_link" href="https://github.com/angpace"> @angpace</span></i>
-                        <i className="fa-regular fa-envelope fa-lg"><span className="social_link" href="https://mail.google.com/">Angpace13@gmail.com</span></i>
-                        <i className="fa-brands fa-medium fa-lg"><span className="social_link" href="https://medium.com/@angpace13">@angpace13</span></i>
+                    <img  src={ME} alt="Angela Pace" className="me"></img>
+                    <div className="socials_flex">
+                        <a className="social_link" href="https://www.instagram.com/heyitspastry/?hl=en"><i className="fa-brands fa-instagram fa-lg"></i></a>
+                        <a className="social_link" href="https://www.linkedin.com/in/angpace/"><i className="fa-brands fa-linkedin fa-lg"></i></a>
+                        <a className="social_link" href="https://github.com/angpace"><i className="fa-brands fa-github fa-lg" ></i></a>
+                        <a className="social_link" href="https://mail.google.com/"><i className="fa-regular fa-envelope fa-lg"></i></a>
+                        <a className="social_link" href="https://medium.com/@angpace13"><i className="fa-brands fa-medium fa-lg"></i></a>
                     </div>
                 </div>
                 <br/>
