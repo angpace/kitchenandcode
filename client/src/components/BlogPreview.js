@@ -17,7 +17,7 @@ function BlogPreview ( ) {
     
     return (
         <div>
-            <div>
+            <div >
               <h1 className="blog_title">Blogs</h1>
             </div>
             <div className="previews">
