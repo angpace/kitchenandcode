@@ -443,6 +443,21 @@ padding-top: 2%;
   padding: 6px; 
 }
 
+.like_btn:hover{
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.fa-heart{
+  color: red;
+}
+
+.fa-heart:hover{
+  cursor: pointer;
+  color: pink;
+}
+
+
 /* Me */
 
 .me{

@@ -5,6 +5,7 @@ function BlogLay (){
     let { id } = useParams();
     const [blogPost, setBlogPost] = useState([])
     const [likes, setLikes] = useState(blogPost.likes)
+    const [isLiked, setIsLiked] = useState(false)
 
     useEffect(() => {
         fetch(`blogs/${id}`)
@@ -15,6 +16,7 @@ function BlogLay (){
     function addLikesToPost(){
        let newLikeCount = blogPost.likes += 1
        setLikes(newLikeCount)
+       setIsLiked(true)
        fetch(`/blogs/${id}`, {
         method: "PATCH",
         headers: { 'content-type': 'application/json' },
@@ -32,10 +34,10 @@ function BlogLay (){
                     <h1 className='blog_title' style={{textAlign: "center"}}>{blogPost.title}</h1>
                 </div>
                 <div>
-                <p className="author" style={{float: 'right'}}>by: {blogPost.author}</p>
+                    <p className="author" style={{float: 'right'}}>by: {blogPost.author}</p>
                 </div>
                 <div>
-                <p>{blogPost.preview}</p>
+                     <p>{blogPost.preview}</p>
                 </div>
                 <div className="feature">
                     <img  className="feature_image" alt="feature" src={blogPost.feature} />
@@ -54,7 +56,15 @@ function BlogLay (){
                 <div className='like_this_post'>
                     <p>Like this post? Show some love!
                     <br/>
-                    <button className="like_btn" onClick={addLikesToPost}>❤️ {blogPost.likes}</button>
+                    <button className="like_btn" onClick={addLikesToPost}>
+                        <i className=
+                         {isLiked? 
+                            "fa-regular fa-solid fa-heart"
+                            :
+                            "fa-regular fa-heart"
+                         }
+                         >
+                            </i> {blogPost.likes}</button>
                     </p>
                 </div>
             </div>
