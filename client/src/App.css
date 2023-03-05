@@ -443,6 +443,16 @@ padding-top: 2%;
   padding: 6px; 
 }
 
+.fa-heart{
+  color: red;
+}
+
+.fa-heart:hover{
+  cursor: pointer;
+  color: pink;
+}
+
+
 /* Me */
 
 .me{
