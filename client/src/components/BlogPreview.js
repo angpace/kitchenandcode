@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Navigate } from "react-router-dom";
 import PreviewCard from "./PreviewCard";
 
 function BlogPreview ( ) {
@@ -17,7 +18,7 @@ function BlogPreview ( ) {
     
     return (
         <div>
-            <div >
+            <div>
               <h1 className="blog_title">Blogs</h1>
             </div>
             <div className="previews">

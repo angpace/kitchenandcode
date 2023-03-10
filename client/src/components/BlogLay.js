@@ -48,9 +48,11 @@ function BlogLay (){
                 <div className='paragraph'>
                     <p>{blogPost.paragraph_two}</p>
                 </div>
-                <div className='side_by_side'>
-                    <img className="image_one" style={{float: 'left', width: '50%'}} alt="imageOne" src={blogPost.image_one} />
-                    <p style={{float: 'right', width: '40%'}}>{blogPost.paragraph_three}</p>
+                <div className="feature">
+                    <img className="feature_image" alt="imageOne" src={blogPost.image_one} />
+                </div>
+                <div className='paragraph'>
+                    <p>{blogPost.paragraph_three}</p>
                 </div>
                 <br/>
                 <div className='like_this_post'>
