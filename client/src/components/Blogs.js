@@ -26,6 +26,7 @@ function Blogs ({currentUser}) {
     }
 
     return (
+        
         <div className="padding">
             {currentUser? 
             
