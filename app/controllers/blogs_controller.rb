@@ -20,6 +20,11 @@ class BlogsController < ApplicationController
         render json: blog
     end
 
+    def destroy
+        blog = Blog.find(params[:id])
+        blog.destroy
+        head :no_content
+
     private
 
     def blog_params
