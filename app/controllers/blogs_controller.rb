@@ -24,6 +24,7 @@ class BlogsController < ApplicationController
         blog = Blog.find(params[:id])
         blog.destroy
         head :no_content
+    end
 
     private
 
