@@ -13,11 +13,16 @@ function Blogs ({currentUser}) {
         .then(data => setBlogs(data))
     }, [])
 
+    function handleDelete(id){
+        const updatedBlogsArray = blogs.filter(blog => blog.id !== id)
+        setBlogs(updatedBlogsArray)
+    }
+
 
     const filteredBlogs = blogs.filter((b) => b.category.toLowerCase().includes(search.toLowerCase()))
 
     const createBlogCards = filteredBlogs.map((b) => { 
-        return ( < BlogCard b={b} key={b.id} /> )
+        return ( < BlogCard handleDelete={handleDelete} currentUser={currentUser} b={b} key={b.id} /> )
     })
 
     function rerender (data){

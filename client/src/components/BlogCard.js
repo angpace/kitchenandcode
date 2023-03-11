@@ -1,15 +1,27 @@
 import { useNavigate} from "react-router-dom";
 
-function BlogCard ({b}) {
+function BlogCard ({b, currentUser, handleDelete}) {
     const navigate = useNavigate();
 
     function getBlogPost (b) {
         navigate(`/${b.id}`)
     }
 
+    function deletePost (e){
+        e.preventDefault()
+        fetch(`blogs/${b.id}`, {
+            method: "DELETE",
+        })
+        handleDelete(b.id)
+    }
 
     return (
      <div>
+                    {currentUser? 
+                         <button onClick={deletePost}>Delete</button>
+                        :
+                        <></>
+                     }
                     <section className="cards">
                         <article className="card card--1" onClick={() => getBlogPost(b)}>
                         <div className="card__info-hover">
@@ -27,7 +39,8 @@ function BlogCard ({b}) {
                             <p className="card__by">{b.preview}</p>
                         </div>
                         </article>
-                     </section>                  
+                     </section>  
+                       
          </div>
        
     )

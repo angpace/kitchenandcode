@@ -29,7 +29,7 @@ function BlogLay (){
     return(
         <div className='blogLayContainer'>
             <div className="blogLay">
-                
+        
                 <div>
                     <h1 className='blog_title' style={{textAlign: "center"}}>{blogPost.title}</h1>
                 </div>
