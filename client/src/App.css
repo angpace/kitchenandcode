@@ -11,17 +11,32 @@ li {
   list-style: none;
 }
 
-.navbar{
-  position: fixed;
-  width: 100%;
+.logo { 
+  font-family: "Abril Fatface"; 
+  font-size: 40px;
+  font-weight: 700; 
+  margin-right: auto;
+  line-height: 26.4px;
+  list-style-type: none;
 }
 
-.navbar i:active {
-  color: #0c6c6d;
+.logo_text{
+ color: #2dba9bb0;
 }
 
-.navbar i:focus {
-  color: #0c6c6d;
+.navlist{
+  display: flex;
+}
+
+.items{
+  line-height: 30px;
+  padding-right: 20px;
+  color: #2dba9bb0;
+  font-family: "Abril Fatface"; 
+}
+
+a:link { 
+  text-decoration: none; 
 }
 
 .fa-solid{

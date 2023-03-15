@@ -46,12 +46,12 @@ function App() {
     <div>
 
           <nav className='navbar'>
-            <ol className='navlist'>
-              <li><Link to="/"><i className="fa-solid fa-house-chimney fa-lg"></i></Link></li>
-              <li><Link to="/blogs"><i className="fa-regular fa-pen-to-square fa-lg"></i></Link></li>
-              <li><Link to="/portfolio"><i className="fa-regular fa-folder-open fa-lg"></i></Link></li>
-              <li><Link to="/about"><i className="fa-regular fa-address-card fa-lg"></i></Link></li>
-            </ol>
+            <ul className='navlist'>
+              <h1 className="logo"><a  className="logo_text" href="/">AP.</a></h1>
+              <li><a className="items" href="/about">About</a></li>
+              <li><a className="items" href="/blogs">Blog</a></li>
+              <li><a className="items" href="/portfolio">Portfolio</a></li>
+            </ul>
             </nav>
             {currentUser? 
 
