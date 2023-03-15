@@ -4,10 +4,14 @@ import Video from "./Video";
 function Home () {
 
     return (
-       
-            <div className="padding">
+       <div>
+            <div>
                  <Video/>  
             </div>
+                
+
+            
+        </div>
         
     )
 }
