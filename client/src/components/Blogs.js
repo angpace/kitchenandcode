@@ -32,7 +32,7 @@ function Blogs ({currentUser}) {
 
     return (
         
-        <div className="padding">
+        <div>
             {currentUser? 
             
             <PostBlog rerender={rerender} currentUser={currentUser}/>

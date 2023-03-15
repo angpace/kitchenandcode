@@ -90,15 +90,6 @@ a:link {
   color:#0c6c6d;
 }
 
-.padding{
-  padding-top: 20%;
-}
-@media (min-width: 40em){
-    .padding{
-    padding-top: 7%;
-  }
-}
-
 .about{
   max-width: 80%;
   display: block;
@@ -451,10 +442,7 @@ padding-top: 2%;
   cursor: pointer;
   color: pink;
 }
-
-
 /* Me */
-
 .me{
   border-radius: 50%;
   width: 60%;
@@ -497,7 +485,6 @@ padding-top: 2%;
   margin: auto;
 }
 
-
 /* testing */
 .kitchcode{
     display: block;
@@ -505,6 +492,11 @@ padding-top: 2%;
     min-width: 250px;
     max-width: 600px; 
  }
+
+ .portfolio a{
+  color: #2dba9bb0;
+ }
+
   
 
 
