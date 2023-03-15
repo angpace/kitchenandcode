@@ -49,7 +49,7 @@ function App() {
             <ul className='navlist'>
               <h1 className="logo"><a  className="logo_text" href="/">AP.</a></h1>
               <li><a className="items" href="/about">About</a></li>
-              <li><a className="items" href="/blogs">Blog</a></li>
+              <li><a className="items" href="/blogposts">Blog</a></li>
               <li><a className="items" href="/portfolio">Portfolio</a></li>
             </ul>
             </nav>
@@ -71,7 +71,7 @@ function App() {
         {/* Routes */}
         <Routes>
           <Route path="/" element={<Home/>} />
-          <Route path="/blogs" element={<Blogs currentUser={currentUser}/>} />
+          <Route path="/blogposts" element={<Blogs currentUser={currentUser}/>} />
           <Route path="/login" element={<Login onLogin={onLogin}/>} />
           <Route path="/:id" element={<BlogLay />} />
           <Route path="/portfolio" element={<Portfolio />} />
