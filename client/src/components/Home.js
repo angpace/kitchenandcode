@@ -1,16 +1,17 @@
 import Video from "./Video";
+import About from "./About";
  
 
 function Home () {
 
     return (
-       <div>
-            <div>
+       <div className="home">
+            <div style={{height: "40%"}}>
                  <Video/>  
             </div>
-                
-
-            
+            <div>
+                <About/>
+            </div>
         </div>
         
     )
