@@ -7,6 +7,7 @@ import { useEffect, useState } from 'react';
 import BlogLay from './components/BlogLay';
 import Portfolio from './components/Portfolio';
 import AboutMe from './components/AboutMe';
+import Socials from './components/Socials';
 
 
 
@@ -64,8 +65,8 @@ function App() {
               <></>
 
             }
-        
 
+  
      
 
         {/* Routes */}
@@ -77,6 +78,9 @@ function App() {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/about" element={<AboutMe/>} />
           </Routes>
+          <footer className='footer'>
+              <Socials/>
+          </footer>
     </div>
   );
 }
