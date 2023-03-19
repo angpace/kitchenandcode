@@ -11,8 +11,9 @@ function Home () {
        <div className="home">
         <ScrollContainer>
             <ScrollPage>
-                <div style={{height: "40%"}}>
+                <div>
                     <Video/>  
+
                 </div>
             </ScrollPage>
             <ScrollPage>
