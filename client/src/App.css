@@ -13,15 +13,17 @@ li {
 
 .logo { 
   font-family: "Abril Fatface"; 
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 700; 
   margin-right: auto;
   list-style-type: none;
   line-height: 20px;
+  letter-spacing: 1px;
+ 
 }
 
 .logo_text{
- color: #2dba9bb0;
+ color: black;
 }
 
 .home{
@@ -30,8 +32,10 @@ flex-direction: column;
 }
 
 .navbar{
-  padding-top: 10px;
-  padding-right: 10%;
+  /* padding-top: 10px; */
+  padding: 2%;
+  padding-bottom: 0%;
+
 }
 
 .navlist{
@@ -41,8 +45,9 @@ flex-direction: column;
 .items{
   font-size: small;
   padding-right: 10px;
-  color: #2dba9bb0;
+  color: rgb(96, 92, 92);
   font-family: "Abril Fatface"; 
+  letter-spacing: 1px;
 }
 
 
@@ -50,7 +55,9 @@ flex-direction: column;
 .items{
   font-size: medium;
   padding-right: 30px;
-  color: #2dba9bb0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgb(96, 92, 92);
   font-family: "Abril Fatface"; 
 }
 }
@@ -129,7 +136,7 @@ a:link {
 
 .about a{
   text-decoration: none;
-  color: rgb(37, 65, 36);
+  color: rgb(96, 92, 92);
   padding: 3px;
   font-family: "Times New Roman", Times, serif;
   font-size: 14px;
@@ -147,7 +154,7 @@ a:link {
 }
 
 .about button:hover{
-  background-color: #8bba8b;
+  background-color: #2dba9bb0;
 }
 
 /* Blog cards on the Blog Page  */
@@ -394,7 +401,7 @@ padding-top: 2%;
   font-size: 24px;
   float: center;
   font-weight: 600;
-  color: #598059;
+  color: #2dba9bb0;
 }
 
 @media (min-width: 40em){
@@ -403,7 +410,7 @@ padding-top: 2%;
     font-size: 37px;
     float: left;
     font-weight: 700;
-    color: #8bba8b;
+    color: #2dba9bb0;
   }
 }
 
@@ -592,5 +599,21 @@ padding-top: 2%;
 
     
 
+/*   
+  .bounce {
+    animation: bounce 2s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  } */
 
 
