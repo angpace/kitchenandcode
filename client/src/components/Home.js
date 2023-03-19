@@ -1,6 +1,6 @@
 import Video from "./Video";
 import About from "./About";
-import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, FadeOut, Move, MoveIn, MoveOut, Sticky, StickyIn, StickyOut, Zoom, ZoomIn, ZoomOut } from "react-scroll-motion";
+import { Animator, ScrollContainer, ScrollPage, batch, Fade, Sticky } from "react-scroll-motion";
  
 
 function Home () {
@@ -11,7 +11,7 @@ function Home () {
        <div className="home">
         <ScrollContainer>
             <ScrollPage>
-                <div style={{height: "60%"}}>
+                <div style={{height: "40%"}}>
                     <Video/>  
                 </div>
             </ScrollPage>
