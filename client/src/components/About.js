@@ -11,7 +11,7 @@ function About () {
             </svg>
             
 
-                <span filter-content="S">I'm <br/> <span filter-content="S">Angela Pace</span> </span>
+                <span filter-content="S">I'm Angela Pace</span>
                 <p>Full Stack Developer, React.js Engineer, Learning Java and AWS, Tech and Food Blogger, Pastry Chef and Problem Solver.</p>
                 <p>My goal is to expand on my technical skills. View my <button><a href="/portfolio">Projects</a></button>, <button><a href="/blogposts">Blogs</a></button> or send me an email 
                 at <button><a href="mailto:angpace13@gmail.com">angpace13@gmail.com.</a></button>

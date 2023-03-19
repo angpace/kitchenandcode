@@ -16,8 +16,8 @@ li {
   font-size: 40px;
   font-weight: 700; 
   margin-right: auto;
-  line-height: 26.4px;
   list-style-type: none;
+  line-height: 20px;
 }
 
 .logo_text{
@@ -29,15 +29,30 @@ display: flex;
 flex-direction: column;
 }
 
+.navbar{
+  padding-top: 10px;
+  padding-right: 10%;
+}
+
 .navlist{
   display: flex;
 }
 
 .items{
-  line-height: 30px;
-  padding-right: 20px;
+  font-size: small;
+  padding-right: 10px;
   color: #2dba9bb0;
   font-family: "Abril Fatface"; 
+}
+
+
+@media (min-width: 40em){
+.items{
+  font-size: medium;
+  padding-right: 30px;
+  color: #2dba9bb0;
+  font-family: "Abril Fatface"; 
+}
 }
 
 a:link { 
@@ -96,17 +111,15 @@ a:link {
 }
 
 .about{
-  max-width: 80%;
   font-family: "Times New Roman", Times, serif;
   display: block;
   margin: auto;
   font-size: small;
-  padding: 10%;
 }
 
 @media (min-width: 40em){
 .about{
-  max-width: 68%;
+  width: 100%;
   font-family: "Times New Roman", Times, serif;
   display: block;
   margin: auto;
@@ -117,9 +130,9 @@ a:link {
 .about a{
   text-decoration: none;
   color: rgb(37, 65, 36);
-  padding: 2px;
+  padding: 3px;
   font-family: "Times New Roman", Times, serif;
-  font-size: 2vw;
+  font-size: 14px;
 }
 
 .about a:hover{
