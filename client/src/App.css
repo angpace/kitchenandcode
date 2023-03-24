@@ -127,6 +127,38 @@ a:link {
   color:#0c6c6d;
 }
 
+.login{
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  padding: 20%;
+}
+
+.login input{
+  display: flex;
+  margin: auto;
+  padding: 5px;
+}
+
+.blog_post{
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  padding: 10%;
+
+}
+
+.lrg_input{
+  margin: auto;
+  width: 300px;
+  height: 150px;
+  display: flex;
+  text-align: center;
+}
+
+.short_input{
+  margin: auto;
+  padding: 5px;
+}
+
 .about{
   font-family: "Times New Roman", Times, serif;
   display: block;

@@ -52,53 +52,53 @@ function PostBlog ({rerender, currentUser}) {
        
 
     return (
-        <div>
+        <div className='blog_post'>
             <h2>Post a New Blog</h2>   
             <form onSubmit={handleSubmit}>
-                          <input
+                          <input className='short_input'
                               onChange={handleChange}
                               placeholder="Blog Title"
                               name="title"
                           />
-                          <input
+                          <input className='short_input'
                               onChange={handleChange}
                               placeholder="Preview"
                               name="preview"
                           />
-                          <input
-                              onChange={handleChange}
-                              placeholder="Intro"
-                              name="paragraph_one"
-                          />
-                          <input
-                              onChange={handleChange}
-                              placeholder="Body"
-                              name="paragraph_two"
-                          />
-                          <input
-                              onChange={handleChange}
-                              placeholder="Conclusion"
-                              name="paragraph_three"
-                          />
-                          <input
+                          <input className='short_input'
                               onChange={handleChange}
                               placeholder="Date"
                               name="date"
                           />
-                          <input
+                          <input className='short_input'
                               onChange={handleChange}
                               placeholder="Feature"
                               name="feature"
                           />
-                          <input
+                          <input className='short_input'
                               onChange={handleChange}
                               placeholder="image"
                               name="image_one"
                           />
-                           <input
+                           <input className='short_input'
                               onChange={handleChange}
                               placeholder="Category"
                               name="category"
+                          />
+                          <input className='lrg_input'
+                              onChange={handleChange}
+                              placeholder="Intro"
+                              name="paragraph_one"
+                          />
+                          <input className='lrg_input'
+                              onChange={handleChange}
+                              placeholder="Body"
+                              name="paragraph_two"
+                          />
+                          <input className='lrg_input'
+                              onChange={handleChange}
+                              placeholder="Conclusion"
+                              name="paragraph_three"
                           />
                           <button type="submit">Post Blog</button>
                       </form> 

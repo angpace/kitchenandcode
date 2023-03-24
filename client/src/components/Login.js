@@ -43,8 +43,9 @@ function Login ({onLogin}){
     return (
         <div className="padding">
           <div>
-        <h3>Login below</h3>
-        <div >
+        
+        <div className="login">
+        <h3>Welcome back, Ang!</h3>
             <form action="#" onSubmit={handleLogin}>
                 <input
                     onChange={handleChange}
