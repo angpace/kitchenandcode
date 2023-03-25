@@ -601,11 +601,11 @@ padding-top: 2%;
  @media (max-width: 50em){
   footer{
    bottom: 0;
+   position: relative;
    width: 100%;
    padding: 3px;
    display: flex;
    justify-content: space-around;
-   background-color: #f3f0ec;
    line-height: 35px;
    }
   }

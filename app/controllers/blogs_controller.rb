@@ -1,7 +1,8 @@
 class BlogsController < ApplicationController
     
     def index
-        render json: Blog.all
+        blog = Blog.order('created_at DESC')
+        render json: blog
     end
 
     def show 
