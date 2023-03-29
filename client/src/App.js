@@ -1,6 +1,6 @@
 import Home from './components/Home';
 import './App.css';
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link, useSearchParams } from "react-router-dom";
 import Blogs from './components/Blogs';
 import Login from './components/Login'
 import { useEffect, useState } from 'react';
@@ -8,6 +8,7 @@ import BlogLay from './components/BlogLay';
 import Portfolio from './components/Portfolio';
 import AboutMe from './components/AboutMe';
 import Socials from './components/Socials';
+import Subscribe from './components/Subscribe';
 
 
 
@@ -43,15 +44,16 @@ function App() {
     // navigate("/")
   }
 
+
   return (
     <div>
-
           <nav className='navbar'>
             <ul className='navlist'>
               <h1 className="logo"><a  className="logo_text" href="/">AP.</a></h1>
               <li><a className="items" href="/about">About</a></li>
               <li><a className="items" href="/blogposts">Blog</a></li>
               <li><a className="items" href="/portfolio">Portfolio</a></li>
+              <li><a style={{textDecoration: "underline"}} className="items" href="/subscribe">Subscribe</a></li>
             </ul>
             </nav>
             {currentUser? 
@@ -77,6 +79,7 @@ function App() {
           <Route path="/:id" element={<BlogLay />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/about" element={<AboutMe/>} />
+          <Route path="/subscribe" element={<Subscribe/>} />
           </Routes>
           <footer className='footer'>
               <Socials/>
