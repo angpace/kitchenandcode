@@ -33,7 +33,7 @@ flex-direction: column;
 
 @media (min-width: 40em){
   .navbar{
-    padding-top: 3%;
+    padding-top: 2%;
     padding-right: 10%;
     padding-left: 10%;
     padding-bottom: 0%;
@@ -394,21 +394,10 @@ padding-top: 2%;
 }
 
 .blogLayContainer{
-  padding-top: 20%;
+  padding-top: 5%;
   padding-bottom: 7%;
   margin: auto;
   max-width: 80%;
-}
-
-
-@media (min-width: 40em) {
-  .blogLayContainer{
-    padding-top: 10%;
-    padding-bottom: 7%;
-    margin: auto;
-    max-width: 80%;
-  }
-  
 }
 
 .portfolio{

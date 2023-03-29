@@ -9,4 +9,23 @@ class UsersController < ApplicationController
         end
     end
 
+    def create
+        user = User.create!(user_params)
+        user.welcome
+        render json: user
+    end
+
+    def destroy
+        user = User.find(params[:id])
+        user.destroy
+        head :no_content
+    end
+
+
+    private
+
+    def user_params
+        params.permit(:name, :email, :password)
+    end
+
 end
