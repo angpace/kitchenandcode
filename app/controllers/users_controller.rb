@@ -13,6 +13,8 @@ class UsersController < ApplicationController
         user = User.create!(user_params)
         user.welcome
         render json: user
+        # rescue ActiveRecord::RecordInvalid => e
+        #     render json: { error: e.record.errors.full_messages }, status: :unprocessable_entity
     end
 
     def destroy
