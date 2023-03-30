@@ -13,13 +13,20 @@ li {
 
 .logo { 
   font-family: "Abril Fatface"; 
+  line-height: 20px;
+  margin-right: auto;
+}
+
+@media(min-width: 40em){
+  .logo { 
+  font-family: "Abril Fatface"; 
   font-size: 50px;
   font-weight: 700; 
   margin-right: auto;
   list-style-type: none;
   line-height: 20px;
   letter-spacing: 1px;
- 
+}
 }
 
 .logo_text{
@@ -54,10 +61,10 @@ flex-direction: column;
 
 .items{
   font-size: small;
-  padding-right: 10px;
+  padding-right: 5px;
   color: rgb(96, 92, 92);
   font-family: "Abril Fatface"; 
-  letter-spacing: 1px;
+  
 }
 
 
