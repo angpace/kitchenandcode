@@ -159,6 +159,38 @@ a:link {
   padding: 5px;
 }
 
+/* Subscribe Page */
+
+.subscribe input{
+  display: flex;
+  margin: auto;
+  padding: 3px;
+}
+
+.submit_subscription{
+  display: flex;
+  margin: auto;
+  background-color: #afb7b538;
+  padding: 3px;
+  border: none;
+  border-radius: 3px
+}
+.submit_subscription:hover{
+  background-color: #2dba9bb0;
+  color: white;
+}
+
+.sub_text{
+  font-family: "Times New Roman", Times, serif;
+  display: block;
+  margin: auto;
+}
+
+.subscription{
+  padding-top: 10%;
+  padding-bottom: 40%;
+}
+
 .about{
   font-family: "Times New Roman", Times, serif;
   display: block;

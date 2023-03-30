@@ -37,10 +37,12 @@ function Subscribe(){
       }
 
     return(
-        <>
+        <div className="subscription">
+        <center className="sub_text">
         <h3>Thank you for your interest in Kitchen and Code!</h3>
-        <p>Sign up to recieve email updates!</p>
-        <form onSubmit={handleSubscription}>
+        <p>Sign up to recieve email updates for new blog posts.</p>
+        </center>
+        <form className="subscribe" onSubmit={handleSubscription}>
           <input
           placeholder='Username'
           onChange={handleChange}
@@ -56,10 +58,11 @@ function Subscribe(){
           placeholder='Password'
           onChange={handleChange}
           name="password"
+          type="password"
           />
-          <button type="submit">Enter</button>
+          <button className="submit_subscription" type="submit">Sign Up</button>
           </form>
-        </>
+        </div>
     )
 }
 
