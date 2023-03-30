@@ -1,25 +1,32 @@
 class User < ApplicationRecord
     has_secure_password
-    validates :email, :name, presence: true, uniqueness: true
+    validates :email, :name, presence: true
 
-    # require 'sendgrid-ruby'
-    #     include SendGrid
+    require 'sendgrid-ruby'
+        include SendGrid
 
-    # def welcome
+    def welcome
         
-    #     from = Email.new(email: 'test@example.com')
-    #     to = Email.new(email: 'test@example.com')
-    #     subject = 'Sending with SendGrid is Fun'
-    #     content = Content.new(type: 'text/plain', value: 'and easy to do anywhere, even with Ruby')
-    #     mail = Mail.new(from, subject, to, content)
-        
-    #     sg = SendGrid::API.new(api_key: ENV['SENDGRID_API_KEY'])
-    #     response = sg.client.mail._('send').post(request_body: mail.to_json)
-    #     puts response.status_code
-    #     puts response.body
-    #     puts response.headers
+        from = Email.new(email: 'welcome.kitchenandcode@gmail.com')
+        to = Email.new(email: "#{self.email}")
+        subject = 'Welcome!'
+        content = Content.new(type: 'text/plain', value: "Hi, there #{self.name}! 
 
-    # end
+    I wanted to personally welcome and express my gratitude for joining me. The journey from Pastry Chef to Software Engineer has been challenging, exciting and fufilling. I'm looking forward to sharing that journey with you! As a subscriber, you'll be the first to know about new blog posts, special offers, and exclusive content.    
+    Thank you once again, I look forward to getting to know you better!
+
+    Best, 
+    Angela Pace
+        ")
+        mail = Mail.new(from, subject, to, content)
+        
+        sg = SendGrid::API.new(api_key: ENV['SENDGRID_API_KEY'])
+        response = sg.client.mail._('send').post(request_body: mail.to_json)
+        puts response.status_code
+        puts response.body
+        puts response.headers
+
+    end
 
 
 
