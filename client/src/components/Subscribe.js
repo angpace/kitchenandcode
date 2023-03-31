@@ -40,7 +40,7 @@ function Subscribe(){
         <div className="subscription">
         <center className="sub_text">
         <h3>Thank you for your interest in Kitchen and Code!</h3>
-        <p>Sign up to recieve email updates for new blog posts.</p>
+        <p>Sign up to receive email updates for new blog posts.</p>
         </center>
         <form className="subscribe" onSubmit={handleSubscription}>
           <input
