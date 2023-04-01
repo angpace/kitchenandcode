@@ -1,6 +1,8 @@
 import { useState } from "react";
+import {useNavigate} from "react-router-dom"
 
 function Login ({onLogin}){
+  const navigate = useNavigate();
     const [login, setLogin] = useState({
         email: "",
         password: "",
@@ -30,9 +32,10 @@ function Login ({onLogin}){
             console.log("yay")
             res.json()
             .then(data => onLogin(data))
+            navigate('/')
+            
           }
           else if (res.status === 401) { 
-            alert.show("Invalid Username or Password.")
         
           }})
 
@@ -45,7 +48,7 @@ function Login ({onLogin}){
           <div>
         
         <div className="login">
-        <h3>Welcome back, Ang!</h3>
+        <h3>Login to manage your subscription.</h3>
             <form action="#" onSubmit={handleLogin}>
                 <input
                     onChange={handleChange}
@@ -59,7 +62,7 @@ function Login ({onLogin}){
                     placeholder="Password"
                     name="password"
                 />
-                <button type="submit">Login</button>
+                <button className="submit_subscription" type="submit">Login</button>
             </form>
             </div>
         </div>

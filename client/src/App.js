@@ -9,6 +9,12 @@ import Portfolio from './components/Portfolio';
 import AboutMe from './components/AboutMe';
 import Socials from './components/Socials';
 import Subscribe from './components/Subscribe';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import Offcanvas from 'react-bootstrap/Offcanvas';
+import Alert from 'react-bootstrap/Alert';
 
 
 
@@ -41,32 +47,80 @@ function App() {
 
   function onLogin(user) {
     setCurrentUser(user)
-    // navigate("/")
+    
   }
+
+  // function Popup() {
+  //   return (
+  //     <>
+  //       {[
+  //         'danger',
+  //         'warning',
+  //         'info',
+  //       ].map((variant) => (
+  //         <Alert key={variant} variant={variant}>
+  //           This is a {variant} alert—check it out!
+  //         </Alert>
+  //       ))}
+  //     </>
+  //   );
+  // }
 
 
   return (
     <div>
-          <nav className='navbar'>
-            <ul className='navlist'>
-              <h1 className="logo"><a  className="logo_text" href="/">AP.</a></h1>
-              <li><a className="items" href="/about">About</a></li>
-              <li><a className="items" href="/blogposts">Blog</a></li>
-              <li><a className="items" href="/portfolio">Portfolio</a></li>
-              <li><a style={{textDecoration: "underline"}} className="items" href="/subscribe">Subscribe</a></li>
-            </ul>
-            </nav>
-            {currentUser? 
+      {['sm'].map((expand) => (
+        <Navbar key={expand} bg="light" expand={expand}>
+          <Container fluid>
+            <Navbar.Brand className="logo" href="/">Angela Pace</Navbar.Brand>
+            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+            <Navbar.Offcanvas
+              id={`offcanvasNavbar-expand-${expand}`}
+              aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
+              placement="end"
+            >
+              <Offcanvas.Header closeButton>
+                <Offcanvas.Title className="logo" id={`offcanvasNavbarLabel-expand-${expand}`}>
+                  Kitchen and Code
+                </Offcanvas.Title>
+              </Offcanvas.Header>
+              <Offcanvas.Body>
+                <Nav className="justify-content-end flex-grow-1 pe-2">
+                  <Nav.Link className="items" href="/about">About</Nav.Link>
+                  <Nav.Link className="items" href="/blogposts">Blog</Nav.Link>
+                  <Nav.Link className="items" href="/portfolio">Portfolio</Nav.Link>
+                  <NavDropdown className="items"
+                    title="Account"
+                    id={`offcanvasNavbarDropdown-expand-${expand}`}
+                  >
+                    <NavDropdown.Item className="items" href="/Subscribe">Subscribe</NavDropdown.Item>
+                    <NavDropdown.Divider />
+                   {currentUser? 
 
-              <div className='padding'>
-                <button onClick={handleLogOut}>Log out</button>
-              </div>
+                      <NavDropdown.Item onClick={handleLogOut} className="items" href="/">
+                      Logout
+                      </NavDropdown.Item>
 
-              :
+                      :
 
-              <></>
+                      
+                       <NavDropdown.Item className="items" href="/login">
+                       Login
+                       </NavDropdown.Item>
+                     
 
-            }
+                      }  
+            
+                  </NavDropdown>
+                </Nav>
+                
+              </Offcanvas.Body>
+            </Navbar.Offcanvas>
+          </Container>
+        </Navbar>
+      ))}
+
+
 
   
      
