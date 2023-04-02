@@ -6,7 +6,7 @@ function AboutMe () {
 
     return (
         <div className="padding">
-            <center className="blog_title">About me</center>
+            <center className="blog_title">About Me</center>
              <br/>
             <div className="about_me">
                 <br/>
@@ -20,7 +20,7 @@ function AboutMe () {
                 <div >
                     <br/>
                         <div>
-                            <center className="blog_title" style={{fontSize: "20px"}}>Hospitality</center>
+                            <center className="blog_heading" style={{fontSize: "20px"}}><strong>Hospitality</strong></center>
                             <br/>
                             <center className="bio">Born and raised in NYC, I've always had a passion for 
                                 diverse food, creativity and art. 
@@ -35,7 +35,7 @@ function AboutMe () {
                         </div>
                         
                         <div>
-                             <center className="blog_title" style={{fontSize: "20px"}}>Technology</center>
+                             <center className="blog_heading"style={{fontSize: "20px"}}><strong>Technology</strong></center>
                              <br/>
                             <center className="bio" >
                                 In September 2022, I attended the <strong>FlatIron School</strong> for their <strong>Software Engineering</strong> Program. 

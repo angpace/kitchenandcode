@@ -30,15 +30,34 @@ function Blogs ({currentUser}) {
         setBlogs([...blogs, data])
     }
 
+
+    const me = 'angpace13@gmail.com' 
+
+    if (currentUser && me == currentUser.email){
+        return (
+        
+            <div>
+                
+                <PostBlog rerender={rerender} currentUser={currentUser}/>
+    
+                <div className="search">
+                      <input className="bar" onChange={(e) => setSearch(e.target.value)} placeholder="Search by Category..."></input>
+                </div>
+                    <div>
+                        <h2 className="blog_title">Blogs</h2>
+                        <div className="line-2"></div>
+                    </div>
+                        <div className="blogContainer">
+                            {createBlogCards}
+                        </div>
+            </div>
+        )
+    }
+    
+
     return (
         
         <div>
-            {currentUser? 
-            
-            <PostBlog rerender={rerender} currentUser={currentUser}/>
-            :
-            <></>
-            }
             <div className="search">
                   <input className="bar" onChange={(e) => setSearch(e.target.value)} placeholder="Search by Category..."></input>
             </div>
