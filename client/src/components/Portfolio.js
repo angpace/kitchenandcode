@@ -92,7 +92,7 @@ function Portfolio() {
               src={Smoothie}
               alt="Smoothie Maker"
             />
-            <Carousel.Caption>
+            <Carousel.Caption className="port_caption">
               <h3>Smoothie Maker</h3>
               <p>Create a custom smoothie with fruit of your choice. Blend and recieve the nutritional value.</p>
             </Carousel.Caption>
@@ -104,23 +104,51 @@ function Portfolio() {
               alt="Second slide"
             />
     
-            <Carousel.Caption>
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <Carousel.Caption className="port_caption">
+              <h3>Synodic</h3>
+              <p>A morning/night wellness planner.</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <img
              className="portfolio" 
               src={candle}
-              alt="Third slide"
+              alt="Reminiscent"
             />
     
-            <Carousel.Caption>
-              <h3>Third slide label</h3>
+            <Carousel.Caption className="port_caption">
+              <h3>Reminiscent</h3>
               <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              An app for Users to create custom candles.
               </p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+             className="portfolio" 
+              src={NYClean}
+              alt="Reminiscent"
+            />
+    
+            <Carousel.Caption className="port_caption">
+              <h3>NYCleans</h3>
+              <p>
+              A "non-profit" volunteer-based cleaning app for NYC.
+              </p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+             className="portfolio" 
+              src={privee}
+              alt="Reminiscent"
+            />
+    
+            <Carousel.Caption className="port_caption">
+              <h3>Priveé</h3>  
+              <p>An app to connect Private Chefs with Clients seeking catering for events. <br/> 
+                          Check out the <a href="https://www.youtube.com/watch?v=NrPr2wIKGgA&feature=youtu.be">Youtube</a> demo or visit <a href="https://privee.onrender.com/">Priveé</a> yourself!
+                          </p>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
