@@ -19,6 +19,7 @@ class User < ApplicationRecord
 
     Best, 
     Angela Pace
+    Content Creater | Kitchenandcode.com
         ")
         mail = Mail.new(from, subject, to, content)
         

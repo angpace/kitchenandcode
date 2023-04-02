@@ -26,8 +26,8 @@ li {
 @media(min-width: 40em){
   .logo { 
   font-family: "Abril Fatface"; 
-  font-size: 80px;
-  font-weight: 700; 
+  font-size: 30px;
+  font-weight: 400; 
   margin-right: auto;
   list-style-type: none;
   line-height: 30px;
