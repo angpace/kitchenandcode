@@ -13,8 +13,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import Offcanvas from 'react-bootstrap/Offcanvas';
-import Alert from 'react-bootstrap/Alert';
+import Offcanvas from 'react-bootstrap/Offcanvas'; 
 
 
 
@@ -47,24 +46,7 @@ function App() {
 
   function onLogin(user) {
     setCurrentUser(user)
-    
   }
-
-  // function Popup() {
-  //   return (
-  //     <>
-  //       {[
-  //         'danger',
-  //         'warning',
-  //         'info',
-  //       ].map((variant) => (
-  //         <Alert key={variant} variant={variant}>
-  //           This is a {variant} alert—check it out!
-  //         </Alert>
-  //       ))}
-  //     </>
-  //   );
-  // }
 
 
   return (
