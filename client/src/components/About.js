@@ -1,4 +1,3 @@
-import ME from "./ME.jpg"
 
 function About () {
 
