@@ -37,18 +37,27 @@ function App() {
       if (r.ok) {
         setCurrentUser(null)
         console.log(currentUser)
-
+        toast(`See you soon!`, {
+          icon: '👋'
+        })
       }
     })
   }
 
   function onLogin(user) {
     setCurrentUser(user)
+    toast(`Welcome, ${user.name}!`, {
+      icon: '👋',
+    })
   }
 
 
   return (
     <div>
+      <Toaster
+              position="bottom-right"
+              reverseOrder={false}
+            />
       {['sm'].map((expand) => (
         <Navbar key={expand} bg="light" expand={expand}>
           <Container fluid>
@@ -73,8 +82,6 @@ function App() {
                     title="Account"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
-                    <NavDropdown.Item className="items" href="/Subscribe">Subscribe</NavDropdown.Item>
-                    <NavDropdown.Divider />
                    {currentUser? 
 
                       <NavDropdown.Item onClick={handleLogOut} className="items" href="/">
@@ -83,11 +90,13 @@ function App() {
 
                       :
 
-                      
+                      <>
+                      <NavDropdown.Item className="items" href="/Subscribe">Subscribe</NavDropdown.Item>
+                        <NavDropdown.Divider />
                        <NavDropdown.Item className="items" href="/login">
                        Login
                        </NavDropdown.Item>
-                     
+                       </>
 
                       }  
             
