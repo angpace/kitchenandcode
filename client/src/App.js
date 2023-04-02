@@ -1,6 +1,6 @@
 import Home from './components/Home';
 import './App.css';
-import { Routes, Route, Link, useSearchParams } from "react-router-dom";
+import { Routes, Route} from "react-router-dom";
 import Blogs from './components/Blogs';
 import Login from './components/Login'
 import { useEffect, useState } from 'react';
@@ -14,9 +14,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas'; 
-
-
-
+import toast, { Toaster } from 'react-hot-toast';
 
 
 function App() {

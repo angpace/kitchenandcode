@@ -1,4 +1,5 @@
 import { useState } from "react";
+import toast, { Toaster } from 'react-hot-toast';
 
 function Subscribe(){
     const [subscriber, setSubscriber] = useState({
@@ -29,15 +30,20 @@ function Subscribe(){
           if (res.status === 200){
             res.json()
             .then(data => console.log(data))
+            toast.success("Thanks for subscribing!")
           } else if (res.status === 422){
             res.json()
-            .then(data => console.log(data))
+            .then(data => toast.error(data.error[0]))
           }
         })
       }
 
     return(
         <div className="subscription">
+          <Toaster
+              position="bottom-right"
+              reverseOrder={false}
+            />
         <center className="sub_text">
         <h3>Thank you for your interest in Kitchen and Code!</h3>
         <p>Sign up to receive email updates for new blog posts.</p>

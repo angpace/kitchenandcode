@@ -33,7 +33,7 @@ function Blogs ({currentUser}) {
 
     const me = 'angpace13@gmail.com' 
 
-    if (currentUser && me == currentUser.email){
+    if (currentUser && me === currentUser.email){
         return (
         
             <div>
