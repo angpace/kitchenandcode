@@ -30,17 +30,18 @@ function App() {
     })
   }, [])
   
-  function handleLogOut() {
+  function handleLogOut(e) {
+    e.preventDefault()
     fetch('/logout', {
       method: "DELETE"
     }).then(r => {
       if (r.ok) {
         setCurrentUser(null)
         console.log(currentUser)
-        toast(`See you soon!`, {
-          icon: '👋'
-        })
       }
+    })
+    toast(`See you soon!`, {
+      icon: '👋'
     })
   }
 
