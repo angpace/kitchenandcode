@@ -15,6 +15,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas'; 
 import toast, { Toaster } from 'react-hot-toast';
+import Manage from './components/Manage';
 
 
 function App() {
@@ -52,6 +53,7 @@ function App() {
     })
   }
 
+  console.log(currentUser)
 
   return (
     <div>
@@ -85,9 +87,13 @@ function App() {
                   >
                    {currentUser? 
 
+                      <>
+                      <NavDropdown.Item className="items" href="/your_account">Manage</NavDropdown.Item>
+                        <NavDropdown.Divider />
                       <NavDropdown.Item onClick={handleLogOut} className="items" href="/">
                       Logout
                       </NavDropdown.Item>
+                      </>
 
                       :
 
@@ -124,6 +130,7 @@ function App() {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/about" element={<AboutMe/>} />
           <Route path="/subscribe" element={<Subscribe/>} />
+          <Route path="/your_account" element={<Manage currentUser={currentUser} toast={toast} Toaster={Toaster}/>} />
           </Routes>
           <footer className='footer'>
               <Socials/>

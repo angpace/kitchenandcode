@@ -1,7 +1,9 @@
 import { useState } from "react";
 import toast, { Toaster } from 'react-hot-toast';
+import { Navigate, useNavigate } from "react-router-dom";
 
 function Subscribe(){
+  const nav = useNavigate()
     const [subscriber, setSubscriber] = useState({
         name: "",
         email: "",
@@ -31,11 +33,13 @@ function Subscribe(){
             res.json()
             .then(data => console.log(data))
             toast.success("Thanks for subscribing!")
+            nav("/login")
           } else if (res.status === 422){
             res.json()
             .then(data => toast.error(data.error[0]))
           }
         })
+        e.target.reset();
       }
 
     return(
@@ -48,7 +52,7 @@ function Subscribe(){
         <h3>Thank you for your interest in Kitchen and Code!</h3>
         <p>Sign up to receive email updates for new blog posts.</p>
         </center>
-        <form className="subscribe" onSubmit={handleSubscription}>
+        <form className="subscribe" id="subscribe" onSubmit={handleSubscription}>
           <input
           placeholder='Username'
           onChange={handleChange}
