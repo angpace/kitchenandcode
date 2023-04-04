@@ -12,6 +12,8 @@ class BlogsController < ApplicationController
 
     def create
         blog = Blog.create!(blog_params)
+        users = User.all
+        users.new_blog(blog)
         render json: blog
     end
 

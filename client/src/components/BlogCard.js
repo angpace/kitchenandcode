@@ -29,10 +29,13 @@ function BlogCard ({b, currentUser, handleDelete, handleUpdate}) {
     //             .then(data => handleUpdate(data))
             
     //         }
+
+    let me = currentUser && currentUser.email === "angpace13@gmail.com"
+
 console.log(edit)
     return (
      <div>
-                    {currentUser? 
+                    {me?
                     <div>
                          <button onClick={deletePost}>Delete</button>
                          <button onClick={() => setEdit(!edit)}>Edit</button>
