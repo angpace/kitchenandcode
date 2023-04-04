@@ -1,4 +1,5 @@
 import { useState } from "react";
+import toast, { Toaster } from 'react-hot-toast';
 import {useNavigate} from "react-router-dom"
 
 
@@ -37,7 +38,9 @@ function Login ({onLogin}){
             
           }
           else if (res.status === 401) { 
-        
+            res.json()
+            .then(data => console.log(data))
+            toast.error("Something went wrong. Please check your credentials.")
           }})
 
         }
@@ -46,6 +49,10 @@ function Login ({onLogin}){
 
     return (
         <div className="padding">
+           <Toaster
+              position="bottom-right"
+              reverseOrder={false}
+            />
           <div>
         
         <div className="login">
