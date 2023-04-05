@@ -12,7 +12,7 @@ Blog.destroy_all
 
 angela = User.create(name: "Angela Pace", email: "angpace13@gmail.com", password: "kitchcode", image: "https://www.gannett-cdn.com/presto/2020/03/17/USAT/c0eff9ec-e0e4-42db-b308-f748933229ee-XXX_ThinkstockPhotos-200460053-001.jpg?crop=1170%2C658%2Cx292%2Cy120&width=1200")
 
-test = Blog.create(title: "Welcome!", author: "Angela Pace", preview: "I'm excited to share my insights with you and hope to inspire you to try something new, be it a new recipe or a new npm package.", paragraph_one: " 
+test = Blog.create(title: "Welcome!", user_id: 1, preview: "I'm excited to share my insights with you and hope to inspire you to try something new, be it a new recipe or a new npm package.", paragraph_one: " 
 Welcome to my blog where I blend my passion for technology and cooking! As someone who loves to experiment in the kitchen and explore the latest advancements in technology, I created this space to share my insights, tips, and experiences with you. 
 Whether you're a tech enthusiast, a food lover, or both, this blog has something for everyone. From recipes and cooking techniques to the latest AI and React plugins, 
  I aim to deliver content that's informative, insipring, and fun.", 
@@ -24,7 +24,7 @@ Whether you're a tech enthusiast, a food lover, or both, this blog has something
 paragraph_three: "So, grab a cup of coffee or tea, sit back, and join me on this journey of culinary and technological exploration.",
  date: "March 2nd, 2023", category: "Tech")
 
- blog2 = Blog.create(title: "Is Pangram?", author: "Angela Pace", preview: "Interviews are naturally the next step when applying for a jobs, right? ",
+ blog2 = Blog.create(title: "Is Pangram?", user_id: 1, preview: "Interviews are naturally the next step when applying for a jobs, right? ",
  paragraph_one: "I was sending job applications like it was my job. Erasing the last two digits and updating them everyday on my whiteboard. 104, 113, 122.  
  But then something unthinkable happened- an INTERVIEW. I got so wrapped up in the applying process that I overlooked 
  the next step which left me feeling unprepared and anxious. Taking a deep breath, I logged onto HackerRank and started up my very dusty journey on my one month preparation kit. ", 

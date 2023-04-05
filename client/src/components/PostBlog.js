@@ -3,7 +3,6 @@ import { useState } from 'react';
 function PostBlog ({rerender, currentUser}) {
     const [newPost, setNewPost] = useState({
         title: "",
-        author: "",
         preview: "",
         paragraph_one: "",
         paragraph_two: "",
@@ -19,6 +18,8 @@ function PostBlog ({rerender, currentUser}) {
         setNewPost({ ...newPost, [name]: value })
     }
 
+    console.log(currentUser)
+
     function handleSubmit(e) {
         e.preventDefault()
            fetch('/blogs', {
@@ -26,7 +27,7 @@ function PostBlog ({rerender, currentUser}) {
            headers: { 'content-type': 'application/json' },
            body: JSON.stringify({
             title: newPost.title,
-            author: currentUser.name,
+            user_id: currentUser.id,
             preview: newPost.preview,
             paragraph_one: newPost.paragraph_one,
             paragraph_two: newPost.paragraph_two,
@@ -45,7 +46,7 @@ function PostBlog ({rerender, currentUser}) {
            }
            else if (r.status === 422) {
                r.json()
-               .then(data => alert.show(data.error))
+               .then(data => console.log(data.error))
            }}
             )
        }

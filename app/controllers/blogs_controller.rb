@@ -13,7 +13,7 @@ class BlogsController < ApplicationController
     def create
         blog = Blog.create!(blog_params)
         users = User.all
-        users.new_blog(blog)
+        # users.new_blog(blog)
         render json: blog
     end
 
@@ -32,7 +32,7 @@ class BlogsController < ApplicationController
     private
 
     def blog_params
-        params.permit(:title, :author, :preview, :paragraph_one, :paragraph_two, 
+        params.permit(:title, :user_id, :preview, :paragraph_one, :paragraph_two, 
         :paragraph_three, :date, :feature, :image_one, :category, :likes)
     end
 
