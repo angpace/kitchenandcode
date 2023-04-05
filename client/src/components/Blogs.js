@@ -18,6 +18,7 @@ function Blogs ({currentUser}) {
         setBlogs(updatedBlogsArray)
     }
 
+    console.log(blogs)
 
     const filteredBlogs = blogs.filter((b) => b.category.toLowerCase().includes(search.toLowerCase()))
 
