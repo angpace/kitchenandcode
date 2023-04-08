@@ -32,7 +32,6 @@ function BlogCard ({b, currentUser, handleDelete, handleUpdate}) {
 
     let me = currentUser && currentUser.email === "angpace13@gmail.com"
 
-console.log(edit)
     return (
      <div>
                     {me?
