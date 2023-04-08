@@ -1,6 +1,6 @@
 import { useState } from "react";
 import toast, { Toaster } from 'react-hot-toast';
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Subscribe(){
   const nav = useNavigate()
