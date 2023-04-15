@@ -26,6 +26,7 @@ function BlogLay (){
          })
     }
 
+    console.log(blogPost)
     return(
         <div className='blogLayContainer'>
             <div className="blogLay">
