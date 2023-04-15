@@ -31,7 +31,6 @@ function Login ({onLogin}){
         })
         .then(res => {
           if (res.status === 200) {
-            console.log("yay")
             res.json()
             .then(data => onLogin(data))
             navigate('/')
