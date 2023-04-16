@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import Comments from './Comments';
 
 function BlogLay (){
     let { id } = useParams();
@@ -12,6 +13,8 @@ function BlogLay (){
         .then(res => res.json())
         .then(data => setBlogPost(data))
     }, [])
+
+
 
     function addLikesToPost(){
        let newLikeCount = blogPost.likes += 1
@@ -26,7 +29,13 @@ function BlogLay (){
          })
     }
 
-    console.log(blogPost)
+    let displayComments = 0
+
+    if (blogPost && blogPost.comments !== undefined){
+      displayComments = blogPost.comments.map((c) => {
+        return  <Comments key={c.id} c={c} /> }) 
+      }
+
     return(
         <div className='blogLayContainer'>
             <div className="blogLay">
@@ -68,6 +77,8 @@ function BlogLay (){
                     </p>
                 </div>
             </div>
+            <div>Comments</div>
+            {displayComments}
         </div>
     )
 }
