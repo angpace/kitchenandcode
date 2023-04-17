@@ -11,8 +11,8 @@ function Comments({c}){
 
 
     return(
-    <div class="card">
-        <div class="card-body">
+    <div className="card">
+        <div className="card-body">
         <p><strong>{user.name}</strong></p>
         <p>{c.content}</p>
         </div>
