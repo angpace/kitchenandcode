@@ -29,13 +29,16 @@ function BlogLay (){
          })
     }
 
-    let displayComments = 0
+    let displayComments = ["This post has no comments yet."]
+
+
 
     if (blogPost && blogPost.comments !== undefined){
       displayComments = blogPost.comments.map((c) => {
         return  <Comments key={c.id} c={c} /> }) 
       }
 
+     
     return(
         <div className='blogLayContainer'>
             <div className="blogLay">
