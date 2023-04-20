@@ -10,13 +10,13 @@ function Comments({c}){
     }, [])
 
 
-    return(
+    return( 
     <div className="card">
-        <div className="card-body">
+       <div className="card-body">
         <p><strong>{user.name}</strong></p>
         <p>{c.content}</p>
         </div>
-    </div>
+     </div> 
     )
 }
 
