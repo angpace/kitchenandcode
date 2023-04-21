@@ -18,7 +18,7 @@ function PostBlog ({rerender, currentUser}) {
         setNewPost({ ...newPost, [name]: value })
     }
 
-    console.log(currentUser)
+ 
 
     function handleSubmit(e) {
         e.preventDefault()
