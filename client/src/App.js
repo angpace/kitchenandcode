@@ -124,7 +124,7 @@ function App() {
           <Route path="/" element={<Home/>} />
           <Route path="/blogposts" element={<Blogs currentUser={currentUser}/>} />
           <Route path="/login" element={<Login onLogin={onLogin}/>} />
-          <Route path="/:id" element={<BlogLay />} />
+          <Route path="/:id" element={<BlogLay currentUser={currentUser}/>} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/about" element={<AboutMe/>} />
           <Route path="/subscribe" element={<Subscribe/>} />

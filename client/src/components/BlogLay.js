@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Comments from './Comments';
 
-function BlogLay (){
+function BlogLay ({currentUser}){
     let { id } = useParams();
     const [blogPost, setBlogPost] = useState([])
     const [likes, setLikes] = useState(blogPost.likes)
@@ -13,6 +13,7 @@ function BlogLay (){
         content: "",
         blog_id: id
     })
+
 
    
     useEffect(() => {
@@ -28,6 +29,17 @@ function BlogLay (){
 
     function submitComment(e){
         e.preventDefault()
+        fetch("/comments", {
+            method: "POST",
+            headers: { 'content-type': 'application/json' },
+           body: JSON.stringify({
+            content: comment.content,
+            blog_id: id,
+            user_id: currentUser.id
+           })
+        })
+        .then(res => res.json())
+        .then(data => console.log())
         console.log(comment)
     }
 
@@ -106,13 +118,14 @@ function BlogLay (){
                                             className="form-label"
                                             >Email
                                         </label>
-                                        <input type="email" 
+                                        <input  
+                                        type="email"
                                             name="email"
                                             className="form-control" 
                                             id="exampleFormControlInput1" 
-                                            placeholder="Coming soon!"
+                                            placeholder="Email"
                                             onChange={handleComment}
-                                            readOnly/>
+                                            />
                                         <small></small>
                                         </div>
                                         <div className="mb-3">
@@ -123,8 +136,9 @@ function BlogLay (){
                                                 id="exampleFormControlTextarea1" 
                                                 rows="3"
                                                 name="content"
+                                                placeholder="Write your comment here!"
                                                 onChange={handleComment}
-                                                readOnly>
+                                                >
                                             </textarea>
                                             <br/>
                                         <button type="submit" className="btn btn-outline-secondary">Post</button>
