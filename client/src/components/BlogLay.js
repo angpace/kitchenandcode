@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Comments from './Comments';
+import toast, { Toaster } from 'react-hot-toast';
 
 function BlogLay ({currentUser}){
     let { id } = useParams();
@@ -39,8 +40,8 @@ function BlogLay ({currentUser}){
            })
         })
         .then(res => res.json())
-        .then(data => console.log())
-        console.log(comment)
+        toast.success("Thnak you for your comment!")
+
     }
 
 
@@ -67,8 +68,16 @@ function BlogLay ({currentUser}){
       }
      
     return(
+       
+          
+        
         <div className='blogLayContainer'>
             <div className="blogLay">
+            <Toaster
+              position="bottom-right"
+              reverseOrder={false}
+            />
+          
         
                 <div>
                     <h1 className='blog_heading' style={{textAlign: "center"}}>{blogPost.title}</h1>
@@ -111,7 +120,45 @@ function BlogLay ({currentUser}){
                      {leaveAComment?
                      
                         <>
-                            <form onSubmit={submitComment}>
+                        {currentUser? 
+
+                        <form onSubmit={submitComment}>
+                        <div className="mb-3">
+                            <br/>
+                                <label htmlFor="exampleFormControlInput1" 
+                                    className="form-label"
+                                    >Email
+                                </label>
+                                <input  
+                                type="email"
+                                    name="email"
+                                    className="form-control" 
+                                    id="exampleFormControlInput1" 
+                                    placeholder="Email"
+                                    onChange={handleComment}
+                                    />
+                                <small></small>
+                                </div>
+                                <div className="mb-3">
+                                        <label htmlFor="exampleFormControlTextarea1" 
+                                            className="form-label">Comment
+                                        </label>
+                                    <textarea className="form-control" 
+                                        id="exampleFormControlTextarea1" 
+                                        rows="3"
+                                        name="content"
+                                        placeholder="Write your comment here!"
+                                        onChange={handleComment}
+                                        >
+                                    </textarea>
+                                    <br/>
+                                <button type="submit" className="btn btn-outline-secondary">Post</button>
+                        
+                        </div>
+                    </form>
+                    
+                :
+                <form onSubmit={submitComment}>
                                 <div className="mb-3">
                                     <br/>
                                         <label htmlFor="exampleFormControlInput1" 
@@ -125,6 +172,7 @@ function BlogLay ({currentUser}){
                                             id="exampleFormControlInput1" 
                                             placeholder="Email"
                                             onChange={handleComment}
+                                            readOnly
                                             />
                                         <small></small>
                                         </div>
@@ -136,15 +184,15 @@ function BlogLay ({currentUser}){
                                                 id="exampleFormControlTextarea1" 
                                                 rows="3"
                                                 name="content"
-                                                placeholder="Write your comment here!"
+                                                placeholder="To make a comment you have to be subscribed and signed in."
                                                 onChange={handleComment}
+                                                readOnly
                                                 >
                                             </textarea>
                                             <br/>
-                                        <button type="submit" className="btn btn-outline-secondary">Post</button>
                                 
                                 </div>
-                            </form>
+                            </form>}
                         </>
                         :
                         <></>

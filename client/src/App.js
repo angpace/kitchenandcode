@@ -38,7 +38,6 @@ function App() {
     }).then(r => {
       if (r.ok) {
         setCurrentUser(null)
-        console.log(currentUser)
       }
     })
     toast(`See you soon!`, {
