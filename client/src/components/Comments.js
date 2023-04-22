@@ -7,7 +7,7 @@ function Comments({c}){
         fetch(`/user/${c.user_id}`)
         .then(res => res.json())
         .then(data => setUser(data))
-    }, [])
+    })
 
 
     return( 
