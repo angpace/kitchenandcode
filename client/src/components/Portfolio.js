@@ -119,7 +119,8 @@ function Portfolio() {
             <Carousel.Caption className="port_caption">
               <h3>Reminiscent</h3>
               <p>
-              An app for Users to create custom candles.
+              An app for Users to create custom candles. <br/>
+              Check out the <a href="https://www.youtube.com/watch?v=K_uEeSlYOh0&feature=youtu.be">Youtube</a> demo!
               </p>
             </Carousel.Caption>
           </Carousel.Item>
@@ -127,21 +128,21 @@ function Portfolio() {
             <img
              className="portfolio" 
               src={NYClean}
-              alt="Reminiscent"
+              alt="NYClean"
             />
     
             <Carousel.Caption className="port_caption">
               <h3>NYCleans</h3>
               <p>
-              A "non-profit" volunteer-based cleaning app for NYC.
-              </p>
+                A "non-profit" volunteer-based cleaning app for NYC. <br/> 
+                Check out the <a href="https://www.youtube.com/watch?v=RHoJySoRt-8&feature=youtu.be">Youtube</a> demo!</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <img
              className="portfolio" 
               src={privee}
-              alt="Reminiscent"
+              alt="Privee"
             />
     
             <Carousel.Caption className="port_caption">
