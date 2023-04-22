@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Comments from './Comments';
-import toast, { Toaster } from 'react-hot-toast';
+import PostComment from './PostComment';
 
 function BlogLay ({currentUser}){
     let { id } = useParams();
@@ -9,40 +9,14 @@ function BlogLay ({currentUser}){
     const [likes, setLikes] = useState(blogPost.likes)
     const [isLiked, setIsLiked] = useState(false)
     const [leaveAComment, setLeaveAComment] = useState(false)
-    const [comment, setComment] = useState({
-        email: "",
-        content: "",
-        blog_id: id
-    })
+    const [updatedComments, setUpdatedComments] = useState([])
 
 
-   
     useEffect(() => {
         fetch(`blogs/${id}`)
         .then(res => res.json())
         .then(data => setBlogPost(data))
-    }, [])
-
-    function handleComment(e){
-        const { name, value } = e.target 
-        setComment({...comment, [name]: value })
-    }
-
-    function submitComment(e){
-        e.preventDefault()
-        fetch("/comments", {
-            method: "POST",
-            headers: { 'content-type': 'application/json' },
-           body: JSON.stringify({
-            content: comment.content,
-            blog_id: id,
-            user_id: currentUser.id
-           })
-        })
-        .then(res => res.json())
-        toast.success("Thnak you for your comment!")
-
-    }
+    })
 
 
     function addLikesToPost(){
@@ -68,17 +42,8 @@ function BlogLay ({currentUser}){
       }
      
     return(
-       
-          
-        
         <div className='blogLayContainer'>
             <div className="blogLay">
-            <Toaster
-              position="bottom-right"
-              reverseOrder={false}
-            />
-          
-        
                 <div>
                     <h1 className='blog_heading' style={{textAlign: "center"}}>{blogPost.title}</h1>
                 </div>
@@ -120,83 +85,10 @@ function BlogLay ({currentUser}){
                      {leaveAComment?
                      
                         <>
-                        {currentUser? 
-
-                        <form onSubmit={submitComment}>
-                        <div className="mb-3">
-                            <br/>
-                                <label htmlFor="exampleFormControlInput1" 
-                                    className="form-label"
-                                    >Email
-                                </label>
-                                <input  
-                                type="email"
-                                    name="email"
-                                    className="form-control" 
-                                    id="exampleFormControlInput1" 
-                                    placeholder="Email"
-                                    onChange={handleComment}
-                                    />
-                                <small></small>
-                                </div>
-                                <div className="mb-3">
-                                        <label htmlFor="exampleFormControlTextarea1" 
-                                            className="form-label">Comment
-                                        </label>
-                                    <textarea className="form-control" 
-                                        id="exampleFormControlTextarea1" 
-                                        rows="3"
-                                        name="content"
-                                        placeholder="Write your comment here!"
-                                        onChange={handleComment}
-                                        >
-                                    </textarea>
-                                    <br/>
-                                <button type="submit" className="btn btn-outline-secondary">Post</button>
-                        
-                        </div>
-                    </form>
-                    
-                :
-                <form onSubmit={submitComment}>
-                                <div className="mb-3">
-                                    <br/>
-                                        <label htmlFor="exampleFormControlInput1" 
-                                            className="form-label"
-                                            >Email
-                                        </label>
-                                        <input  
-                                        type="email"
-                                            name="email"
-                                            className="form-control" 
-                                            id="exampleFormControlInput1" 
-                                            placeholder="Email"
-                                            onChange={handleComment}
-                                            readOnly
-                                            />
-                                        <small></small>
-                                        </div>
-                                        <div className="mb-3">
-                                                <label htmlFor="exampleFormControlTextarea1" 
-                                                    className="form-label">Comment
-                                                </label>
-                                            <textarea className="form-control" 
-                                                id="exampleFormControlTextarea1" 
-                                                rows="3"
-                                                name="content"
-                                                placeholder="To make a comment you have to be subscribed and signed in."
-                                                onChange={handleComment}
-                                                readOnly
-                                                >
-                                            </textarea>
-                                            <br/>
-                                
-                                </div>
-                            </form>}
+                            <PostComment id={id} currentUser={currentUser}/>
                         </>
                         :
                         <></>
-
                      }
                      <br/>
                      <>
