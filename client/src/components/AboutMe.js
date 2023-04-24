@@ -43,10 +43,10 @@ function AboutMe () {
                                 Full Stack Development.</strong> For my Capstone Project, I built Priveé- a Private Chef Platform. Priveé is a <strong>React.js/Rails</strong> 
                                 application, using <strong>SendGrid</strong> for email services, <strong>PostgreSQL</strong> for database and was <strong>deployed on Render</strong>.
                                 This website, Kitchen and Code, is also a <strong>React.js/Rails</strong> website with a <strong>PostgreSQL database, deployed on Render.
-                                </strong> I implemented react-scroll-motion and the use of Icons to 
+                                </strong> I implemented bootstrap, react-scroll-motion and the use of icons to 
                                 give the site a minimal apperance with effective functionality. 
 
-                                While searching for a <strong>Full Stack position</strong>, I continue to expand on my technical skills and am currently learning <strong>Java</strong> and <strong>AWS</strong>. My current 
+                                While searching for a <strong>Full Stack position</strong>, I continue to expand on my technical skills and am currently learning <strong>Python</strong>. My current 
                                 read is <strong>Eloquent JavaScript.</strong>
                             </center>
                             <br/>
