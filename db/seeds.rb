@@ -7,6 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 puts "...Seeding"
 
+angela = User.find_by(email: "angpace13@gmail.com")
+
 test = Blog.create!(title: "Welcome!", user_id: angela.id, preview: "I'm excited to share my insights with you and hope to inspire you to try something new, be it a new recipe or a new npm package.", paragraph_one: " 
 Welcome to my blog where I blend my passion for technology and cooking! As someone who loves to experiment in the kitchen and explore the latest advancements in technology, I created this space to share my insights, tips, and experiences with you. 
 Whether you're a tech enthusiast, a food lover, or both, this blog has something for everyone. From recipes and cooking techniques to the latest AI and React plugins, 
@@ -29,8 +31,7 @@ paragraph_three: "So, grab a cup of coffee or tea, sit back, and join me on this
  feature: "https://images.squarespace-cdn.com/content/v1/57a9d8dcd482e9bbf179f445/1495010574822-KBM2BFDM9SM7E7C5DQHH/The+quick+brown+fox+jumps+over+the+lazy+dog.png?format=750w", category: "Tech", likes: 1
  )
 
-# user = User.find_by(email: "angpace13@gmail.com")
-# blog = Blog.find_by(title: "Is Pangram?")
+
 
 
 
