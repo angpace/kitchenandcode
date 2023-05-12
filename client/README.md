@@ -1,73 +1,27 @@
-# Getting Started with Create React App
+Kitchen & Code Portfolio and Blog
+----
+Welcome to the Kitchen & Code Portfolio and Blog repository! This project combines the love for both cooking and coding, showcasing a collection of my projects and insightful blog posts on both cooking and technology. The application is built using a React.js front end and a Ruby back end.
 
+----
+Features
+Portfolio: Browse through a collection of my previous projects.
+Blog: Read engaging articles that dive into various topics related to cooking, coding, and the convergence of the two.
+User Authentication: Register an account and log in to access additional features, such as commenting on blog posts.
+Search Functionality: Easily search for specific projects or blog posts using keywords.
+Responsive Design: Enjoy a seamless experience across devices, as the application is designed to be responsive and mobile-friendly.
+Technologies Used
+Front End: React.js, Bootstrap, CSS, JavaScript
+Back End: Ruby, Ruby on Rails
+Database: PostgreSQL
+Additional Tools: React-Scroll-Motion
+Follow these steps to get a local copy of the project up and running on your machine:
 
-Testing -branch angela
+Clone the repository: git clone <repository_url>
+Navigate to the project directory: cd kitchen-code-portfolio-blog
+Install the necessary dependencies: npm install (for front end) and bundle install (for back end)
+Set up the database: rails db:setup
+Start the development server: rails server
+Open another terminal window and navigate to the client directory: cd client
+Start the React development server: npm start
+The application should now be running locally on your machine. Visit http://localhost:3000 in your web browser to access it.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

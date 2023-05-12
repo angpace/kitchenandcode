@@ -223,6 +223,11 @@ a:link {
 }
 
 /* Blog cards on the Blog Page  */
+@media (min-width: 40em) {
+  .blogContainer{
+    padding: 20%;
+  }
+}
 .blogContainer{
   display: flex;
   flex-direction: row;
