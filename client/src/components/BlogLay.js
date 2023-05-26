@@ -77,7 +77,7 @@ function BlogLay ({currentUser}){
                             "fa-regular fa-heart"
                          }
                          >
-                            </i> {blogPost.likes}</button>
+                            </i> {likes}</button>
                     </p>
                 </div>
             </div>
