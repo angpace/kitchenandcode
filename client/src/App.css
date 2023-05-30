@@ -12,7 +12,7 @@ li {
 }
 
 .logo { 
-  font-family: "Abril Fatface"; 
+  /* font-family: "Abril Fatface";  */
   line-height: 10px;
   text-transform: uppercase;
 }
@@ -25,7 +25,7 @@ li {
 
 @media(min-width: 40em){
   .logo { 
-  font-family: "Abril Fatface"; 
+  /* font-family: "Abril Fatface";  */
   font-size: 25px;
   font-weight: 400; 
   margin-right: auto;
@@ -48,7 +48,7 @@ flex-direction: column;
   font-size: small;
   padding-right: 10px;
   color: rgb(96, 92, 92);
-  font-family: "Abril Fatface"; 
+  /* font-family: "Abril Fatface";  */
 }
 
 
@@ -59,7 +59,7 @@ flex-direction: column;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: rgb(96, 92, 92);
-  font-family: "Abril Fatface"; 
+  /* font-family: "Abril Fatface";  */
 }
 }
 
@@ -81,14 +81,14 @@ a:link {
 
 .social_link{
   text-decoration: none;
-  font-family: "Times New Roman", Times, serif;
+  /* font-family: "Times New Roman", Times, serif; */
   font-size: 4vw;
 }
 
   @media (min-width: 40em){
     .social_link{
     text-decoration: none;
-    font-family: "Times New Roman", Times, serif;
+    /* font-family: "Times New Roman", Times, serif; */
     font-size: 20px;
   }
 }
@@ -132,7 +132,7 @@ a:link {
 
 .blog_post{
   text-align: center;
-  font-family: "Times New Roman", Times, serif;
+  /* font-family: "Times New Roman", Times, serif; */
   padding: 10%;
 
 }
@@ -172,7 +172,7 @@ a:link {
 }
 
 .sub_text{
-  font-family: "Times New Roman", Times, serif;
+  /* font-family: "Times New Roman", Times, serif; */
   display: block;
   margin: auto;
 }
@@ -183,7 +183,7 @@ a:link {
 }
 
 .about{
-  font-family: "Times New Roman", Times, serif;
+  /* font-family: "Times New Roman", Times, serif; */
   display: block;
   margin: auto;
   font-size: small;
@@ -192,7 +192,7 @@ a:link {
 @media (min-width: 40em){
 .about{
   width: 100%;
-  font-family: "Times New Roman", Times, serif;
+  /* font-family: "Times New Roman", Times, serif; */
   display: block;
   margin: auto;
   font-size: medium;
@@ -203,7 +203,7 @@ a:link {
   text-decoration: none;
   color: rgb(96, 92, 92);
   padding: 3px;
-  font-family: "Times New Roman", Times, serif;
+  /* font-family: "Times New Roman", Times, serif; */
   font-size: 14px;
 }
 
@@ -315,7 +315,7 @@ min-height: 120px;
 }
 
 .card__category {
-  font-family: 'Raleway', sans-serif;
+  /* font-family: 'Raleway', sans-serif; */
   text-transform: uppercase;
   font-size: 13px;
   letter-spacing: 2px;
@@ -326,12 +326,12 @@ color: #868686;
 .card__title {
   margin-top: 5px;
   margin-bottom: 10px;
-  font-family: 'Roboto Slab', serif;
+  /* font-family: 'Roboto Slab', serif; */
 }
 
 .card__by {
   font-size: 12px;
-  font-family: 'Raleway', sans-serif;
+  /* font-family: 'Raleway', sans-serif; */
   font-weight: 400;
 }
 
@@ -390,9 +390,9 @@ color: #868686;
   font-size: small;
 }
 
-.blog_heading{
+/* .blog_heading{
   font-family: "Times New Roman", Times, serif;
-}
+} */
 
 @media(min-width: 40em){
   .blogLay {
@@ -448,7 +448,7 @@ padding-top: 2%;
 }
 
 .portfolio h1{
-  font-family: "Times New Roman", Times, serif;
+  /* font-family: "Times New Roman", Times, serif; */
   font-size: 24px;
   float: center;
   font-weight: 600;
@@ -457,7 +457,7 @@ padding-top: 2%;
 
 @media (min-width: 40em){
   .portfolio h1{
-    font-family: "Times New Roman", Times, serif;
+    /* font-family: "Times New Roman", Times, serif; */
     font-size: 37px;
     float: left;
     font-weight: 700;
@@ -466,8 +466,9 @@ padding-top: 2%;
 }
 
 .blog_title{
-  font-family: "Times New Roman", Times, serif;
-  padding-top: 10%;
+  /* font-family: "Times New Roman", Times, serif; */
+  padding-top: 5%;
+  font-weight: 300;
   padding-bottom: 15px;
   color: #272a2b;
   border-bottom: 1px solid  grey;
@@ -477,11 +478,10 @@ padding-top: 2%;
 
 @media (min-width: 40em){
   .blog_title{
-    font-weight: 300;
     font-size: 29px;
     letter-spacing: 1px;
-    font-family: "Times New Roman", Times, serif;
-    padding-top: 10%;
+    /* font-family: "Times New Roman", Times, serif; */
+    /* padding-top: 10%; */
     padding-bottom: 10px;
     color: #272a2b;
     border-bottom: 1px solid  grey;
@@ -614,7 +614,7 @@ padding-top: 2%;
 
   span {
     position: relative;
-    font-family: "Avenir Next", sans-serif;
+    /* font-family: "Avenir Next", sans-serif; */
     font-weight: 700;
     font-size: 40px;
     text-transform: uppercase;

@@ -9,7 +9,7 @@ function BlogLay ({currentUser}){
     const [likes, setLikes] = useState(blogPost.likes)
     const [isLiked, setIsLiked] = useState(false)
     const [leaveAComment, setLeaveAComment] = useState(false)
-    const [updatedComments, setUpdatedComments] = useState([])
+    // const [updatedComments, setUpdatedComments] = useState([])
 
 
     useEffect(() => {
