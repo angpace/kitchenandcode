@@ -61,10 +61,10 @@ function Blogs ({currentUser}) {
                   <input className="bar" onChange={(e) => setSearch(e.target.value)} placeholder="Search by Category..."></input>
             </div>
                 <div>
-                    <h2 className="blog_title">Blogs</h2>
+                    <h2 className="blog_title" style={{paddingTop: '10%'}}>Blogs</h2>
                     <div className="line-2"></div>
                 </div>
-                    <div className="blogContainer">
+                    <div className="blogContainer" >
                         {createBlogCards}
                     </div>
         </div>
