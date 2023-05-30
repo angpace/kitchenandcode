@@ -20,7 +20,7 @@ function AboutMe () {
                 <div >
                     <br/>      
                         <div>
-                             <center className="blog_title">Technology</center>
+                             <center className="blog_title">Technologyg</center>
                              <br/>
                             <center className="bio" >
                                 In September 2022, I attended the <strong>FlatIron School</strong> for their <strong>Software Engineering</strong> Program. 
