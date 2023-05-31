@@ -59,9 +59,9 @@ function App() {
               reverseOrder={false}
             />
       {['sm'].map((expand) => (
-        <Navbar key={expand} bg="light" expand={expand}>
+        <Navbar key={expand} bg="#fff" expand={expand}>
           <Container fluid>
-            <Navbar.Brand className="logo" href="/">Angela Pace</Navbar.Brand>
+            <Navbar.Brand className="logo fs-1" href="/">AP</Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
@@ -69,12 +69,12 @@ function App() {
               placement="end"
             >
               <Offcanvas.Header closeButton>
-                <Offcanvas.Title className="logo" id={`offcanvasNavbarLabel-expand-${expand}`}>
+                <Offcanvas.Title className="logo fs-1" id={`offcanvasNavbarLabel-expand-${expand}`}>
                   Kitchen and Code
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
-                <Nav className="justify-content-end flex-grow-1 pe-2">
+                <Nav className="mx-auto">
                   <Nav.Link className="items" href="/about">About</Nav.Link>
                   <Nav.Link className="items" href="/blogposts">Blog</Nav.Link>
                   <Nav.Link className="items" href="/portfolio">Portfolio</Nav.Link>

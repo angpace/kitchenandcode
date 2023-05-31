@@ -20,33 +20,26 @@ function AboutMe () {
                 <div >
                     <br/>      
                         <div>
-                             <center className="blog_title">Technologyg</center>
+                             <center className="blog_title">Technology</center>
                              <br/>
                             <center className="bio" >
-                                In September 2022, I attended the <strong>FlatIron School</strong> for their <strong>Software Engineering</strong> Program. 
-                                Over the 15 weeks of School, I gained extensive skills in <strong>HTML/CSS/JavaScript, React.js, Ruby, SQL, Ruby on Rails and 
-                                Full Stack Development.</strong> For my Capstone Project, I built Priveé- a Private Chef Platform. Priveé is a <strong>React.js/Rails</strong> 
-                                application, using <strong>SendGrid</strong> for email services, <strong>PostgreSQL</strong> for database and was <strong>deployed on Render</strong>.
-                                This website, Kitchen and Code, is also a <strong>React.js/Rails</strong> website with a <strong>PostgreSQL database, deployed on Render.
-                                </strong> I implemented bootstrap, react-scroll-motion and the use of icons to 
-                                give the site a minimal apperance with effective functionality. 
+                               I attended <strong>Flatiron School</strong> and developed expertise in <strong>JavaScript, HTML, CSS, React.js, Ruby on Rails, and Postgres/SQL databases</strong>. 
+                               I possess a strong <strong>passion</strong> for <strong>creating enjoyable user experiences</strong> and have the ability to leverage tools like <strong>SendGrid</strong> and additional plugins to enhance them. With this skill set, I am adept at crafting <strong>dynamic and user-friendly web applications</strong> that leave a lasting impression on users.
 
-                                While searching for a <strong>Full Stack position</strong>, I continue to expand on my technical skills and am currently studying <strong>Data Structures and Algorithms</strong>.
+                                While searching for a <strong>Full Stack position</strong>, I continue to expand on my technical skills and am currently studying <strong>Data Structures and Algorithms</strong> with <strong>Zero to Mastery</strong>.
                             </center>
                             <br/>
                         </div>
                         <div>
                             <center className="blog_title" ><strong>Hospitality</strong></center>
                             <br/>
-                            <center className="bio">Born and raised in NYC, I've always had a passion for 
-                                diverse food, creativity and art. 
-                                I followed that passion to the <strong>Culinary Institue of America</strong> in Hyde Park and graduated from their Pastry Program in 2016.
-                                Following graduation, I secured a position as Pastry Chef de Partie in the opening team at <strong>Le Coucou</strong>. 
-                                A year and some later, I learned of an opportunity to join the reopening team for the Best Restaurant in the World 2017, <strong>Eleven Madison Park</strong>. I left Le Coucou as a Junior Pastry Sous Chef and joined the team at <strong>EMP</strong>. I worked through all Pastry Stations before becoming a Pastry lead, and 
-                                later a Pastry Sous Chef. Upon closing for the Pandemic, I volunteered for the summer to 
-                                make meals for food insecure New Yorkers before moving to Ticino, Switzerland. I moved to London in 2021, where I reopened <strong>Davies and Brook</strong> as the <strong>Pastry Chef</strong> and worked
-                                alongside <strong>Chef De Cusine, Dmitri Magi</strong>. January of 2022, Davies and Brook closed and I rejoined the team at <strong>Eleven Madison Park</strong>  as <strong>Executive Pastry Sous Chef</strong> under 
-                                Pastry Chef <strong>Laura Cronin</strong>. 
+                            <center className="bio">
+                            Born and raised in NYC, I pursued my passion for food, creativity, and art by attending the <strong>Culinary Institue of America</strong>.
+                             After graduating from their Pastry Program in 2016, I began my career as a member of the opening team at <strong>Le Coucou</strong>. 
+                             Seeking new challenges, I joined the reopening team at <strong>Eleven Madison Park</strong>, the <strong>Best Restaurant in the World 2017</strong>, starting as a Pastry Chef de Partie and progressing to <strong>Pastry Sous Chef</strong>. 
+                             During the pandemic, I volunteered to help provide meals for food-insecure New Yorkers before relocating to Ticino, Switzerland.
+                              In 2021, I became the <strong>Pastry Chef</strong> at <strong>Davies and Brook</strong> in London, working alongside <strong>Chef De Cusine, Dmitri Magi</strong>. 
+                              Following the closure of Davies and Brook in January 2022, I returned to <strong>Eleven Madison Park</strong> as the <strong>Executive Pastry Sous Chef</strong> under <strong>Pastry Chef, Laura Cronin</strong>.
                             </center>
                         </div>
                         <center className="bio">If you have any questions, please feel free to reach out. <br/>Thanks for reading!</center>
