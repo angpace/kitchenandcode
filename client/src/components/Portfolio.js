@@ -31,29 +31,6 @@ function Portfolio() {
           </Carousel.Item>
           <Carousel.Item>
             <img
-              className="portfolio"
-              src={Smoothie}
-              alt="Smoothie Maker"
-            />
-            <Carousel.Caption className="port_caption">
-              <h3>Smoothie Maker</h3>
-              <p>Create a custom smoothie with fruit of your choice. Blend and recieve the nutritional value.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="portfolio"
-              src={Synodic}
-              alt="Second slide"
-            />
-    
-            <Carousel.Caption className="port_caption">
-              <h3>Synodic</h3>
-              <p>A morning/night wellness planner.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
              className="portfolio" 
               src={candle}
               alt="Reminiscent"
@@ -79,6 +56,29 @@ function Portfolio() {
               <p>
                 A "non-profit" volunteer-based cleaning app for NYC. <br/> 
                 Check out the <a href="https://www.youtube.com/watch?v=RHoJySoRt-8&feature=youtu.be">Youtube</a> demo!</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="portfolio"
+              src={Smoothie}
+              alt="Smoothie Maker"
+            />
+            <Carousel.Caption className="port_caption">
+              <h3>Smoothie Maker</h3>
+              <p>Create a custom smoothie with fruit of your choice. Blend and recieve the nutritional value.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="portfolio"
+              src={Synodic}
+              alt="Second slide"
+            />
+    
+            <Carousel.Caption className="port_caption">
+              <h3>Synodic</h3>
+              <p>A morning/night wellness planner.</p>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>

@@ -29,13 +29,12 @@ function Blogs ({currentUser}) {
         setBlogs([...blogs, data])
     }
 
-    console.log(blogs)
     const me = 'angpace13@gmail.com' 
 
     if (currentUser && me === currentUser.email){
         return (
         
-            <div>
+            <>
                 
                 <PostBlog rerender={rerender} currentUser={currentUser}/>
     
@@ -49,7 +48,7 @@ function Blogs ({currentUser}) {
                         <div className="blogContainer">
                             {createBlogCards}
                         </div>
-            </div>
+            </>
         )
     }
     
