@@ -44,10 +44,10 @@ function BlogLay ({currentUser}){
     return(
         <div className='blogLayContainer'>
             <div className="blogLay">
-                <div>
-                    <h1 className='blog_heading' style={{textAlign: "center"}}>{blogPost.title}</h1>
-                </div>
-                <div>
+                <>
+                    <h1 className='blog_title' style={{textAlign: "center"}}>{blogPost.title}</h1>
+                </>
+                <div style={{paddingTop: '15px'}}>
                      <p>{blogPost.preview}</p>
                 </div>
                 <div className="feature">
