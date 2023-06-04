@@ -10,12 +10,13 @@ function AboutMe () {
              <br/>
             <div className="about_me">
                 <br/>
-                <div className="socials">
+                <img  src={ME} alt="Angela Pace" className="me"></img>
+                {/* <div className="socials">
                     <img  src={ME} alt="Angela Pace" className="me"></img>
                     <div className="socials_flex">
                         <Socials/>
                     </div>
-                </div>
+                </div> */}
                 <br/>
                 <>
                     <br/>      
