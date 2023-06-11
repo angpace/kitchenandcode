@@ -77,7 +77,7 @@ function App() {
                 <Nav className="mx-auto">
                   <Nav.Link className="items" href="/about">About</Nav.Link>
                   <Nav.Link className="items" href="/blogposts">Blog</Nav.Link>
-                  <Nav.Link className="items" href="/portfolio">Portfolio</Nav.Link>
+                  {/* <Nav.Link className="items" href="/portfolio">Portfolio</Nav.Link> */}
                   <NavDropdown className="items"
                     title="Account"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
@@ -124,7 +124,7 @@ function App() {
           <Route path="/blogposts" element={<Blogs currentUser={currentUser}/>} />
           <Route path="/login" element={<Login onLogin={onLogin}/>} />
           <Route path="/:id" element={<BlogLay currentUser={currentUser}/>} />
-          <Route path="/portfolio" element={<Portfolio />} />
+          {/* <Route path="/portfolio" element={<Portfolio />} /> */}
           <Route path="/about" element={<AboutMe/>} />
           <Route path="/subscribe" element={<Subscribe/>} />
           <Route path="/your_account" element={<Manage currentUser={currentUser} toast={toast} Toaster={Toaster}/>} />
