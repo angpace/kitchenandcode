@@ -5,7 +5,6 @@ import Blogs from './components/Blogs';
 import Login from './components/Login'
 import { useEffect, useState } from 'react';
 import BlogLay from './components/BlogLay';
-import Portfolio from './components/Portfolio';
 import AboutMe from './components/AboutMe';
 import Socials from './components/Socials';
 import Subscribe from './components/Subscribe';
