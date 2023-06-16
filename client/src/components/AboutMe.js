@@ -1,6 +1,4 @@
 import ME from "./ME.jpg"
-import Socials from "./Socials";
-
 function AboutMe () {
 
 
