@@ -1,4 +1,4 @@
-import ME from "./ME.png"
+import ME from "./me.png"
 function AboutMe () {
 
 
