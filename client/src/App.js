@@ -74,6 +74,7 @@ function App() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="mx-auto">
+                <Nav.Link className="items" href="/">Home</Nav.Link>
                   <Nav.Link className="items" href="/about">About</Nav.Link>
                   <Nav.Link className="items" href="/blogposts">Blog</Nav.Link>
                   {/* <Nav.Link className="items" href="/portfolio">Portfolio</Nav.Link> */}
