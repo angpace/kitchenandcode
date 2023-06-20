@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import BlogCard from "./BlogCard";
 import PostBlog from "./PostBlog";
+import desktop from "./desktop2.jpg"
 
 function Blogs ({currentUser}) {
     const [blogs, setBlogs] = useState([])
@@ -56,6 +57,9 @@ function Blogs ({currentUser}) {
     return (
         
         <>
+        <div style={{overflow: "hidden", height: "250px"}}>
+        <img src={desktop} style={{width: "100%"}}/>
+        </div>
             <div className="search">
                   <input className="bar" onChange={(e) => setSearch(e.target.value)} placeholder="Search by Category..."></input>
             </div>
