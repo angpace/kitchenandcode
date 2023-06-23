@@ -5,8 +5,8 @@ import Blogs from './components/Blogs';
 import Login from './components/Login'
 import { useEffect, useState } from 'react';
 import BlogLay from './components/BlogLay';
-import AboutMe from './components/AboutMe';
-import Socials from './components/Socials';
+// import AboutMe from './components/AboutMe';
+// import Socials from './components/Socials';
 import Subscribe from './components/Subscribe';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -57,10 +57,10 @@ function App() {
               position="bottom-right"
               reverseOrder={false}
             />
-      {['sm'].map((expand) => (
-        <Navbar key={expand} bg="#fff" expand={expand}>
+      {/* {['sm'].map((expand) => (
+        <Navbar  key={expand} expand={expand}>
           <Container fluid>
-            <Navbar.Brand className="logo fs-1" href="/">AP</Navbar.Brand>
+            <Navbar.Brand className="logo fs-1" href="/">Kitchen and Code</Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
@@ -77,7 +77,7 @@ function App() {
                 <Nav.Link className="items" href="/">Home</Nav.Link>
                   <Nav.Link className="items" href="/about">About</Nav.Link>
                   <Nav.Link className="items" href="/blogposts">Blog</Nav.Link>
-                  {/* <Nav.Link className="items" href="/portfolio">Portfolio</Nav.Link> */}
+                  <Nav.Link className="items" href="/portfolio">Portfolio</Nav.Link>
                   <NavDropdown className="items"
                     title="Account"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
@@ -111,7 +111,7 @@ function App() {
             </Navbar.Offcanvas>
           </Container>
         </Navbar>
-      ))}
+      ))} */}
 
 
 
@@ -125,13 +125,13 @@ function App() {
           <Route path="/login" element={<Login onLogin={onLogin}/>} />
           <Route path="/:id" element={<BlogLay currentUser={currentUser}/>} />
           {/* <Route path="/portfolio" element={<Portfolio />} /> */}
-          <Route path="/about" element={<AboutMe/>} />
+          {/* <Route path="/about" element={<AboutMe/>} /> */}
           <Route path="/subscribe" element={<Subscribe/>} />
           <Route path="/your_account" element={<Manage currentUser={currentUser} toast={toast} Toaster={Toaster}/>} />
           </Routes>
-          <footer className='footer'>
+          {/* <footer className='footer'>
               <Socials/>
-          </footer>
+          </footer> */}
     </div>
   );
 }
