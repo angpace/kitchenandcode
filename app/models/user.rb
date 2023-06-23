@@ -4,9 +4,9 @@ class User < ApplicationRecord
     has_many :blogs
     has_many :comments
 
-    # validates :email, presence: true, uniqueness: true
-    # validates :name, presence: true
-    # validates :password, length: { minimum: 6 }
+    validates :email, presence: true, uniqueness: true
+    validates :name, presence: true
+    validates :password, length: { minimum: 6 }
 
     require 'sendgrid-ruby'
         include SendGrid

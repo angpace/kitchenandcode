@@ -4,12 +4,12 @@ import { Animator, ScrollContainer, ScrollPage, batch, Fade, Sticky } from "reac
  
 
 function Home () {
-    const FadeUp = batch(Fade(), Sticky());
+    // const FadeUp = batch(Fade(), Sticky());
 
     return (
         
-       <div className="home">
-        <ScrollContainer>
+       <div>
+        {/* <ScrollContainer>
             <ScrollPage>
                 <div>
                     <Video/>  
@@ -22,7 +22,8 @@ function Home () {
                 </Animator>
             </ScrollPage>
 
-            </ScrollContainer>
+            </ScrollContainer> */}
+            hi
         </div>
         
     )

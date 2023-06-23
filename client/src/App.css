@@ -1,22 +1,26 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Extreme&display=swap');
 
-ol {
+* {
+  font-family: 'Pathway Extreme', sans-serif;
+} 
+.navbar .items{
+ color: #0c6c6d;
+}
+/* ol {
   display: flex;
   justify-content: right;
   padding-right: 40px;
   gap: 15px;
   align-items: center;
-}
+} */
 
-li {
+/* li {
   margin-top: 15px;
   list-style: none;
-}
+} */
 
-.logo { 
-  font-family: 'Dawning of a New Day', cursive; 
-  letter-spacing: 1px;
+.items{
+  float: right;
 }
 
 @media(max-width:  40em){
@@ -25,44 +29,10 @@ li {
   }
 }
 
-@media(min-width: 40em){
-  .logo { 
-  font-size: 40px;
-  font-weight: 400; 
-  margin-right: auto;
-  list-style-type: none;
-  line-height: 30px;
-  letter-spacing: 1px;
-}
-}
-
-.logo_text{
- color: rgba(0, 0, 0, 0.548);
-}
 
 .home{
 display: flex;
 flex-direction: column;
-}
-
-.mx-auto{
-  justify-content: center;
-  align-items: center;
-}
-
-.items{
-  text-transform: uppercase;
-}
-
-
-@media (min-width: 40em){
-.items{
-  font-size: medium;
-  padding-right: 30px;
-  letter-spacing: 1px;
-  /* text-transform: uppercase; */
-  color: rgb(96, 92, 92);
-}
 }
 
 a:link { 

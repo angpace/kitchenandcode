@@ -12,6 +12,7 @@ ReactDOM.render(
   <React.StrictMode>
      <BrowserRouter>
       <UnderConstruction/>
+      {/* <App/> */}
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
