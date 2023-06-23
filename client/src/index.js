@@ -11,8 +11,8 @@ import UnderConstruction from './components/Construction/UnderConstruction';
 ReactDOM.render(
   <React.StrictMode>
      <BrowserRouter>
-      <UnderConstruction/>
-      {/* <App/> */}
+      {/* <UnderConstruction/> */}
+      <App/>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
