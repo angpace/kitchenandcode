@@ -1,16 +1,15 @@
-import Home from './components/Home';
+import Home from './pages/Home';
 import './App.css';
 import { Routes, Route} from "react-router-dom";
 import Blogs from './components/Blogs';
 import Login from './components/Login'
 import { useEffect, useState } from 'react';
 import BlogLay from './components/BlogLay';
-import Nav from "./NavBar/Navbar.js"
-// import AboutMe from './components/AboutMe';
-// import Socials from './components/Socials';
+import Nav from "./components/NavBar/Navbar.js"
 import Manage from './components/Manage';
 import Subscribe from './components/Subscribe'
 import toast, { Toaster } from 'react-hot-toast';
+import About from "./pages/About/About"
 
 
 function App() {
@@ -59,6 +58,7 @@ function App() {
         {/* Routes */}
         <Routes>
           <Route path="/" element={<Home/>} />
+          <Route path="/about" element={<About/>}/>
           <Route path="/blogposts" element={<Blogs currentUser={currentUser}/>} />
           <Route path="/login" element={<Login onLogin={onLogin}/>} />
           <Route path="/:id" element={<BlogLay currentUser={currentUser}/>} />
