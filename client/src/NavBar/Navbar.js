@@ -15,15 +15,15 @@ const NavBar = ({currentUser, handleLogOut}) => {
         {['sm'].map((expand) => (
         <Navbar key={expand} expand={expand} style={{backgroundColor: "#faf0e6"}}>
           <Container fluid>
-      <a class="navbar-brand" href="/">
+      {/* <a class="navbar-brand" href="/">
         <img src={pom} width="30" height="30" class="d-inline-block align-top" alt=""/> Kitchen and Code
-      </a>
-            {/* <Navbar.Brand className="logo fs-1" href="/">Kitchen and Code</Navbar.Brand> */}
+      </a> */}
+            <Navbar.Brand className="logo fs-1" href="/">Kitchen and Code</Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
-              placement="start"
+              placement="end"
             >
               <Offcanvas.Header style={{backgroundColor: "#faf0e6"}} closeButton>
                 <Offcanvas.Title className="logo fs-1" id={`offcanvasNavbarLabel-expand-${expand}`}>
