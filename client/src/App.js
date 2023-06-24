@@ -54,6 +54,7 @@ function App() {
               reverseOrder={false}
             />
         <Nav currentUser={currentUser} handleLogOut={handleLogOut}/>
+        
 
         {/* Routes */}
         <Routes>

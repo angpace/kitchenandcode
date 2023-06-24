@@ -12,6 +12,7 @@
     "@testing-library/user-event": "^12.8.3",
     "bootstrap": "^5.2.3",
     "react": "^18.0.11",
+    "react-alice-carousel": "^2.7.1",
     "react-bootstrap": "^2.7.2",
     "react-dom": "^18.0.11",
     "react-hot-toast": "^2.4.0",
