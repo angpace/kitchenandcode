@@ -4,6 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas'; 
+import pom from './pom2.png'
 
 
 const NavBar = ({currentUser, handleLogOut}) => {
@@ -14,12 +15,15 @@ const NavBar = ({currentUser, handleLogOut}) => {
         {['sm'].map((expand) => (
         <Navbar key={expand} expand={expand} style={{backgroundColor: "#faf0e6"}}>
           <Container fluid>
-            <Navbar.Brand className="logo fs-1" href="/">Kitchen and Code</Navbar.Brand>
+      <a class="navbar-brand" href="/">
+        <img src={pom} width="30" height="30" class="d-inline-block align-top" alt=""/> Kitchen and Code
+      </a>
+            {/* <Navbar.Brand className="logo fs-1" href="/">Kitchen and Code</Navbar.Brand> */}
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
-              placement="end"
+              placement="start"
             >
               <Offcanvas.Header style={{backgroundColor: "#faf0e6"}} closeButton>
                 <Offcanvas.Title className="logo fs-1" id={`offcanvasNavbarLabel-expand-${expand}`}>
@@ -27,11 +31,11 @@ const NavBar = ({currentUser, handleLogOut}) => {
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body style={{backgroundColor: "#faf0e6"}}>
-                <Nav className="navbar">
-                <Nav.Link  href="/">Home</Nav.Link>
+                <Nav >
+                  <Nav.Link  href="/">Home</Nav.Link>
                   <Nav.Link href="/about">About</Nav.Link>
                   <Nav.Link  href="/blogposts">Blog</Nav.Link>
-                  <NavDropdown 
+                  <NavDropdown
                     title="Account"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >

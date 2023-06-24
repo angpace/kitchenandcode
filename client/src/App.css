@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Pathway+Extreme&display=swap');
+@import "react-alice-carousel/lib/alice-carousel.css";
 
 * {
   font-family: 'Pathway Extreme', sans-serif;
 } 
-.navbar .items{
- color: #0c6c6d;
-}
+
+html {background-color: #faf0e6}
 /* ol {
   display: flex;
   justify-content: right;

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const ConstructionPage = styled.div`
    background-color: whitesmoke;
    display: flex;
-   max-height: 720px;
+   max-height: 100%;
    width: 100%;
    overflow: hidden;
 
