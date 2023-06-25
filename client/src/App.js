@@ -10,6 +10,7 @@ import Manage from './components/Manage';
 import Subscribe from './components/Subscribe'
 import toast, { Toaster } from 'react-hot-toast';
 import About from "./pages/About/About"
+import Footer from './components/Footer/Footer';
 
 
 function App() {
@@ -65,7 +66,7 @@ function App() {
           <Route path="/subscribe" element={<Subscribe/>} />
           <Route path="/your_account" element={<Manage currentUser={currentUser} toast={toast} Toaster={Toaster}/>} />
           </Routes>
-
+      <Footer/>
     </div>
   );
 }
