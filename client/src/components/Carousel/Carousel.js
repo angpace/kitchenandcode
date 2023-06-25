@@ -21,7 +21,8 @@ const items = [
 
 const Carousel = () => (
     <CarouselWrapper>
-        <CarouselHeading>Featured</CarouselHeading>
+        <CarouselHeading>Featured Posts
+        </CarouselHeading>
     <AliceCarousel 
         mouseTracking
         items={items}

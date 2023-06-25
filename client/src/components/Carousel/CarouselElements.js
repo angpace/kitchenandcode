@@ -25,7 +25,6 @@ object-fit: contain;
 `
 
 export const CarouselHeading = styled.h2`
-padding: 1%;
-border-bottom: thin solid;
+padding: 2% 0 0% 2%;
 
 `
