@@ -31,13 +31,11 @@ const NavBar = ({currentUser, handleLogOut}) => {
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body style={{backgroundColor: "#faf0e6"}}>
-                <Nav >
-                  <Nav.Link  href="/">Home</Nav.Link>
-                  <Nav.Link href="/about">About</Nav.Link>
-                  <Nav.Link  href="/blogposts">Blog</Nav.Link>
+                <Nav className="navbar-nav ms-auto">
                   <NavDropdown
                     title="Account"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
+                    
                   >
                    {currentUser? 
 
@@ -59,14 +57,19 @@ const NavBar = ({currentUser, handleLogOut}) => {
                        </NavDropdown.Item>
                        </>
 
-                      }  
-            
+                      }        
                   </NavDropdown>
+                  <Nav.Link  href="/">Home</Nav.Link>
+                  <Nav.Link href="/about">About</Nav.Link>
+                  <Nav.Link  href="/blogposts">Blog</Nav.Link>
+                  <Nav.Link  href="/blogposts">Contact</Nav.Link>
                 </Nav>
                 
               </Offcanvas.Body>
             </Navbar.Offcanvas>
+            
           </Container>
+        
         </Navbar>
       ))}
     </div>
