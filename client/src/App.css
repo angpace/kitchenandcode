@@ -6,22 +6,6 @@
 } 
 
 html {background-color: #faf0e6}
-/* ol {
-  display: flex;
-  justify-content: right;
-  padding-right: 40px;
-  gap: 15px;
-  align-items: center;
-} */
-
-/* li {
-  margin-top: 15px;
-  list-style: none;
-} */
-
-.items{
-  float: right;
-}
 
 @media(max-width:  40em){
   .kitchcode{
@@ -35,61 +19,12 @@ display: flex;
 flex-direction: column;
 }
 
-a:link { 
-  text-decoration: none; 
-}
-
-.fa-solid{
-  color: #2dba9bb0;
-}
-
-.fa-regular{
-  color: #2dba9bb0;
-}
 
 .fa-brands{
-  color: #2dba9bb0;
-}
-
-.social_link{
-  text-decoration: none;
-  font-size: 4vw;
-}
-
-  @media (min-width: 40em){
-    .social_link{
-    text-decoration: none;
-    font-size: 20px;
-  }
-}
-
-.socials_flex{
-  display: flex;
-  gap: 22px;
-  margin: auto;
-  padding-top: 5%;
-  text-align: left;
-  justify-content: center;
-}
-
-@media (min-width: 40em){
-  .socials_flex{
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
-    justify-content: center;
-  }
-  .socials{
-    justify-items: center;
-  }
-}
-
-.socials_flex span{
-  color:#0c6c6d;
+  color: #991221e3;
 }
 
 .login{
-  font-family: "Times New Roman", Times, serif;
   text-align: center;
   padding: 10%;
 }
