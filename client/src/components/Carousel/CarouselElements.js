@@ -21,7 +21,6 @@ object-fit: contain;
 &:hover{
  cursor: pointer;
 }
-
 `
 
 export const CarouselHeading = styled.h2`

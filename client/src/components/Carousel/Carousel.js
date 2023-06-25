@@ -1,6 +1,8 @@
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import { CarouselWrapper, Item, Image, CarouselHeading } from './CarouselElements';
+
+
 // import { useNavigate} from "react-router-dom";
 
 const responsive = {
@@ -11,6 +13,7 @@ const responsive = {
 
 // const navigate = useNavigate();
 
+
 const items = [
     <Item onClick={(e) => console.log(e.target.alt)} data-value="1"><Image  alt="crossiant" src="https://images.pexels.com/photos/3993720/pexels-photo-3993720.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"/></Item>,
     <Item onClick={(e) => console.log(e.target.alt)} data-value="2"><Image  alt="brownie"src="https://images.pexels.com/photos/2067396/pexels-photo-2067396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"/></Item>,
@@ -20,6 +23,7 @@ const items = [
 ];
 
 const Carousel = () => (
+
     <CarouselWrapper>
         <CarouselHeading>Featured Posts
         </CarouselHeading>
@@ -34,6 +38,7 @@ const Carousel = () => (
         
     />
     </CarouselWrapper>
+
 );
 
 export default Carousel;
