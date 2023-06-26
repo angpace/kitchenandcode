@@ -10,6 +10,11 @@ class BlogsController < ApplicationController
         render json: blog
     end
 
+    def specific 
+        blogs = Blog.where(category: params[:category])
+        render json: blogs
+    end
+
     def create
         blog = Blog.create!(blog_params)
         users = User.all

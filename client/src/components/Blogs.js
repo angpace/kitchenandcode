@@ -8,7 +8,7 @@ function Blogs ({currentUser}) {
 
 
     useEffect(() => {
-        fetch("/blogs")
+        fetch(`/blogs`)
         .then(res => res.json())
         .then(data => setBlogs(data))
     }, [])

@@ -61,8 +61,8 @@ const NavBar = ({currentUser, handleLogOut}) => {
                   </NavDropdown>
                   <Nav.Link  href="/">Home</Nav.Link>
                   <Nav.Link href="/about">About</Nav.Link>
-                  <Nav.Link  href="/blogposts">Blog</Nav.Link>
-                  <Nav.Link  href="/blogposts">Contact</Nav.Link>
+                  <Nav.Link  href="/blog">Blog</Nav.Link>
+                  <Nav.Link  href="/blog">Contact</Nav.Link>
                 </Nav>
                 
               </Offcanvas.Body>
