@@ -15,10 +15,10 @@ const NavBar = ({currentUser, handleLogOut}) => {
         {['sm'].map((expand) => (
         <Navbar key={expand} expand={expand} style={{backgroundColor: "#faf0e6"}}>
           <Container fluid>
-      {/* <a class="navbar-brand" href="/">
+      <a class="navbar-brand" href="/">
         <img src={pom} width="30" height="30" class="d-inline-block align-top" alt=""/> Kitchen and Code
-      </a> */}
-            <Navbar.Brand className="logo fs-1" href="/">Kitchen and Code</Navbar.Brand>
+      </a>
+            {/* <Navbar.Brand className="logo fs-1" href="/">Kitchen and Code</Navbar.Brand> */}
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
@@ -31,9 +31,9 @@ const NavBar = ({currentUser, handleLogOut}) => {
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body style={{backgroundColor: "#faf0e6"}}>
-                <Nav className="navbar-nav ms-auto">
+                <Nav className="navbar-nav ms-auto px-3">
                   <NavDropdown
-                    title="Account"
+                    title="Join"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                     
                   >
