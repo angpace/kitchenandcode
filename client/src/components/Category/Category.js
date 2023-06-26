@@ -15,7 +15,7 @@ const Category = () => {
     console.log(blogs)
     console.log(params)
 
-    const mapBlogs = blogs.map((b) => <BlogCard b={b}/>)
+    const mapBlogs = blogs.map((b) => <BlogCard b={b} key={b.id}/>)
   return (
     <>
         {mapBlogs}

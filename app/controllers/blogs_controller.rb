@@ -24,8 +24,11 @@ class BlogsController < ApplicationController
 
     def update
         blog = Blog.find(params[:id])
-        blog.update(blog_params)
-        render json: blog
+        if blog.update(blog_params)
+      render json: { success: true, message: 'Likes updated successfully' }
+    else
+      render json: { success: false, message: blog.errors.full_messages }, status: :unprocessable_entity
+    end
     end
 
     def destroy
