@@ -1,12 +1,12 @@
 class User < ApplicationRecord
     has_secure_password
 
-    has_many :blogs
+    has_many :blogs, dependent: :destroy
     has_many :comments
 
     validates :email, presence: true, uniqueness: true
     validates :name, presence: true
-    validates :password, length: { minimum: 6 }
+    # validates :password, length: { minimum: 6 }
 
     require 'sendgrid-ruby'
         include SendGrid

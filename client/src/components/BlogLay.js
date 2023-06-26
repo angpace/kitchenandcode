@@ -16,20 +16,23 @@ function BlogLay ({currentUser}){
         fetch(`blogs/${id}`)
         .then(res => res.json())
         .then(data => setBlogPost(data))
-    })
+    },[])
 
+    console.log(id)
 
     function addLikesToPost(){
        let newLikeCount = blogPost.likes += 1
        setLikes(newLikeCount)
        setIsLiked(true)
-       fetch(`/blogs/${id}`, {
+       fetch(`blogs/${id}`, {
         method: "PATCH",
         headers: { 'content-type': 'application/json' },
         body: JSON.stringify({
              likes: newLikeCount
             })
          })
+         .then(res => res.json())
+         .then(data => console.log(data))
     }
 
     let displayComments = ["This post has no comments yet."]
