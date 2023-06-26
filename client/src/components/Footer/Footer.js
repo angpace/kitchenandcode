@@ -9,7 +9,7 @@ const Footer = () => {
               <FooterTitle>Kitchen and Code</FooterTitle>
                   <Link to="/">Home</Link>
                   <Link to="/about">About</Link>
-                  <Link to="/blogposts">Blog</Link>
+                  <Link to="/blog">Blog</Link>
             </FooterLinks>
             <FooterLinks>
               <FooterTitle>Account</FooterTitle>
