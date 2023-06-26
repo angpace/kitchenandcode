@@ -1,3 +1,4 @@
+import Bloglead from "../components/BlogLead/Bloglead";
 import Carousel from "../components/Carousel/Carousel";
 import Header from "../components/Header/Header";
 import { useState,useEffect } from "react";
@@ -10,7 +11,8 @@ function Home () {
     return (
        <div>
             <Header/>
-            <Carousel/>     
+            <Carousel/>   
+            <Bloglead/>  
         </div>
         
     )
