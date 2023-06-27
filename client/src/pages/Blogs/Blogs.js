@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
-import BlogCard from "./BlogCard";
-import PostBlog from "./PostBlog";
+import BlogCard from "../../components/BlogCard";
+import PostBlog from "../../components/PostBlog";
+import { CarouselHeading } from "../../components/Carousel/CarouselElements";
+import { BlogContainer } from "../../components/Category/CategoryElements";
+import { SearchContainer, Search, HeadingContainer } from "./BlogElements";
 
 function Blogs ({currentUser}) {
     const [blogs, setBlogs] = useState([])
@@ -55,20 +58,16 @@ function Blogs ({currentUser}) {
 
     return (
         
-        <>
-        <div>
-        </div>
-            <div className="search">
-                  <input className="bar" onChange={(e) => setSearch(e.target.value)} placeholder="🔎"></input>
-            </div>
-                <div>
-                    <h2 className="blog_title" style={{paddingTop: '8%'}}>Blogs</h2>
-                    <div className="line-2"></div>
-                </div>
-                    <div className="blogContainer" >
-                        {createBlogCards}
-                    </div>
-        </>
+        <BlogContainer>
+            <SearchContainer>
+                <Search onChange={(e) => setSearch(e.target.value)} placeholder="Search by Category 🔎"></Search>
+            </SearchContainer>
+            <HeadingContainer>
+                <CarouselHeading>Blog</CarouselHeading>
+                </HeadingContainer>
+                {createBlogCards}
+                    
+        </BlogContainer>
     )
 }
 

@@ -1,7 +1,7 @@
 import Home from './pages/Home';
 import './App.css';
 import { Routes, Route} from "react-router-dom";
-import Blogs from './components/Blogs';
+import Blogs from './pages/Blogs/Blogs';
 import Login from './pages/Login'
 import { useEffect, useState } from 'react';
 import BlogLay from './components/BlogLay';
