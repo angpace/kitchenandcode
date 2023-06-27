@@ -137,7 +137,7 @@ flex-direction: column;
   padding-top: 2%;
 }
 
-.cards {
+/* .cards {
   width: 100%;
   display: flex;
   display: -webkit-flex;
@@ -155,9 +155,9 @@ flex-direction: column;
   color: #AD7D52;
   vertical-align: middle;
   margin-left: 3px;
-}
+} */
 
-.card__img {
+/* .card__img {
 visibility: hidden;
   background-size: cover;
   background-position: center;
@@ -174,9 +174,9 @@ border-top-right-radius: 12px;
   width: 100%;
   opacity: 0;
   top: 0;
-}
+} */
 
-.card__img--hover {
+/* .card__img--hover {
 transition: 0.2s all ease-out;
   background-size: cover;
   background-position: center;
@@ -193,7 +193,7 @@ top: 0;
     margin-right: 30px;
     transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
     background-color: #fff;
-      /* width: 33.3%; */
+      width: 33.3%;
     position: relative;
     border-radius: 12px;
     overflow: hidden;
@@ -202,9 +202,9 @@ top: 0;
 .card:hover {
   box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
     transform: scale(1.01, 1.01);
-}
+} */
 
-.card__info {
+/* .card__info {
 z-index: 2;
 background-color: #fff;
 border-bottom-left-radius: 12px;
@@ -231,9 +231,9 @@ color: #868686;
   font-weight: 600;
   text-decoration: none;
   color: #AD7D52;
-}
+} */
 
-.card:hover .card__img--hover {
+/* .card:hover .card__img--hover {
   height: 100%;
   opacity: 0.3;
 }
@@ -245,9 +245,9 @@ color: #868686;
 
 .card:hover .card__info-hover {
   opacity: 1;
-}
+} */
 /* Finished- Blog cards on the Blog Page  */
-
+/* 
 @media (min-width: 40em){
   .main-container {
     padding-right: 15%;
@@ -274,7 +274,7 @@ color: #868686;
   max-width: 70%;
   display: block;
 }
-}
+} */
 
 /* Blog lay */
 
@@ -290,7 +290,7 @@ color: #868686;
 }
 
 .feature{
-max-width: 100%;
+max-width: 60%;
 padding-top: 2%;
 padding-bottom: 2%;
 }
@@ -309,49 +309,8 @@ padding-bottom: 2%;
   max-width: 1000px;
 }
 
-.portfolio{
- display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  overflow: scroll;
-}
 
-.container img{
-  max-width: 90%;
-}
-
-.container{
-  text-align: center;
-  max-width: 100%;
-}
-
-.portDescription{
-  font-size: small;
-}
-
-@media (min-width: 40em){
-  .portDescription{
-    max-width: 650px;
-    font-size: medium;
-  }
-}
-
-.portfolio h1{
-  font-size: 24px;
-  float: center;
-  font-weight: 600;
-  color: #2dba9bb0;
-}
-
-@media (min-width: 40em){
-  .portfolio h1{
-    font-size: 37px;
-    float: left;
-    font-weight: 700;
-    color: #2dba9bb0;
-  }
-}
-
+/* 
 .blog_title{
   font-family: 'Dawning of a New Day', cursive;  
   font-size: 40px;
@@ -374,20 +333,20 @@ padding-bottom: 2%;
       max-width: 70%;
       margin: auto;
   }
-}
+} */
 
 .search{
   float: right;
   padding-top: 13%;
   padding-right: 10%;
-}
-.bar{
+} 
+ .bar{
   border: none;
   font-style: italic;
   font-size: 10px;
 }
 
-@media (min-width: 40em){
+/* @media (min-width: 40em){
 .search{
   float: right;
   padding-right: 15%;
@@ -398,7 +357,7 @@ padding-bottom: 2%;
   font-style: italic; 
   font-size: 14px;
 }
-}
+} */
 
 .like_this_post{
   text-align: center;
@@ -424,90 +383,7 @@ padding-bottom: 2%;
   cursor: pointer;
   color: pink;
 }
-/* Me */
-.me{
-  border-radius: 50%;
-  width: 60%;
-  display: block;
-  margin: auto;
-  padding-bottom: 1%;
 
-}
 
-@media (min-width: 40em){
-  .me{
-    border-radius: 50%;
-    width: 30%;
-    display: block;
-    margin: auto;
-  }
-}
 
-.more_about_me{
-  font-style: italic;
-}
-
-.about_me{
-  font-size: 12px;
-}
-
-@media (min-width: 40em){
-  .about_me{
-    max-width: 80%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    font-size: 14px;
-  }
-}
-
-.bio{
-  max-width: 80%;
-  padding-bottom: 5%;
-  margin: auto;
-}
-
-.kitchcode{
-    display: block;
-    margin: auto;
-    min-width: 250px;
-    max-width: 600px; 
- }
-
- .portfolio a{
-  color: #2dba9bb0;
- }
-
- footer{
-  bottom: 0;
-  width: 40%;
-  display: flex;
-  justify-content: space-evenly;
-  padding: 5%;
- }
-
- @media (max-width: 50em){
-  footer{
-   bottom: 0;
-   position: relative;
-   width: 100%;
-   padding: 3px;
-   display: flex;
-   justify-content: space-around;
-   line-height: 35px;
-   }
-  }
-
-  @media(min-width: 40em) {
-    .portfolio{
-    padding-top: 2%;
-    width: 70%;
-    margin: auto;
-    border-radius: 3%; 
-  }
-}
-
-.port_caption{
-  background-color: #ffffffc9;
-}
 

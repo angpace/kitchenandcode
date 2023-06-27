@@ -59,7 +59,7 @@ function Blogs ({currentUser}) {
         <div>
         </div>
             <div className="search">
-                  <input className="bar" onChange={(e) => setSearch(e.target.value)} placeholder="Search by Category..."></input>
+                  <input className="bar" onChange={(e) => setSearch(e.target.value)} placeholder="🔎"></input>
             </div>
                 <div>
                     <h2 className="blog_title" style={{paddingTop: '8%'}}>Blogs</h2>

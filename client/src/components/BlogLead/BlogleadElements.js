@@ -25,11 +25,10 @@ max-width: 1000px;
 `
 export const Image = styled.img`
 width: 100%;
-border-radius: 3px;
+border-radius: 1px;
 
 &:hover{
     opacity: .7;
-    border-radius: 10px;
 }
 `
 
@@ -42,5 +41,5 @@ export const BlogCategoryContent = styled.h3`
   justify-content: center;
 
   width: 100%;
-  padding: 2%;
+  padding: 1%;
 `

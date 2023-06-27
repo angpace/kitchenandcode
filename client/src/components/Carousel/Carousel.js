@@ -33,7 +33,6 @@ const Carousel = () => (
         responsive={responsive}
         controlsStrategy="alternate"
         disableDotsControls="true"
-        autoPlayControls="true"
         infinite
         
     />

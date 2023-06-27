@@ -2,12 +2,13 @@ import { Link as LinkS } from "react-router-dom";
 import styled from "styled-components";
 
 export const FooterFlex = styled.div`
+max-height: 200px;
 border-top: thin solid;
 /* max-width: 1100px; */
 `
 
 export const FooterContent = styled.div`
-padding: 10%;
+padding: 5%;
 display: flex;
 justify-content: space-around;
 background-color: #faf0e6;
