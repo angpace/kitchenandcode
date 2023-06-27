@@ -26,7 +26,7 @@ export const Content = styled.h1`
 background-color: whitesmoke;
 font-size: 30px;
 color: black;
-padding: 10%;
+padding: 7%;
 
 @media screen and (max-width: 768px){
     font-size: 20px;
