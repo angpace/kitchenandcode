@@ -11,7 +11,7 @@ export const FooterContent = styled.div`
 padding: 5%;
 display: flex;
 justify-content: space-around;
-background-color: #faf0e6;
+background-color: #fffef2;
 
 @media screen and (max-width: 820px){
     flex-direction: column;
@@ -20,6 +20,7 @@ background-color: #faf0e6;
 export const FooterTitle = styled.p`
 font-weight: 600;
 padding-top: 10px;
+color: #333333;
 `
 
 export const FooterLinks = styled.div`
@@ -30,10 +31,10 @@ align-items: center;
 
 export const Link = styled(LinkS)`
 text-decoration: none;
-color: black;
+color: #333333;
 
 &:hover{
-    color: #991221e3;
+    color: gray;
     transition: 0.3s ease-out
 }
 `

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import BlogCard from "../../components/BlogCard";
+import BlogCard from "../../components/BlogCard/BlogCard";
 import PostBlog from "../../components/PostBlog";
 import { CarouselHeading } from "../../components/Carousel/CarouselElements";
 import { BlogContainer } from "../../components/Category/CategoryElements";

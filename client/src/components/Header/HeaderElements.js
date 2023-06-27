@@ -4,7 +4,9 @@ export const HeaderContainer = styled.div`
 border-top: thin solid;
 border-bottom: thin solid;
 padding: 10%;
-background-color: #faf0e6;
+background-color: #333333;
+color: #fffef2
+
 `
 
 export const HeaderContent = styled.div`

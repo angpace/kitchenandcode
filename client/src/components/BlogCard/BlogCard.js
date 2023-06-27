@@ -42,12 +42,8 @@ function BlogCard ({b, currentUser, handleDelete, handleUpdate}) {
                         :
                         <></>
                      }
-                   <div class="card mb-3" style={{maxWidth: "80%"}} onClick={() => getBlogPost(b)}>
-                    <div>
-                        {/* <div class="col-md-3">
-                        <img src={b.feature}class="img-fluid rounded-start" alt="..."/>
-                        </div> */}
-                        
+                   <div class="card mb-3" style={{maxWidth: "80%", backgroundColor: "#fffef2"}} onClick={() => getBlogPost(b)}>
+                    <div>      
                         <div class="card-body">
                             <h5 class="card-title">{b.title}</h5>
                             <p class="card-text">{b.preview}</p>
