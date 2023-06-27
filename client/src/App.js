@@ -2,12 +2,12 @@ import Home from './pages/Home';
 import './App.css';
 import { Routes, Route} from "react-router-dom";
 import Blogs from './components/Blogs';
-import Login from './components/Login'
+import Login from './pages/Login'
 import { useEffect, useState } from 'react';
 import BlogLay from './components/BlogLay';
 import Nav from "./components/NavBar/Navbar.js"
 import Manage from './components/Manage';
-import Subscribe from './components/Subscribe'
+import Subscribe from './pages/Subscribe'
 import toast, { Toaster } from 'react-hot-toast';
 import About from "./pages/About/About"
 import Footer from './components/Footer/Footer';
