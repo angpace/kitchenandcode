@@ -34,7 +34,8 @@ border-radius: 1px;
 `
 
 export const BlogCategoryContent = styled.h3`
-  background: #faf0e6;
+  background: #333333;
+  color: whitesmoke;
 
   /* center overlay text */
   display: flex;
