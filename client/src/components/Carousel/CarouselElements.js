@@ -31,4 +31,7 @@ padding: 3% 0% 3% 2%;
 text-align: center;
 background-color: #fffef2;
 
+@media screen and (max-width: 400px){
+    padding: 9% 0% 3% 2%
+}
 `

@@ -4,7 +4,7 @@ import { Routes, Route} from "react-router-dom";
 import Blogs from './pages/Blogs/Blogs';
 import Login from './pages/Login'
 import { useEffect, useState } from 'react';
-import BlogLay from './components/BlogLay';
+import BlogLay from './components/BlogLay/BlogLay';
 import Nav from "./components/NavBar/Navbar.js"
 import Manage from './components/Manage';
 import Subscribe from './pages/Subscribe'

@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import Comments from './Comments';
-import PostComment from './PostComment';
+import Comments from '../Comments';
+import PostComment from '../PostComment';
+import { ConstructionPage, Content, ContentContainer, Image, ImageContainer } from '../Construction/UnderCElements';
 
 function BlogLay ({currentUser}){
     let { id } = useParams();
@@ -45,8 +46,33 @@ function BlogLay ({currentUser}){
       }
      
     return(
-        <div className='blogLayContainer'>
-            <div className="blogLay">
+        <ConstructionPage>
+             <ImageContainer>
+                <Image src={blogPost.feature}></Image>
+                </ImageContainer>
+            <ContentContainer>
+                <Content>{blogPost.title}</Content>
+                <br/>
+                <p>{blogPost.paragraph_one}</p>
+                <p>{blogPost.paragraph_two}</p>
+                <p>{blogPost.paragraph_three}</p>
+                    <button type="button" className="btn btn-outline-secondary"  onClick={() => setLeaveAComment(!leaveAComment)}>Leave a Comment</button>
+                     {leaveAComment?
+                     
+                        <>
+                            <PostComment id={id} currentUser={currentUser}/>
+                        </>
+                        :
+                        <></>
+                     }
+                     <br/>
+                     <>
+                     <br/>
+                        {displayComments}
+                     </>
+                </ContentContainer>
+                
+            {/* <div className="blogLay">
                 <>
                     <h1 className='blog_title' style={{textAlign: "center"}}>{blogPost.title}</h1>
                 </>
@@ -83,22 +109,8 @@ function BlogLay ({currentUser}){
                             </i> {likes}</button>
                     </p>
                 </div>
-            </div>
-            <button type="button" className="btn btn-outline-secondary"  onClick={() => setLeaveAComment(!leaveAComment)}>Leave a Comment</button>
-                     {leaveAComment?
-                     
-                        <>
-                            <PostComment id={id} currentUser={currentUser}/>
-                        </>
-                        :
-                        <></>
-                     }
-                     <br/>
-                     <>
-                     <br/>
-                        {displayComments}
-                     </>
-        </div>
+            </div> */}
+        </ConstructionPage>
     )
 }
 
