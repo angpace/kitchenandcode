@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import Comments from '../Comments';
 import PostComment from '../PostComment';
 import { ConstructionPage, Content, ContentContainer, Image, ImageContainer } from '../Construction/UnderCElements';
+import { BodyContainer } from './BloglayElements';
 
 function BlogLay ({currentUser}){
     let { id } = useParams();
@@ -53,9 +54,11 @@ function BlogLay ({currentUser}){
             <ContentContainer>
                 <Content>{blogPost.title}</Content>
                 <br/>
+                <BodyContainer>
                 <p>{blogPost.paragraph_one}</p>
                 <p>{blogPost.paragraph_two}</p>
                 <p>{blogPost.paragraph_three}</p>
+                </BodyContainer>
                     <button type="button" className="btn btn-outline-secondary"  onClick={() => setLeaveAComment(!leaveAComment)}>Leave a Comment</button>
                      {leaveAComment?
                      
