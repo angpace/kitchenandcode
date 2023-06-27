@@ -43,5 +43,5 @@ export const BlogCategoryContent = styled.h3`
   justify-content: center;
 
   width: 100%;
-  padding: 1%;
+  padding: 3%;
 `
