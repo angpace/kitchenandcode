@@ -4,7 +4,7 @@ export const CarouselWrapper = styled.div`
 height: 30%;
 width: 100%;
 overflow: hidden;
-background-color: #faf0e6;
+background-color: #fffef2;
 border-bottom: thin solid;
 
 `
@@ -29,5 +29,6 @@ object-fit: contain;
 export const CarouselHeading = styled.h2`
 padding: 3% 0% 3% 2%;
 text-align: center;
+background-color: #fffef2;
 
 `

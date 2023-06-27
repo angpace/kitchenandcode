@@ -5,6 +5,7 @@ display: flex;
 justify-content: center;
 justify-content: space-around;
 padding: 7%;
+background-color: #fffef2;
 
 @media screen and (max-width: 400px){
     flex-direction: column;
@@ -33,7 +34,7 @@ border-radius: 1px;
 `
 
 export const BlogCategoryContent = styled.h3`
-  background: rgba(20%, 20%, 20%, .10);
+  background: #faf0e6;
 
   /* center overlay text */
   display: flex;
