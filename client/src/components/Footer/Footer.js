@@ -15,6 +15,7 @@ const Footer = () => {
               <FooterTitle>Account</FooterTitle>
                   <Link to="/subscribe">Subscribe</Link>
                   <Link to="/login">Login</Link>
+                  <Link to="/contact">Contact</Link>
                 </FooterLinks>
                 <SocialMediaWrap>
                     <a  href="https://www.linkedin.com/in/angpace/"><i className="fa-brands fa-linkedin fa-lg"></i></a>
@@ -22,8 +23,9 @@ const Footer = () => {
                     <a  href="https://medium.com/@angpace13"><i className="fa-brands fa-medium fa-lg"></i></a>
                     <a  href="https://www.instagram.com/heyitspastry/?hl=en"><i className="fa-brands fa-instagram fa-lg"></i></a>
                 </SocialMediaWrap>
-                
         </FooterContent>
+       
+        <center> <small>© Kitchen and Code</small></center>
     </FooterFlex>
   )
 }

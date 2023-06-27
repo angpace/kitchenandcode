@@ -1,16 +1,19 @@
 import styled from "styled-components";
 
 export const CarouselWrapper = styled.div`
-height: 500px;
+height: 30%;
 width: 100%;
 overflow: hidden;
-background-color: #faf0e6
+background-color: #faf0e6;
+border-bottom: thin solid;
+
 `
 export const Item = styled.div`
-height: 100%;
+height: 550px;
 display: flex;
 align-items: center;
 justify-content: center;
+
 `
 
 export const Image = styled.img`
@@ -24,7 +27,7 @@ object-fit: contain;
 `
 
 export const CarouselHeading = styled.h2`
-padding: 2% 0 0% 2%;
+padding: 3% 0% 3% 2%;
 text-align: center;
 
 `
