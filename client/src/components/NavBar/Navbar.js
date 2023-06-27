@@ -13,7 +13,7 @@ const NavBar = ({currentUser, handleLogOut}) => {
     <div>
     
         {['sm'].map((expand) => (
-        <Navbar key={expand} expand={expand} style={{backgroundColor: "#faf0e6"}}>
+        <Navbar key={expand} expand={expand} style={{backgroundColor: "#fffef2"}}>
           <Container fluid>
       <a class="navbar-brand" href="/">
         <img src={pom} width="30" height="30" class="d-inline-block align-top" alt=""/> Kitchen and Code
@@ -25,12 +25,12 @@ const NavBar = ({currentUser, handleLogOut}) => {
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
               placement="end"
             >
-              <Offcanvas.Header style={{backgroundColor: "#faf0e6"}} closeButton>
+              <Offcanvas.Header style={{backgroundColor: "#fffef2"}} closeButton>
                 <Offcanvas.Title className="logo fs-1" id={`offcanvasNavbarLabel-expand-${expand}`}>
                   Kitchen and Code
                 </Offcanvas.Title>
               </Offcanvas.Header>
-              <Offcanvas.Body style={{backgroundColor: "#faf0e6"}}>
+              <Offcanvas.Body style={{backgroundColor: "#fffef2"}}>
                 <Nav className="navbar-nav ms-auto px-3">
                   <NavDropdown
                     title="Join"
