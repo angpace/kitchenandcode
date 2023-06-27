@@ -33,7 +33,7 @@ function BlogCard ({b, currentUser, handleDelete, handleUpdate}) {
     let me = currentUser && currentUser.email === "angpace13@gmail.com"
 
     return (
-     <div>
+     <center>
                     {me?
                     <div>
                          <button onClick={deletePost}>Delete</button>
@@ -42,26 +42,23 @@ function BlogCard ({b, currentUser, handleDelete, handleUpdate}) {
                         :
                         <></>
                      }
-                    <section className="cards">
-                        <article className="card card--1" onClick={() => getBlogPost(b)}>
-                        <div className="card__info-hover">
-                            <div className="card__clock-info">
-                                <span className="card__time">♡ {b.likes}</span>
-                            </div>
+                   <div class="card mb-3" style={{maxWidth: "70%"}} onClick={() => getBlogPost(b)}>
+                    <div>
+                        {/* <div class="col-md-3">
+                        <img src={b.feature}class="img-fluid rounded-start" alt="..."/>
+                        </div> */}
+                        
+                        <div class="card-body">
+                            <h5 class="card-title">{b.title}</h5>
+                            <p class="card-text">{b.preview}</p>
+                            <p class="card-text"><small class="text-muted">{b.date}</small></p>
                         </div>
-                        <div  className="card__img"></div>
-                            <img alt="feature" src={b.feature} className="card__img--hover"/>
-                        <div className="card__info">
-                            <span className="card__category">{b.category}</span>
-                            <h3 className="card__title">{b.title}</h3>
-                            <span className="card__by">{b.date}</span>
-                            <br/>
-                            <p className="card__by">{b.preview}</p>
-                        </div>
-                        </article>
-                     </section>  
-                       
-         </div>
+                        
+                    </div>
+                    </div>
+
+       </center>                
+       
        
     )
 }
