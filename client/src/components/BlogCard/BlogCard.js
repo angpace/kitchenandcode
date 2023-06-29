@@ -49,7 +49,7 @@ function BlogCard ({b, currentUser, handleDelete, handleUpdate}) {
                             <CardTitle>{b.title}</CardTitle>
                             <CardDate>{b.date}</CardDate>
                             <CardPreview>{b.preview}</CardPreview>
-                            <CardLikes>{b.likes} likes</CardLikes>
+                            <CardLikes>{b.likes} ❤️</CardLikes>
                         </BlogCardContainer>    
                         
                     </Container>

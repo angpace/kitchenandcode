@@ -57,8 +57,20 @@ function BlogLay ({currentUser}){
                 <BodyContainer>
                 <p>{blogPost.paragraph_one}</p>
                 <p>{blogPost.paragraph_two}</p>
+                <img className="feature_image" alt="imageOne" src={blogPost.image_one} />
                 <p>{blogPost.paragraph_three}</p>
-                </BodyContainer>
+                <p>Like this post? Show some love <br/> or leave a comment below!
+                    <br/>
+                    <button className="like_btn" onClick={addLikesToPost}>
+                        <i className=
+                         {isLiked? 
+                            "fa-regular fa-solid fa-heart"
+                            :
+                            "fa-regular fa-heart"
+                         }
+                         >
+                            </i> {likes}</button>
+                    </p>
                     <button type="button" className="btn btn-outline-secondary"  onClick={() => setLeaveAComment(!leaveAComment)}>Leave a Comment</button>
                      {leaveAComment?
                      
@@ -73,6 +85,7 @@ function BlogLay ({currentUser}){
                      <br/>
                         {displayComments}
                      </>
+                </BodyContainer>
                 </ContentContainer>
                 
             {/* <div className="blogLay">
