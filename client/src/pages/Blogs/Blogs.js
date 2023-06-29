@@ -40,17 +40,16 @@ function Blogs ({currentUser}) {
             <>
                 
                 <PostBlog rerender={rerender} currentUser={currentUser}/>
-    
-                <div className="search">
-                      <input className="bar" onChange={(e) => setSearch(e.target.value)} placeholder="Search by Category..."></input>
-                </div>
-                    <div>
-                        <h2 className="blog_title">Blogs</h2>
-                        <div className="line-2"></div>
-                    </div>
-                        <div className="blogContainer">
-                            {createBlogCards}
-                        </div>
+                <BlogContainer>
+                    <SearchContainer>
+                        <Search onChange={(e) => setSearch(e.target.value)} placeholder="Search 🔎"></Search>
+                    </SearchContainer>
+                    <HeadingContainer>
+                        <CarouselHeading>Blog</CarouselHeading>
+                    </HeadingContainer>
+                    {createBlogCards}
+                            
+                </BlogContainer>
             </>
         )
     }

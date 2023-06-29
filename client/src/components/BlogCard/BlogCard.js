@@ -36,7 +36,7 @@ function BlogCard ({b, currentUser, handleDelete, handleUpdate}) {
     return (
     
                     
-                   <Container onClick={() => getBlogPost(b)}>
+                   <Container>
                    {me?
                     <div>
                          <button onClick={deletePost}>Delete</button>
@@ -45,7 +45,7 @@ function BlogCard ({b, currentUser, handleDelete, handleUpdate}) {
                         :
                         <></>
                      }
-                        <BlogCardContainer>
+                        <BlogCardContainer onClick={() => getBlogPost(b)}>
                             <CardTitle>{b.title}</CardTitle>
                             <CardDate>{b.date}</CardDate>
                             <CardPreview>{b.preview}</CardPreview>

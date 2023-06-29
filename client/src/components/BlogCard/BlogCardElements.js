@@ -21,23 +21,28 @@ border-top: thin solid;
 padding: 10px;
 background-color: "#fffef2";
 
+
 @media screen and (max-width: 400px){
-    max-width: 100%
+    max-width: 100%;
+    padding: 5px;
 }
 `
 export const CardTitle = styled.h3`
 font-weight: 600;
 float: left;
 
+@media screen and (max-width: 400px){
+    padding-bottom: 15%;
+}
 
 `
 export const CardDate = styled.p`
 float: right;
 `
 export const CardPreview = styled.p`
-padding-top: 7%;
+padding-top: 10%;
 @media screen and (max-width: 400px){
-    padding-top: 12%;
+    padding-top: 15%;
 }
 `
 export const CardLikes = styled.p`

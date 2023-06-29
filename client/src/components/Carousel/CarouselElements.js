@@ -9,7 +9,7 @@ border-bottom: thin solid;
 
 `
 export const Item = styled.div`
-height: 550px;
+max-height: 400px;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -17,10 +17,9 @@ justify-content: center;
 `
 
 export const Image = styled.img`
-max-height: 100%;
-max-width: 100%;
+/* max-height: 100%; */
+max-width: 95%;
 object-fit: contain;
-justify-content: stretch;
 
 &:hover{
  cursor: pointer;
