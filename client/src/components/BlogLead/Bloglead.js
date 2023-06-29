@@ -8,7 +8,9 @@ const Bloglead = () => {
 
     function bringToBlogs (e){
         e.preventDefault()
-        nav(`/blogs/${e.target.alt}`)
+        if(e.target.alt){
+            nav(`/blogs/${e.target.alt}`)
+        }
     }
   return (
     <>

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate} from "react-router-dom";
+import { BlogCardContainer, CardDate, CardTitle, CardPreview, CardLikes, Container } from "./BlogCardElements";
 
 function BlogCard ({b, currentUser, handleDelete, handleUpdate}) {
     const navigate = useNavigate();
@@ -33,8 +34,10 @@ function BlogCard ({b, currentUser, handleDelete, handleUpdate}) {
     let me = currentUser && currentUser.email === "angpace13@gmail.com"
 
     return (
-     <center>
-                    {me?
+    
+                    
+                   <Container onClick={() => getBlogPost(b)}>
+                   {me?
                     <div>
                          <button onClick={deletePost}>Delete</button>
                          <button onClick={() => setEdit(!edit)}>Edit</button>
@@ -42,18 +45,16 @@ function BlogCard ({b, currentUser, handleDelete, handleUpdate}) {
                         :
                         <></>
                      }
-                   <div class="card mb-3" style={{maxWidth: "80%", backgroundColor: "#fffef2"}} onClick={() => getBlogPost(b)}>
-                    <div>      
-                        <div class="card-body">
-                            <h5 class="card-title">{b.title}</h5>
-                            <p class="card-text">{b.preview}</p>
-                            <p class="card-text"><small class="text-muted">{b.date}</small></p>
-                        </div>
+                        <BlogCardContainer>
+                            <CardTitle>{b.title}</CardTitle>
+                            <CardDate>{b.date}</CardDate>
+                            <CardPreview>{b.preview}</CardPreview>
+                            <CardLikes>{b.likes} likes</CardLikes>
+                        </BlogCardContainer>    
                         
-                    </div>
-                    </div>
-
-       </center>                
+                    </Container>
+            
+             
        
        
     )
