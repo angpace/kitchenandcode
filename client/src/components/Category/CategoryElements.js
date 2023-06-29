@@ -1,12 +1,11 @@
 import styled from "styled-components";
 
 export const BlogContainer = styled.div`
-padding: 5%;
+padding: 2%;
 border-top: thin solid;
 background-color: #fffef2;
 
-@media screen and (max-width: 400px){
-    padding: 1%;
+@media screen and (max-width: 500px){
     padding-top: 8%;
     padding-bottom: 8%;
 }

@@ -6,6 +6,7 @@ position: absolute;
 
 export const Search = styled.input`
 border-style: none;
+background-color: #fffef2
 `
 export const HeadingContainer = styled.div`
 
