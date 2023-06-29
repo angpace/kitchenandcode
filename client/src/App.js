@@ -12,6 +12,7 @@ import toast, { Toaster } from 'react-hot-toast';
 import About from "./pages/About/About"
 import Footer from './components/Footer/Footer';
 import Category from './components/Category/Category';
+import Contact from './pages/Contact/Contact';
 
 
 function App() {
@@ -61,6 +62,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/about" element={<About/>}/>
+          <Route path="/contact" element={<Contact/>}/>
           <Route path="/blog" element={<Blogs currentUser={currentUser}/>} />
           <Route path="blogs/:id" element={<Category/>} />
           <Route path="/login" element={<Login onLogin={onLogin}/>} />
