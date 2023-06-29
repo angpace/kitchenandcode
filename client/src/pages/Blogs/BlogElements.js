@@ -10,7 +10,7 @@ background-color: #fffef2
 `
 export const HeadingContainer = styled.div`
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 500px){
     padding-top: 10%;
 }
 `

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const ConstructionPage = styled.div`
    background-color: whitesmoke;
    display: flex;
-   max-height: 700px;
+   max-height: 650px;
    /* overflow-y: scroll; */
    width: 100%;
    background-color: #fffef2;
@@ -12,6 +12,7 @@ export const ConstructionPage = styled.div`
    @media screen and (max-width: 900px){
     flex-direction: column;
     max-height: 100%;
+    padding: 2px;
 }
 `
 
@@ -51,6 +52,7 @@ overflow: hidden;
 `
 export const Image = styled.img`
 width: 100%;
+min-height: 100%;
 
 @media screen and (max-width: 900px){
     height: 600px;
