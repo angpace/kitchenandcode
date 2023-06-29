@@ -60,7 +60,7 @@ function Blogs ({currentUser}) {
         
         <BlogContainer>
             <SearchContainer>
-                <Search onChange={(e) => setSearch(e.target.value)} placeholder="Search by Category 🔎"></Search>
+                <Search onChange={(e) => setSearch(e.target.value)} placeholder="Search 🔎"></Search>
             </SearchContainer>
             <HeadingContainer>
                 <CarouselHeading>Blog</CarouselHeading>

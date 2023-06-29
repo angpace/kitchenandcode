@@ -346,17 +346,6 @@ padding-bottom: 2%;
   }
 } */
 
-.search{
-  float: right;
-  padding-top: 13%;
-  padding-right: 10%;
-} 
- .bar{
-  border: none;
-  font-style: italic;
-  font-size: 10px;
-}
-
 /* @media (min-width: 40em){
 .search{
   float: right;
@@ -375,7 +364,7 @@ padding-bottom: 2%;
 }
 
 .like_btn{
-  background-color: whitesmoke;
+  background-color: #fffef2;
   border: none;
   border-radius: 50%;
   padding: 6px; 
