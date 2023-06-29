@@ -7,6 +7,11 @@ margin-left:10%;
     cursor: pointer;
 }
 
+@media screen and (max-width: 400px){
+    margin-left:0%;
+    padding-top: 5%;
+}
+
 `
 
 export const BlogCardContainer = styled.div`
@@ -23,14 +28,20 @@ background-color: "#fffef2";
 export const CardTitle = styled.h3`
 font-weight: 600;
 float: left;
+
+
 `
 export const CardDate = styled.p`
 float: right;
 `
 export const CardPreview = styled.p`
-padding-top: 6%;
+padding-top: 7%;
+@media screen and (max-width: 400px){
+    padding-top: 12%;
+}
 `
 export const CardLikes = styled.p`
 color: gray; 
-font-style: italic;
+font-size: 12px;
+/* font-style: italic; */
 `
