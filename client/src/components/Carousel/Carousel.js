@@ -32,7 +32,7 @@ class Carousel extends React.Component {
           controlsStrategy="alternate"
           disableDotsControls={true}
           infinite
-          autoHeight="true"
+        //   autoHeight="true"
         />
       </CarouselWrapper>
     );

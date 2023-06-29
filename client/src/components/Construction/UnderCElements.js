@@ -43,6 +43,7 @@ export const ImageContainer = styled.div`
 left: 40%;
 width: 40%;
 overflow: hidden;
+border-right: thin solid;
 
 @media screen and (max-width: 900px){
     width: 100%;
