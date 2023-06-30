@@ -33,6 +33,7 @@ const NavBar = ({currentUser, handleLogOut}) => {
               <Offcanvas.Body style={{backgroundColor: "#fffef2"}}>
                 <Nav className="navbar-nav ms-auto px-3">
                   <NavDropdown
+                    className='dropdown'
                     title="Join"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                     
@@ -42,7 +43,7 @@ const NavBar = ({currentUser, handleLogOut}) => {
                       <>
                       <NavDropdown.Item  href="/your_account">Manage</NavDropdown.Item>
                         <NavDropdown.Divider />
-                      <NavDropdown.Item onClick={handleLogOut} className="items" href="/">
+                      <NavDropdown.Item class="dropdown-item" onClick={handleLogOut} className="items" href="/">
                       Logout
                       </NavDropdown.Item>
                       </>
@@ -50,9 +51,9 @@ const NavBar = ({currentUser, handleLogOut}) => {
                       :
 
                       <>
-                      <NavDropdown.Item  href="/subscribe">Subscribe</NavDropdown.Item>
+                      <NavDropdown.Item  class="dropdown-item" href="/subscribe">Subscribe</NavDropdown.Item>
                         <NavDropdown.Divider />
-                       <NavDropdown.Item  href="/login">
+                       <NavDropdown.Item  class="dropdown-item" href="/login">
                        Login
                        </NavDropdown.Item>
                        </>
@@ -77,3 +78,4 @@ const NavBar = ({currentUser, handleLogOut}) => {
 }
 
 export default NavBar;
+
