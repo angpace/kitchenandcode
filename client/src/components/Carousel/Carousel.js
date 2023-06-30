@@ -12,9 +12,9 @@ const responsive = {
 
 class Carousel extends React.Component {
   renderItems() {
-    const { featuredPosts, getBlog } = this.props;
+    const { featured, getBlog } = this.props;
 
-    return featuredPosts.map((post, index) => (
+    return featured.map((post, index) => (
       <Item key={index} onClick={(e) => console.log(e.target.alt)} data-value={index + 1}>
         <Image alt={post.title} src={post.feature} onClick={() =>getBlog(post.id)}/>
       </Item>
