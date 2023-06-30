@@ -1,5 +1,6 @@
 import React from 'react'
 import Container from 'react-bootstrap/Container';
+import NavLink from 'react-bootstrap/esm/NavLink';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
@@ -60,10 +61,10 @@ const NavBar = ({currentUser, handleLogOut}) => {
 
                       }        
                   </NavDropdown>
-                  <Nav.Link href="/">Home</Nav.Link>
-                  <Nav.Link href="about">About</Nav.Link>
-                  <Nav.Link href="blogposts">Blog</Nav.Link>
-                  <Nav.Link href="contact">Contact</Nav.Link>
+                  <NavLink href="/">Home</NavLink>
+                  <NavLink href="about">About</NavLink>
+                  <NavLink href="blogposts">Blog</NavLink>
+                  <NavLink href="contact">Contact</NavLink>
                 </Nav>
                 
               </Offcanvas.Body>
