@@ -13,10 +13,6 @@ const Category = () => {
         .then(res => res.json())
         .then(blogs => setBlogs(blogs))
     }, [])
-
-    console.log(blogs)
-    console.log(params)
-
     const mapBlogs = blogs.map((b) => <BlogCard b={b} key={b.id}/>)
   return (
     <BlogContainer>

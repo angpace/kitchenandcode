@@ -15,8 +15,8 @@ const NavBar = ({currentUser, handleLogOut}) => {
         {['sm'].map((expand) => (
         <Navbar key={expand} expand={expand} style={{backgroundColor: "#fffef2"}}>
           <Container fluid>
-      <a class="navbar-brand" href="/">
-        <img src={pom} width="30" height="30" class="d-inline-block align-top" alt=""/> Kitchen and Code
+      <a className="navbar-brand" href="/">
+        <img src={pom} width="30" height="30" className="d-inline-block align-top" alt=""/> Kitchen and Code
       </a>
             {/* <Navbar.Brand className="logo fs-1" href="/">Kitchen and Code</Navbar.Brand> */}
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />

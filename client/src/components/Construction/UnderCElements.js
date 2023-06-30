@@ -27,7 +27,7 @@ align-items: center;
 
 
 @media screen and (max-width: 900px){
-    width: 100%;
+    width: 97%;
 }
 `
 
