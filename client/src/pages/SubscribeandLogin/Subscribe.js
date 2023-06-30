@@ -1,6 +1,8 @@
 import { useState } from "react";
 import toast, { Toaster } from 'react-hot-toast';
 import { useNavigate } from "react-router-dom";
+import {Form} from "../Contact/ContactElements";
+import { Contain, LoginContainer } from "./LoginElements";
 
 function Subscribe(){
   const nav = useNavigate()
@@ -43,7 +45,7 @@ function Subscribe(){
       }
 
     return(
-        <div className="subscription">
+        <LoginContainer>
           <Toaster
               position="bottom-right"
               reverseOrder={false}
@@ -52,27 +54,32 @@ function Subscribe(){
         <h3>Thank you for your interest in Kitchen and Code!</h3>
         <p>Sign up to receive email updates for new blog posts.</p>
         </center>
-        <form className="subscribe" id="subscribe" onSubmit={handleSubscription}>
+        <Contain>
+        <Form className="subscribe" id="subscribe" onSubmit={handleSubscription}>
           <input
+          style={{backgroundColor: "#fffef2", border: "thin solid"}}
           placeholder='Username'
           onChange={handleChange}
           name="name"
           />
           <input
+          style={{backgroundColor: "#fffef2", border: "thin solid"}}
           placeholder='Email'
           onChange={handleChange}
           name="email"
 
           />
           <input
+          style={{backgroundColor: "#fffef2", border: "thin solid"}}
           placeholder='Password'
           onChange={handleChange}
           name="password"
           type="password"
           />
-          <button className="submit_subscription" type="submit">Sign Up</button>
-          </form>
-        </div>
+          <button className='btn btn-secondary' type="submit">Sign Up</button>
+          </Form>
+          </Contain>
+        </LoginContainer>
     )
 }
 

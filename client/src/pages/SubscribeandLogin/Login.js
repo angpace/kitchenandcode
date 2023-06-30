@@ -1,6 +1,8 @@
 import { useState } from "react";
 import toast, { Toaster } from 'react-hot-toast';
 import {useNavigate} from "react-router-dom"
+import { Form } from "../Contact/ContactElements";
+import { Contain, LoginContainer } from "./LoginElements";
 
 
 function Login ({onLogin}){
@@ -49,33 +51,36 @@ function Login ({onLogin}){
         
 
     return (
-        <div className="padding">
+        <LoginContainer>
            <Toaster
               position="bottom-right"
               reverseOrder={false}
             />
-          <div>
         
-        <div className="login">
-        <h3>Login to manage your subscription.</h3>
-            <form action="#" onSubmit={handleLogin}>
+        <center className="sub_text">
+        <h3>Welcome back! Login below.</h3>
+        </center>
+        <Contain>
+            <Form action="#" onSubmit={handleLogin}>
                 <input
+                    style={{backgroundColor: "#fffef2", border: "thin solid"}}
                     onChange={handleChange}
                     type="email"
                     placeholder="Email Address"
                     name="email"
                 />
                 <input
+                    style={{backgroundColor: "#fffef2", border: "thin solid"}}
                     onChange={handleChange}
                     type="password"
                     placeholder="Password"
                     name="password"
                 />
-                <button className="submit_subscription" type="submit">Login</button>
-            </form>
-            </div>
-        </div>
-    </div>
+                <button className='btn btn-secondary'type="submit">Login</button>
+                </Form>
+              </Contain>
+            </LoginContainer>
+           
     )
 }
 
