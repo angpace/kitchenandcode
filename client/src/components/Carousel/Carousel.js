@@ -2,7 +2,7 @@ import React from 'react';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import { CarouselWrapper, Item, Image, CarouselHeading } from './CarouselElements';
-import { useNavigate } from 'react-router-dom';
+
 
 const responsive = {
   0: { items: 1 },
