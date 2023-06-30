@@ -10,7 +10,7 @@ puts "...Seeding"
 Blog.destroy_all
 
 me = User.find_by(email: "angpace13@gmail.com")
-angela.destroy
+me.destroy
 
 angela = User.create!(name: "Angela Pace", email: "angpace13@gmail.com", password_digest: "kitchcode")
 
