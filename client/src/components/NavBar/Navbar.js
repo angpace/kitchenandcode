@@ -5,6 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas'; 
 import pom from './pom2.png'
+import { Link } from 'react-router-dom';
 
 
 const NavBar = ({currentUser, handleLogOut}) => {
@@ -40,9 +41,9 @@ const NavBar = ({currentUser, handleLogOut}) => {
                    {currentUser? 
 
                       <>
-                      <NavDropdown.Item className="dropdown-item" href="/your_account">Manage</NavDropdown.Item>
+                      <NavDropdown.Item className="dropdown-item" as={Link} to="/your_account">Manage</NavDropdown.Item>
                         <NavDropdown.Divider />
-                      <NavDropdown.Item  className="dropdown-item" onClick={handleLogOut} href="/">
+                      <NavDropdown.Item  className="dropdown-item" as={Link} to="/" onClick={handleLogOut} >
                       Logout
                       </NavDropdown.Item>
                       </>
@@ -50,19 +51,19 @@ const NavBar = ({currentUser, handleLogOut}) => {
                       :
 
                       <>
-                      <NavDropdown.Item  className="dropdown-item" href="subscribe">Subscribe</NavDropdown.Item>
+                      <NavDropdown.Item  className="dropdown-item" as={Link} to="/subscribe">Subscribe</NavDropdown.Item>
                         <NavDropdown.Divider />
-                       <NavDropdown.Item className="dropdown-item" href="login">
+                       <NavDropdown.Item className="dropdown-item" as={Link} to="/login">
                        Login
                        </NavDropdown.Item>
                        </>
 
                       }        
                   </NavDropdown>
-                  <Nav.Link href="/">Home</Nav.Link>
-                  <Nav.Link href="about">About</Nav.Link>
-                  <Nav.Link href="blogposts">Blog</Nav.Link>
-                  <Nav.Link href="contact">Contact</Nav.Link>
+                  <Nav.Link as={Link} to="/">Home</Nav.Link>
+                  <Nav.Link as={Link} to="/about">About</Nav.Link>
+                  <Nav.Link as={Link} to="/blogposts">Blog</Nav.Link>
+                  <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
                 </Nav>
                 
               </Offcanvas.Body>
