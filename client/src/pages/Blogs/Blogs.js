@@ -21,7 +21,7 @@ function Blogs ({currentUser}) {
         setBlogs(updatedBlogsArray)
     }
 
-    const filteredBlogs = blogs.filter((b) => b.category.toLowerCase().includes(search.toLowerCase()))
+    const filteredBlogs = blogs.filter((b) => b.keywords.toLowerCase().includes(search.toLowerCase()))
 
     const createBlogCards = filteredBlogs.map((b) => { 
         return ( < BlogCard handleDelete={handleDelete} currentUser={currentUser} b={b} key={b.id} /> )

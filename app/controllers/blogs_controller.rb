@@ -41,7 +41,7 @@ class BlogsController < ApplicationController
 
     def blog_params
         params.permit(:title, :user_id, :preview, :paragraph_one, :paragraph_two, 
-        :paragraph_three, :date, :feature, :image_one, :category, :likes)
+        :paragraph_three, :date, :feature, :image_one, :category, :likes, :keywords, :featured)
     end
 
 

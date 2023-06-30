@@ -14,7 +14,6 @@ function Login ({onLogin}){
 
       function handleChange(e) {
         const { name, value } = e.target
-        console.log(login)
         setLogin({
           ...login, [name]: value
         })
