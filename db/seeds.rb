@@ -8,7 +8,9 @@
 puts "...Seeding"
 
 Blog.destroy_all
-# angela = User.find_by(email: "angpace13@gmail.com")
+
+me = User.find_by(email: "angpace13@gmail.com")
+angela.destroy
 
 angela = User.create!(name: "Angela Pace", email: "angpace13@gmail.com", password_digest: "kitchcode")
 
