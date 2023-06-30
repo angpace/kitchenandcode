@@ -1,6 +1,5 @@
 import React from 'react'
 import Container from 'react-bootstrap/Container';
-import NavLink from 'react-bootstrap/esm/NavLink';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
@@ -34,7 +33,6 @@ const NavBar = ({currentUser, handleLogOut}) => {
               <Offcanvas.Body style={{backgroundColor: "#fffef2"}}>
                 <Nav className="navbar-nav ms-auto px-3">
                   <NavDropdown
-                    className='dropdown'
                     title="Join"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                     
@@ -61,10 +59,10 @@ const NavBar = ({currentUser, handleLogOut}) => {
 
                       }        
                   </NavDropdown>
-                  <NavLink href="/">Home</NavLink>
-                  <NavLink href="about">About</NavLink>
-                  <NavLink href="blogposts">Blog</NavLink>
-                  <NavLink href="contact">Contact</NavLink>
+                  <Nav.Link href="/">Home</Nav.Link>
+                  <Nav.Link href="about">About</Nav.Link>
+                  <Nav.Link href="blogposts">Blog</Nav.Link>
+                  <Nav.Link href="contact">Contact</Nav.Link>
                 </Nav>
                 
               </Offcanvas.Body>
