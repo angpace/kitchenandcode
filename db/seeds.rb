@@ -19,7 +19,7 @@ Whether you're a tech enthusiast, a food lover, or both, this blog has something
  feature: "https://images.pexels.com/photos/8473852/pexels-photo-8473852.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
  paragraph_two: "Being a former pastry chef, kitchen and code is a bit of a passion project for me. I've learnt a lot building it and I'm excited to continue to learn as I add new features.", image_one: "https://images.pexels.com/photos/6177607/pexels-photo-6177607.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", 
 paragraph_three: "Thanks for joining me on this journey. I hope it brings you at least half of the joy it brings me!",
- date: "March 2nd, 2023", category: "tech", likes: 0, keywords: "coding kitchen about", featured: true)
+ date: "June 30th, 2023", category: "tech", likes: 0, keywords: "coding kitchen about", featured: true)
 
 
 
