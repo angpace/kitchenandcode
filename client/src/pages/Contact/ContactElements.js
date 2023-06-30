@@ -9,7 +9,7 @@ padding: 10%;
 background-color: #fffef2;
 
 @media screen and (max-width: 400px){
-    padding: 15%
+    padding: 7% 0% 7% 0%
 }
 `
 
@@ -23,7 +23,7 @@ width: 60%;
 
 @media screen and (max-width: 300px){
     padding: 5px;
-    width: 70%
+    width: 90%
 }
 
 `

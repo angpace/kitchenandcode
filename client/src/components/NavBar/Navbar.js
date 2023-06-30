@@ -43,7 +43,7 @@ const NavBar = ({currentUser, handleLogOut}) => {
                       <>
                       <NavDropdown.Item  href="/your_account">Manage</NavDropdown.Item>
                         <NavDropdown.Divider />
-                      <NavDropdown.Item class="dropdown-item" onClick={handleLogOut} className="items" href="/">
+                      <NavDropdown.Item  onClick={handleLogOut} className="items" href="/">
                       Logout
                       </NavDropdown.Item>
                       </>
@@ -51,9 +51,9 @@ const NavBar = ({currentUser, handleLogOut}) => {
                       :
 
                       <>
-                      <NavDropdown.Item  class="dropdown-item" href="/subscribe">Subscribe</NavDropdown.Item>
+                      <NavDropdown.Item   href="/subscribe">Subscribe</NavDropdown.Item>
                         <NavDropdown.Divider />
-                       <NavDropdown.Item  class="dropdown-item" href="/login">
+                       <NavDropdown.Item  href="/login">
                        Login
                        </NavDropdown.Item>
                        </>

@@ -11,6 +11,8 @@ function PostBlog ({rerender, currentUser}) {
         feature: "",
         image_one: "",
         category: "",
+        featured: "",
+        keywords: ""
     })
 
     function handleChange(e) {
@@ -36,6 +38,8 @@ function PostBlog ({rerender, currentUser}) {
             feature: newPost.feature,
             image_one: newPost.image_one,
             category:  newPost.category,
+            featured: newPost.featured,
+            keywords: newPost.keywords,
             likes: 0
            })
         })
@@ -100,6 +104,16 @@ function PostBlog ({rerender, currentUser}) {
                               onChange={handleChange}
                               placeholder="Conclusion"
                               name="paragraph_three"
+                          />
+                           <input className='lrg_input'
+                              onChange={handleChange}
+                              placeholder="featured"
+                              name="featured"
+                          />
+                           <input className='lrg_input'
+                              onChange={handleChange}
+                              placeholder="Keywords"
+                              name="keywords"
                           />
                           <button type="submit">Post Blog</button>
                       </form> 

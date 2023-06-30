@@ -9,7 +9,7 @@
 
 # # angela = User.find_by(email: "angpace13@gmail.com")
 
-# angela = User.create!(name: "Angela Pace", email: "angpace13@gmail.com", password_digest: "123456")
+# angela = User.create!(name: "Angela Pace", email: "angpace13@gmail.com", password_digest: "kitchcode")
 
 # est = Blog.create!(title: "Welcome!", user_id: angela.id, preview: "I'm excited to share my insights with you and hope to inspire you to try something new, be it a new recipe or a new npm package.", paragraph_one: " 
 # Welcome to my blog where I blend my passion for technology and cooking! As someone who loves to experiment in the kitchen and explore the latest advancements in technology, I created this space to share my insights, tips, and experiences with you. 
@@ -21,7 +21,7 @@
 #  please feel free to reach out via any social platform that is linked in the About Me page. 
 #  ", image_one: "https://grist.org/wp-content/uploads/2013/06/apple-food-technology-hp.jpg", 
 # paragraph_three: "So, grab a cup of coffee or tea, sit back, and join me on this journey of culinary and technological exploration.",
-#  date: "March 2nd, 2023", category: "Tech")
+#  date: "March 2nd, 2023", category: "Tech", likes: 0)
 
 #  blog2 = Blog.create!(title: "Is Pangram?", user_id: angela.id, preview: "Interviews are naturally the next step when applying for a jobs, right? ",
 #  paragraph_one: "I was sending job applications like it was my job. Erasing the last two digits and updating them everyday on my whiteboard. 104, 113, 122.  
@@ -35,6 +35,6 @@
 
 
 
-# # comment_test = Comment.create(user_id: user.id, blog_id: blog.id, content: "Comments coming soon!" )
+# comment_test = Comment.create(user_id: user.id, blog_id: blog.id, content: "Comments coming soon!" )
 
 # puts "Done seeding!"

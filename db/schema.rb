@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_04_15_161413) do
+ActiveRecord::Schema.define(version: 2023_06_30_152852) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -29,6 +29,8 @@ ActiveRecord::Schema.define(version: 2023_04_15_161413) do
     t.string "category"
     t.integer "likes"
     t.integer "user_id"
+    t.boolean "featured"
+    t.string "keywords"
   end
 
   create_table "comments", force: :cascade do |t|
