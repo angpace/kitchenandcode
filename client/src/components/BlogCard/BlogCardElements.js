@@ -7,7 +7,7 @@ margin-left:10%;
     cursor: pointer;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 500px){
     margin-left:0%;
     padding-top: 5%;
 }
@@ -22,7 +22,7 @@ padding: 10px;
 background-color: "#fffef2";
 
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 500px){
     max-width: 100%;
     padding: 5px;
 }
@@ -32,7 +32,8 @@ font-weight: 600;
 float: left;
 
 @media screen and (max-width: 400px){
-    padding-bottom: 15%;
+    padding-bottom: 0%;
+    font-size: 15px;
 }
 
 `
