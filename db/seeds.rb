@@ -7,8 +7,8 @@
 # #   Character.create(name: 'Luke', movie: movies.first)
 # puts "...Seeding"
 
-Blog.destroy_all
-User.destroy_all
+# Blog.destroy_all
+# User.destroy_all
 
 # angela = User.create!(name: "Angela Pace", email: "angpace13@gmail.com", password_digest: "kitchcode")
 

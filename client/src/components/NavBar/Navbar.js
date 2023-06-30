@@ -70,7 +70,6 @@ const NavBar = ({ currentUser, handleLogOut }) => {
                           to="/"
                           onClick={() => {
                             handleLogOut();
-                            handleLinkClick();
                           }}
                         >
                           Logout
