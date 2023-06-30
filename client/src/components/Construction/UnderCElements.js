@@ -24,6 +24,7 @@ align-items: center;
 /* ::-webkit-scrollbar{
     width: 20px;
 } */
+/* padding-bottom: 2px; */
 
 
 @media screen and (max-width: 900px){

@@ -17,11 +17,11 @@ const Bloglead = () => {
     <CarouselHeading>Read More</CarouselHeading>
     <BlogLeadContainer>
         <BlogCategory onClick={(e) => bringToBlogs(e)}>
-            <Image src="https://cdn.pixabay.com/photo/2020/01/26/20/14/computer-4795762_640.jpg" alt="Tech"/>
+            <Image src="https://cdn.pixabay.com/photo/2020/01/26/20/14/computer-4795762_640.jpg" alt="tech"/>
             <BlogCategoryContent>Tech</BlogCategoryContent>
         </BlogCategory>
         <BlogCategory onClick={(e) => bringToBlogs(e)}> 
-            <Image src="https://www.thespruceeats.com/thmb/5f1AUqYbY4CsjHSeqvDUau7OjaQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/basic-congee-recipes-4065244-hero-01-5cf81547c34d4520be10bb57c6cda902.jpg" alt="food"/>
+            <Image src="https://images.pexels.com/photos/2228559/pexels-photo-2228559.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="food"/>
             <BlogCategoryContent>Food</BlogCategoryContent>
         </BlogCategory>
     </BlogLeadContainer>

@@ -29,6 +29,7 @@ object-fit: contain;
 export const CarouselHeading = styled.h2`
 padding: 3% 0% 3% 2%;
 text-align: center;
+font-weight: 850px;
 background-color: #fffef2;
 
 @media screen and (max-width: 400px){

@@ -16,7 +16,10 @@ function Home () {
     .then(data => setFeaturedPosts(data))
   }, [])
 
+ 
   const featured = featuredPosts.filter((b) => b.featured === true)
+
+  
 
   function getBlog(id){
     if (id){
@@ -29,7 +32,7 @@ function Home () {
        <div>
             <Header/>
             <Carousel featured={featured} getBlog={getBlog}/>   
-            <Bloglead/>  
+            <Bloglead/> 
         </div>
         
     )

@@ -1,15 +1,20 @@
+import { AboutContainer, Image, AboutMeContent, Content, Title, Body} from "./AboutElements";
 
 function About () {
 
     return (
-        <div className="about">
-                <h1 className="logo fs-0">I'm Angela Pace.</h1>
-                <p>Full Stack Developer, React.js Engineer, practing Zero to Mastery, Tech and Food Blogger, Pastry Chef and Problem Solver.</p>
-                <p>My goal is to expand on my technical skills. View my <button><a href="https://angelapace.tech/">Projects</a></button>, <button><a href="/blogposts">Blogs</a></button> or send me an email 
-                at <button><a href="mailto:angpace13@gmail.com">angpace13@gmail.com.</a></button>
-                </p>
-                <p><a style={{color: "black"}} href="/about">Learn more about me. </a></p>                
-        </div>
+     <AboutContainer>
+         <AboutMeContent>
+            <Content>
+                <Title>About</Title>
+                <Body>Kitchen and Code is a collaboration of some of my many passions, food, technology and sharing knowledge about these topics. Before becoming a Software Engineer, 
+                    I worked as a Pastry Chef in Michelin-starred restaurants around the world. Hospitality and Technology have many things in common, among the most important to me is bringing people together.
+                    I hope you'll join me in this journey.
+                </Body>
+            </Content>
+        </AboutMeContent>
+        <Image src="https://images.pexels.com/photos/6963789/pexels-photo-6963789.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"></Image>
+     </AboutContainer>
     )
 }
 
