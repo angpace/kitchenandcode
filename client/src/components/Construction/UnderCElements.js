@@ -7,7 +7,7 @@ export const ConstructionPage = styled.div`
    /* overflow-y: scroll; */
    width: 100%;
    background-color: #fffef2;
-   /* overflow: hidden; */
+   /* border-top: thin solid; */
 
    @media screen and (max-width: 900px){
     flex-direction: column;

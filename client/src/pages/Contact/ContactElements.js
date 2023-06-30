@@ -7,6 +7,10 @@ flex-direction: column;
 align-items: center;
 padding: 10%;
 background-color: #fffef2;
+
+@media screen and (max-width: 400px){
+    padding: 15%
+}
 `
 
 export const ContactMeHeading = styled.h3`
@@ -14,7 +18,13 @@ font-weight: 600px;
 `
 
 export const FormContainer = styled.div`
+max-width: 500px;
 width: 60%;
+
+@media screen and (max-width: 300px){
+    padding: 5px;
+    width: 70%
+}
 
 `
 
