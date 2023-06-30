@@ -55,21 +55,22 @@ function App() {
               position="bottom-right"
               reverseOrder={false}
             />
-        <Nav currentUser={currentUser} handleLogOut={handleLogOut}/>
+       <Nav currentUser={currentUser} handleLogOut={handleLogOut}/>
         
 
         {/* Routes */}
         <Routes>
           <Route path="/" element={<Home/>} />
-          <Route path="/about" element={<About/>}/>
-          <Route path="/contact" element={<Contact/>}/>
-          <Route path="/blog" element={<Blogs currentUser={currentUser}/>} />
+          <Route path="about" element={<About/>}/>
+          <Route path="contact" element={<Contact/>}/>
+          <Route path="blogposts" element={<Blogs currentUser={currentUser}/>} />
           <Route path="blogs/:id" element={<Category/>} />
-          <Route path="/login" element={<Login onLogin={onLogin}/>} />
-          <Route path="/:id" element={<BlogLay currentUser={currentUser}/>} />
-          <Route path="/subscribe" element={<Subscribe/>} />
-          <Route path="/your_account" element={<Manage currentUser={currentUser} toast={toast} Toaster={Toaster}/>} />
+          <Route path="login" element={<Login onLogin={onLogin}/>} />
+          <Route path=":id" element={<BlogLay currentUser={currentUser}/>} />
+          <Route path="subscribe" element={<Subscribe/>} />
+          <Route path="your_account" element={<Manage currentUser={currentUser} toast={toast} Toaster={Toaster}/>} />
           </Routes>
+      
       <Footer/>
     </div>
   );

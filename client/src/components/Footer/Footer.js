@@ -8,14 +8,14 @@ const Footer = () => {
             <FooterLinks>
               <FooterTitle>Kitchen and Code</FooterTitle>
                   <Link to="/">Home</Link>
-                  <Link to="/about">About</Link>
-                  <Link to="/blog">Blog</Link>
+                  <Link to="about">About</Link>
+                  <Link to="blogposts">Blog</Link>
             </FooterLinks>
             <FooterLinks>
               <FooterTitle>Account</FooterTitle>
-                  <Link to="/subscribe">Subscribe</Link>
-                  <Link to="/login">Login</Link>
-                  <Link to="/contact">Contact</Link>
+                  <Link to="subscribe">Subscribe</Link>
+                  <Link to="login">Login</Link>
+                  <Link to="contact">Contact</Link>
                 </FooterLinks>
                 <SocialMediaWrap>
                     <a  href="https://www.linkedin.com/in/angpace/"><i className="fa-brands fa-linkedin fa-lg"></i></a>
