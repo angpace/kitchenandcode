@@ -15,7 +15,7 @@ class Carousel extends React.Component {
     const { featured, getBlog } = this.props;
 
     return featured.map((post, index) => (
-      <Item key={index} onClick={(e) => console.log(e.target.alt)} data-value={index + 1}>
+      <Item key={index} data-value={index + 1}>
         <Image alt={post.title} src={post.feature} onClick={() =>getBlog(post.id)}/>
       </Item>
     ));
