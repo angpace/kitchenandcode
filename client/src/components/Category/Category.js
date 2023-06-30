@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import BlogCard from '../BlogCard/BlogCard'
-import { BlogContainer, ContainerHeading  } from "./CategoryElements.js"
+import { BlogContainer} from "./CategoryElements.js"
 import { CarouselHeading } from '../Carousel/CarouselElements'
 
 const Category = () => {

@@ -55,29 +55,10 @@ flex-direction: column;
   background-color: #960e1eb0;
 }
 
-
-.feature{
-max-width: 60%;
-padding-top: 2%;
-padding-bottom: 2%;
-}
-
 .feature_image{
-  width: 90%;
-  height: 100%;
-  object-fit: contain;
-}
-
-.blogLayContainer{
-  padding-top: 10%;
-  padding: 10%;
-  padding-bottom: 7%;
-  margin: auto;
-  max-width: 1000px;
-}
-
-.like_this_post{
-  text-align: center;
+  width: 70%;
+  height: 70%;
+  padding-bottom: 2%;
 }
 
 .like_btn{
