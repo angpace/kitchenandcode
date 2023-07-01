@@ -5,7 +5,7 @@
 # #
 # #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 # #   Character.create(name: 'Luke', movie: movies.first)
-# puts "...Seeding"
+puts "...Seeding"
 
 # Blog.destroy_all
 # User.destroy_all
@@ -26,4 +26,4 @@
 
 # # comment_test = Comment.create(user_id: user.id, blog_id: blog.id, content: "Comments coming soon!" )
 
-# puts "Done seeding!"
+puts "Done seeding!"

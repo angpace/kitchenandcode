@@ -53,7 +53,7 @@ const NavBar = ({ currentUser, handleLogOut }) => {
               <Offcanvas.Body style={{ backgroundColor: '#fffef2' }}>
                 <Nav className="navbar-nav ms-auto px-3">
                   <NavDropdown title="Join" id={`offcanvasNavbarDropdown-expand-${expand}`}>
-                    {currentUser ? (
+                    {currentUser ? 
                       <>
                         <NavDropdown.Item
                           className="dropdown-item"
@@ -66,16 +66,13 @@ const NavBar = ({ currentUser, handleLogOut }) => {
                         <NavDropdown.Divider />
                         <NavDropdown.Item
                           className="dropdown-item"
-                          as={Link}
-                          to="/"
-                          onClick={() => {
-                            handleLogOut();
-                          }}
+                          href='/'
+                          onClick={handleLogOut}
                         >
                           Logout
                         </NavDropdown.Item>
                       </>
-                    ) : (
+                     : 
                       <>
                         <NavDropdown.Item
                           className="dropdown-item"
@@ -95,7 +92,7 @@ const NavBar = ({ currentUser, handleLogOut }) => {
                           Login
                         </NavDropdown.Item>
                       </>
-                    )}
+                    }
                   </NavDropdown>
                   <Nav.Link as={Link} to="/" onClick={handleLinkClick}>
                     Home
