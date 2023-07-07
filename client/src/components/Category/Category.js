@@ -9,11 +9,13 @@ const Category = () => {
     const [blogs, setBlogs] = useState([])
 
     useEffect(() => {
-        fetch(`/${params.id}`)
+        fetch(`blogs/${params.id}`)
         .then(res => res.json())
         .then(blogs => setBlogs(blogs))
     }, [])
     const mapBlogs = blogs.map((b) => <BlogCard b={b} key={b.id}/>)
+
+    console.log(blogs)
   return (
     <BlogContainer>
     <CarouselHeading>Blogs about {params.id}</CarouselHeading>
