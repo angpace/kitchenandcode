@@ -61,14 +61,14 @@ function App() {
         {/* Routes */}
         <Routes>
           <Route path="/" element={<Home/>} />
-          <Route path="about" element={<About/>}/>
-          <Route path="contact" element={<Contact/>}/>
-          <Route path="blogposts" element={<Blogs currentUser={currentUser}/>} />
-          <Route path="blogs/:id" element={<Category/>} />
-          <Route path="login" element={<Login onLogin={onLogin}/>} />
-          <Route path=":id" element={<BlogLay currentUser={currentUser}/>} />
-          <Route path="subscribe" element={<Subscribe/>} />
-          <Route path="your_account" element={<Manage currentUser={currentUser} toast={toast} Toaster={Toaster}/>} />
+          <Route path="/about" element={<About/>}/>
+          <Route path="/contact" element={<Contact/>}/>
+          <Route path="/blogposts" element={<Blogs currentUser={currentUser}/>} />
+          <Route path="/blogs/:id" element={<Category/>} />
+          <Route path="/login" element={<Login onLogin={onLogin}/>} />
+          <Route path="/:id" element={<BlogLay currentUser={currentUser}/>} />
+          <Route path="/subscribe" element={<Subscribe/>} />
+          <Route path="/your_account" element={<Manage currentUser={currentUser} toast={toast} Toaster={Toaster}/>} />
           </Routes>
       
       <Footer/>
