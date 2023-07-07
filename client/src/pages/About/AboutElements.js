@@ -5,7 +5,7 @@ background-color: #fffef2;
 padding: 10%;
 display: flex;
 justify-content: space-between;
-max-height: 800px;
+max-height: 650px;
 max-width: 1600px;
 align-items: center;
 
