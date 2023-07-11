@@ -16,7 +16,9 @@ class UsersController < ApplicationController
 
     def create
         user = User.create!(user_params)
+        angela = User.find_by(email: "angpace13@gmail.com")
         user.welcome
+        angela.new_sub(user)
         render json: user
         rescue ActiveRecord::RecordInvalid => e
             render json: { error: e.record.errors.full_messages }, status: :unprocessable_entity

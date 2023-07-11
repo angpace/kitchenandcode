@@ -16,11 +16,11 @@ class User < ApplicationRecord
         from = Email.new(email: 'welcome.kitchenandcode@gmail.com')
         to = Email.new(email: "#{self.email}")
         subject = 'Welcome!'
-        content = Content.new(type: 'text/plain', value: "Hi, there #{self.name},
+        content = Content.new(type: 'text/plain', value: "Hi there #{self.name},
 
-I wanted to personally welcome you to Kitchen and Code! The journey from Pastry Chef to Software Engineer has been challenging, exciting and fufilling. I'm looking forward to sharing that journey with you! As a subscriber, you'll be the first to know about New Blog Posts.
+I wanted to personally welcome you to Kitchen and Code. The journey from Pastry Chef to Software Engineer has been a challenging, exciting and fufilling one and I'm looking forward to sharing that journey with you! As a subscriber, you'll be the first to know about new posts.
 
-I look forward to getting to know you better! 
+Thanks for joining me,  
 Angela Pace
 Software Engineer | Kitchenandcode.com
         ")
@@ -34,27 +34,46 @@ Software Engineer | Kitchenandcode.com
 
     end
 
-    # def new_blog (blog)
+    def new_sub(subscriber)
         
-    #     from = Email.new(email: 'welcome.kitchenandcode@gmail.com')
-    #     to = Email.new(email: "#{self.email}")
-    #     subject = "#{blog.title} is up!"
-    #     content = Content.new(type: 'text/plain', value: "Hi, there #{self.name}!  
-    #     A new blog, #{blog.title}, is up. Check it out!
+        from = Email.new(email: 'welcome.kitchenandcode@gmail.com')
+        to = Email.new(email: "#{self.email}")
+        subject = 'Welcome a new subscriber!'
+        content = Content.new(type: 'text/plain', value: "Hi #{self.name},
 
-    #     Best, 
-    #     Angela Pace
-    #     Content Creater | Kitchenandcode.com
-    #     ")
-    #     mail = Mail.new(from, subject, to, content)
+We have a new subscriber! Welcome #{subscriber.name}.
+        ")
+        mail = Mail.new(from, subject, to, content)
         
-    #     sg = SendGrid::API.new(api_key: Rails.application.credentials.sendgrid_api)
-    #     response = sg.client.mail._('send').post(request_body: mail.to_json)
-    #     puts response.status_code
-    #     puts response.body
-    #     puts response.headers
+        sg = SendGrid::API.new(api_key: Rails.application.credentials.sendgrid_api)
+        response = sg.client.mail._('send').post(request_body: mail.to_json)
+        puts response.status_code
+        puts response.body
+        puts response.headers
 
-    # end
+    end
+
+    def new_blog (blog)
+        
+        from = Email.new(email: 'welcome.kitchenandcode@gmail.com')
+        to = Email.new(email: "#{self.email}")
+        subject = "#{blog.title} is up!"
+        content = Content.new(type: 'text/plain', value: "Hi, there #{self.name}!  
+        A new blog, #{blog.title}, is up. Check it out!
+
+        Best, 
+        Angela Pace
+        Content Creater | Kitchenandcode.com
+        ")
+        mail = Mail.new(from, subject, to, content)
+        
+        sg = SendGrid::API.new(api_key: Rails.application.credentials.sendgrid_api)
+        response = sg.client.mail._('send').post(request_body: mail.to_json)
+        puts response.status_code
+        puts response.body
+        puts response.headers
+
+    end
 
 
 
