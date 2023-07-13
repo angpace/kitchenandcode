@@ -10,7 +10,8 @@ padding: 10%;
 background-color: #fffef2;
 
 @media screen and (max-width: 400px){
-    padding: 7% 0% 7% 0%
+    padding: 7% 0% 7% 0%;
+    margin-top: 30px;
 }
 ` 
 export const Contain = styled.div`

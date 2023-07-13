@@ -5,7 +5,11 @@
   font-family: 'Pathway Extreme', sans-serif;
 } 
 
-html {background-color: #fffef2;}
+html {background-color: #fffef2; margin-top: 30px;}
+
+/* .nav{
+border-bottom: thin solid;
+} */
 
 .home{
 display: flex;

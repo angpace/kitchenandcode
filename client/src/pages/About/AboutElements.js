@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const AboutContainer = styled.div`
 background-color: #fffef2;
+/* margin-top: 30px; */
 padding: 10%;
 display: flex;
 justify-content: space-between;
@@ -11,6 +12,7 @@ align-items: center;
 
 @media screen and (max-width: 400px) {
     flex-direction: column;
+    margin-top: 30px;
     max-height: 100%;
 }
 `

@@ -13,6 +13,7 @@ export const ConstructionPage = styled.div`
     flex-direction: column;
     max-height: 100%;
     padding: 2px;
+    margin-top: 30px;
 }
 `
 

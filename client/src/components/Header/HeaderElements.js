@@ -5,7 +5,8 @@ border-top: thin solid;
 border-bottom: thin solid;
 padding: 10%;
 background-color: #333333;
-color: #fffef2
+color: #fffef2;
+margin-top: 26px;
 
 `
 

@@ -15,13 +15,14 @@ const NavBar = ({ currentUser, handleLogOut }) => {
   };
 
   return (
-    <div>
+    <div >
       {['sm'].map((expand) => (
         <Navbar
           key={expand}
           expand={expand}
           expanded={expanded}
-          style={{ backgroundColor: '#fffef2' }}
+          style={{ backgroundColor: '#fffef2', borderBottom: 'thin solid' }}
+          fixed="top"
         >
           <Container fluid>
             <a className="navbar-brand" href="/">
