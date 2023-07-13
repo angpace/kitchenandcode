@@ -56,7 +56,7 @@ We have a new subscriber! Welcome #{subscriber.name}.
     # def new_blog (blog)
         
     #     from = Email.new(email: 'welcome.kitchenandcode@gmail.com')
-    #     to = Email.new(email: "#{self.email}")
+    #     to = Email.new(email: users.map(&:email))
     #     subject = "#{blog.title} is up!"
     #     content = Content.new(type: 'text/plain', value: "Hi, there #{self.name}!  
     #     A new blog, #{blog.title}, is up. Check it out!
