@@ -6,7 +6,7 @@ import Login from './pages/SubscribeandLogin/Login'
 import { useEffect, useState } from 'react';
 import BlogLay from './components/BlogLay/BlogLay';
 import Nav from "./components/NavBar/Navbar.js"
-import Manage from './components/Manage';
+import Manage from './pages/SubscribeandLogin/Manage';
 import Subscribe from './pages/SubscribeandLogin/Subscribe'
 import toast, { Toaster } from 'react-hot-toast';
 import About from "./pages/About/About"
