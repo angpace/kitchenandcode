@@ -1,4 +1,5 @@
 import {useNavigate} from "react-router-dom"
+import { LoginContainer } from "./LoginElements"
 
 function Manage({currentUser, toast, Toaster}){
     const navigate = useNavigate()
@@ -31,14 +32,14 @@ function Manage({currentUser, toast, Toaster}){
     }
    
     return(
-        <>
+        <LoginContainer>
         <Toaster
               position="bottom-right"
               reverseOrder={false}
             />
         <h3 className="blog_title">Hi, {currentUser.name}!</h3>
         <button className="submit_subscription" onClick={deleteSubscription}>Unsubscribe</button>
-        </>
+        </LoginContainer>
     )
     
 
