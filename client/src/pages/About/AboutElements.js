@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const AboutContainer = styled.div`
 background-color: #fffef2;
-/* margin-top: 30px; */
+margin-top: 50px;
 padding: 10%;
 display: flex;
 justify-content: space-between;

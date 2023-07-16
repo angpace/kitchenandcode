@@ -4,7 +4,7 @@ export const BlogLeadContainer = styled.div`
 display: flex;
 justify-content: center;
 justify-content: space-around;
-padding: 7%;
+padding: 4%;
 background-color: #fffef2;
 
 @media screen and (max-width: 400px){

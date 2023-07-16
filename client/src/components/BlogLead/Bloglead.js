@@ -13,7 +13,7 @@ const Bloglead = () => {
         }
     }
   return (
-    <>
+    <div style={{backgroundColor: "#fffef2"}}>
     <CarouselHeading>Read More</CarouselHeading>
     <BlogLeadContainer>
         <BlogCategory onClick={(e) => bringToBlogs(e)}>
@@ -25,7 +25,7 @@ const Bloglead = () => {
             <BlogCategoryContent>Food</BlogCategoryContent>
         </BlogCategory>
     </BlogLeadContainer>
-    </>
+    </div>
   )
 }
 
