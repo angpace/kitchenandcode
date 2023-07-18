@@ -2,6 +2,9 @@ import React from 'react'
 
 const Recipe = ({recipe}) => {
 
+    if (recipe.length < 1){
+        return <h1>LOADING</h1>
+    }
     let ingredients = recipe.ingredients.map((i) => {
         return <li>{i}</li>
     })
