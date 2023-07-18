@@ -58,6 +58,11 @@ function BlogLay ({currentUser}){
                 <Content>{blogPost.title}</Content>
                 <br/>
                 <BodyContainer>
+                {recipe? 
+                <button style={{float: "right"}}>Jump to recipe</button>
+                :
+                <></>
+            }
                 <p>{blogPost.paragraph_one}</p>
                 <p>{blogPost.paragraph_two}</p>
                 <img className="feature_image" alt="imageOne" src={blogPost.image_one} />
