@@ -8,8 +8,8 @@
 puts "...Seeding"
 # Blog.destroy_all
 
-    
-# # Blog.destroy_all
+
+# Blog.destroy_all
 # User.destroy_all
 
 # angela = User.create!(name: "Angela Pace", email: "angpace13@gmail.com", password_digest: "kitchcode")
@@ -24,7 +24,7 @@ puts "...Seeding"
 #  date: "June 30th, 2023", category: "tech", likes: 0, keywords: "coding kitchen about", featured: true)
 
 # test = Recipe.create!(title: "Peanut Butter and Jelly", ingredients: ["peanut butter", "jelly", "bread"], method: ["1. Toast two slices of bread", "2. Take knife and spread peanut butter on one slice.", 
-# "3. Do the same with the jelly on the other piece.", "4. Put bread together and enjoy!"], blog_id: first.id)
+# "3. Do the same with the jelly on the other piece.", "4. Put bread together and enjoy!"], blog_id: first.id, photo: "https://media.istockphoto.com/id/469700577/photo/peanut-butter.jpg?s=612x612&w=0&k=20&c=F9w5f4UohZFXRuJL06vIp4Hq8vq1I0C79EXMHcWXl68=")
 
 
 
