@@ -6,8 +6,10 @@
 # #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 # #   Character.create(name: 'Luke', movie: movies.first)
 puts "...Seeding"
-
 # Blog.destroy_all
+
+    
+# # Blog.destroy_all
 # User.destroy_all
 
 # angela = User.create!(name: "Angela Pace", email: "angpace13@gmail.com", password_digest: "kitchcode")
@@ -20,6 +22,9 @@ puts "...Seeding"
 #  paragraph_two: "Being a former pastry chef, kitchen and code is a bit of a passion project for me. I've learnt a lot building it and I'm excited to continue to learn as I add new features.", image_one: "https://images.pexels.com/photos/6177607/pexels-photo-6177607.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", 
 # paragraph_three: "Thanks for joining me on this journey. I hope it brings you at least half of the joy it brings me!",
 #  date: "June 30th, 2023", category: "tech", likes: 0, keywords: "coding kitchen about", featured: true)
+
+# test = Recipe.create!(title: "Peanut Butter and Jelly", ingredients: ["peanut butter", "jelly", "bread"], method: ["1. Toast two slices of bread", "2. Take knife and spread peanut butter on one slice.", 
+# "3. Do the same with the jelly on the other piece.", "4. Put bread together and enjoy!"], blog_id: first.id)
 
 
 
