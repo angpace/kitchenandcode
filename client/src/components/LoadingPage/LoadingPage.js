@@ -1,8 +1,9 @@
 import React from 'react'
+import { SpinnerContainer } from './LoadingElements'
 
 const LoadingPage = () => {
   return (
-   <div class="d-flex justify-content-center">
+   <SpinnerContainer>
         <div class="spinner-grow text-light" role="status">
             <span class="sr-only">Loading...</span>
             </div>
@@ -12,7 +13,7 @@ const LoadingPage = () => {
                     <div class="spinner-grow text-light" role="status">
                         <span class="sr-only">Loading...</span>
                     </div>
-    </div>
+    </SpinnerContainer>
   )
 }
 
