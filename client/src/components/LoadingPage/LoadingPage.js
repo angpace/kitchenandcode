@@ -4,15 +4,12 @@ import { SpinnerContainer } from './LoadingElements'
 const LoadingPage = () => {
   return (
    <SpinnerContainer>
-        <div class="spinner-grow text-light" role="status">
-            <span class="sr-only">Loading...</span>
+        <div className="spinner-grow spinner-grow-sm text-dark" role="status">
             </div>
-                <div class="spinner-grow text-dark" role="status">
-                    <span class="sr-only">Loading...</span>
-                </div>
-                    <div class="spinner-grow text-light" role="status">
-                        <span class="sr-only">Loading...</span>
-                    </div>
+            <div class="spinner-grow spinner-grow-sm text-dark" role="status"> 
+            </div>
+            <div class="spinner-grow spinner-grow-sm text-dark" role="status">
+            </div>
     </SpinnerContainer>
   )
 }

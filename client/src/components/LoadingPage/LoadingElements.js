@@ -7,4 +7,5 @@ align-items: center;
 justify-content: center;
 padding: 15%;
 background-color:#fffef2;
+justify-content: space-around;
 `

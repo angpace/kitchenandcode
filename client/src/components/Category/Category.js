@@ -15,7 +15,7 @@ const Category = () => {
     }, [])
     const mapBlogs = blogs.map((b) => <BlogCard b={b} key={b.id}/>)
 
-    console.log(blogs)
+  
   return (
     <BlogContainer>
     <CarouselHeading>Blogs about {params.id}</CarouselHeading>
