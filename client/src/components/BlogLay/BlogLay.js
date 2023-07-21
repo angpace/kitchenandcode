@@ -5,6 +5,7 @@ import PostComment from '../PostComment';
 import { ConstructionPage, Content, ContentContainer, Image, ImageContainer } from '../Construction/UnderCElements';
 import { BodyContainer, JumpToRecipe, ButtonContainer } from './BloglayElements';
 import Recipe from '../Recipes/Recipe';
+import LoadingPage from '../LoadingPage/LoadingPage'
 
 function BlogLay ({currentUser}){
     let { id } = useParams();
@@ -26,6 +27,10 @@ function BlogLay ({currentUser}){
             }
           });
       }, []);
+
+      if (blogPost.length < 1){
+        return <LoadingPage/>
+      }
 
     function addLikesToPost(){
        let newLikeCount = blogPost.likes += 1
