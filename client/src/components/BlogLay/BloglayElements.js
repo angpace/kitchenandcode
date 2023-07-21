@@ -9,3 +9,16 @@ padding: 4%;
 }
 `
 
+export const ButtonContainer = styled.div`
+padding-bottom: 10%;
+
+@media screen and (max-width: 440px){
+    padding-bottom: 15%;  
+}
+`
+
+export const JumpToRecipe = styled.button`
+float: right;
+`
+
+

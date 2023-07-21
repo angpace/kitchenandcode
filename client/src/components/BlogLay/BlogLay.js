@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import Comments from '../Comments';
 import PostComment from '../PostComment';
 import { ConstructionPage, Content, ContentContainer, Image, ImageContainer } from '../Construction/UnderCElements';
-import { BodyContainer } from './BloglayElements';
+import { BodyContainer, JumpToRecipe, ButtonContainer } from './BloglayElements';
 import Recipe from '../Recipes/Recipe';
 
 function BlogLay ({currentUser}){
@@ -59,10 +59,13 @@ function BlogLay ({currentUser}){
                 <br/>
                 <BodyContainer>
                 {recipe? 
-                <button style={{float: "right"}}>Jump to recipe</button>
+                <ButtonContainer>
+                <JumpToRecipe>Jump to recipe</JumpToRecipe>
+                </ButtonContainer>
                 :
                 <></>
             }
+                
                 <p>{blogPost.paragraph_one}</p>
                 <p>{blogPost.paragraph_two}</p>
                 <img className="feature_image" alt="imageOne" src={blogPost.image_one} />
