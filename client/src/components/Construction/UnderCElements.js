@@ -22,14 +22,14 @@ width: 55%;
 max-height: 650px;
    overflow-y: scroll;
 align-items: center;
-/* ::-webkit-scrollbar{
-    width: 20px;
-} */
 /* padding-bottom: 2px; */
 
 
 @media screen and (max-width: 900px){
-    width: 97%;
+    width: 95%;
+    /* height: 100%;
+    overflow-y: inherit; */
+   
 }
 `
 
