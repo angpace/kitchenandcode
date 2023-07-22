@@ -32,6 +32,14 @@ function BlogLay ({currentUser}){
         return <LoadingPage/>
       }
 
+      function scrollToSection(sectionId) {
+        console.log("Hi")
+        const section = document.getElementById(sectionId);
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+
     function addLikesToPost(){
        let newLikeCount = blogPost.likes += 1
        setLikes(newLikeCount)
@@ -64,9 +72,12 @@ function BlogLay ({currentUser}){
                 <br/>
                 <BodyContainer>
                 {recipe? 
+
+                <section id="recipe">
                 <ButtonContainer>
-                <JumpToRecipe>Jump to recipe</JumpToRecipe>
+                <JumpToRecipe onClick={() => scrollToSection(id)}>Jump to recipe</JumpToRecipe>
                 </ButtonContainer>
+                </section>
                 :
                 <></>
             }
