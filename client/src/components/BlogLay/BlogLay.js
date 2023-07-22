@@ -33,7 +33,6 @@ function BlogLay ({currentUser}){
       }
 
       function scrollToSection(sectionId) {
-        console.log("Hi")
         const section = document.getElementById(sectionId);
         if (section) {
           section.scrollIntoView({ behavior: 'smooth' });
@@ -73,11 +72,11 @@ function BlogLay ({currentUser}){
                 <BodyContainer>
                 {recipe? 
 
-                <section id="recipe">
+               
                 <ButtonContainer>
-                <JumpToRecipe onClick={() => scrollToSection(id)}>Jump to recipe</JumpToRecipe>
+                <JumpToRecipe onClick={() => scrollToSection("recipe")}>Jump to recipe</JumpToRecipe>
                 </ButtonContainer>
-                </section>
+              
                 :
                 <></>
             }
@@ -88,7 +87,10 @@ function BlogLay ({currentUser}){
                 <p>{blogPost.paragraph_three}</p>
                 {recipe? 
                 
+                <section id="recipe">
                 <Recipe recipe={recipe}/>
+                </section>
+
                 :
                 <></>
             }

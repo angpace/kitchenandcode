@@ -1,6 +1,6 @@
 import React from 'react'
 import { Content, } from '../Construction/UnderCElements'
-import { MiniTitle, RecipeImage } from './RecipeElements'
+import { MiniTitle, RecipeImage, RecipeContainer } from './RecipeElements'
 
 const Recipe = ({recipe}) => {
 
@@ -15,7 +15,7 @@ const Recipe = ({recipe}) => {
         return <p>{m}</p>
     })
   return (
-    <div>
+    <RecipeContainer>
         <Content>{recipe.title}</Content>
             <RecipeImage src={recipe.photo}/>
         <MiniTitle>Ingredients</MiniTitle>
@@ -24,7 +24,7 @@ const Recipe = ({recipe}) => {
         </ul>
         <MiniTitle>Method</MiniTitle>
         {method}
-    </div>
+    </RecipeContainer>
   )
 }
 
