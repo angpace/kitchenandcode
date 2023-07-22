@@ -6,9 +6,9 @@ const LoadingPage = () => {
    <SpinnerContainer>
         <div className="spinner-grow spinner-grow-sm text-dark" role="status">
             </div>
-            <div class="spinner-grow spinner-grow-sm text-dark" role="status"> 
+            <div className="spinner-grow spinner-grow-sm text-dark" role="status"> 
             </div>
-            <div class="spinner-grow spinner-grow-sm text-dark" role="status">
+            <div className="spinner-grow spinner-grow-sm text-dark" role="status">
             </div>
     </SpinnerContainer>
   )

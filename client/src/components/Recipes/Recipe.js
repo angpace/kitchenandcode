@@ -8,11 +8,11 @@ const Recipe = ({recipe}) => {
         return <h1>LOADING</h1>
     }
     let ingredients = recipe.ingredients.map((i) => {
-        return <li>{i}</li>
+        return <li key={i}>{i}</li>
     })
 
     let method = recipe.method.map((m) => {
-        return <p>{m}</p>
+        return <p key={m}>{m}</p>
     })
   return (
     <RecipeContainer>
