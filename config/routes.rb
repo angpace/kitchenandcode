@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   resources :comments
   resources :users
   resources :blogs
+  resources :recipes
   post "/login", to: "sessions#create"
   delete "/logout", to: "sessions#destroy"
   get "/me", to: "users#show"

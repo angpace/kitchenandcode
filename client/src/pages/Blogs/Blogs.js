@@ -24,7 +24,7 @@ function Blogs ({currentUser}) {
     const filteredBlogs = blogs.filter((b) => b.keywords.toLowerCase().includes(search.toLowerCase()))
 
     const createBlogCards = filteredBlogs.map((b) => { 
-        return ( < BlogCard handleDelete={handleDelete} currentUser={currentUser} b={b} key={b.id} /> )
+        return ( < BlogCard handleDelete={handleDelete} currentUser={currentUser} b={b} key={b.id} rerender={rerender}/> )
     })
 
     function rerender (data){

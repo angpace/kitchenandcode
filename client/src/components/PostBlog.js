@@ -15,6 +15,7 @@ function PostBlog ({rerender, currentUser}) {
         keywords: ""
     })
 
+
     function handleChange(e) {
         const { name, value } = e.target 
         setNewPost({ ...newPost, [name]: value })
