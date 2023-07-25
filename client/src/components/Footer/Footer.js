@@ -1,21 +1,27 @@
 import React from 'react'
 import { FooterFlex, FooterContent, FooterLinks, Link, FooterTitle, SocialMediaWrap } from './FooterElements'
+import { animateScroll as scroll } from 'react-scroll';
+
 
 const Footer = () => {
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  } 
+
   return (
     <FooterFlex>
         <FooterContent>
             <FooterLinks>
               <FooterTitle>Kitchen and Code</FooterTitle>
-                  <Link to="/">Home</Link>
-                  <Link to="about">About</Link>
-                  <Link to="blogposts">Blog</Link>
+                  <Link to="/" onClick={toggleHome}>Home</Link>
+                  <Link to="about" onClick={toggleHome}>About</Link>
+                  <Link to="blogposts" onClick={toggleHome}>Blog</Link>
             </FooterLinks>
             <FooterLinks>
               <FooterTitle>Account</FooterTitle>
-                  <Link to="subscribe">Subscribe</Link>
-                  <Link to="login">Login</Link>
-                  <Link to="contact">Contact</Link>
+                  <Link to="subscribe" onClick={toggleHome}>Subscribe</Link>
+                  <Link to="login" onClick={toggleHome}>Login</Link>
+                  <Link to="contact" onClick={toggleHome}>Contact</Link>
                 </FooterLinks>
                 <SocialMediaWrap>
                     <a  href="https://www.linkedin.com/in/angpace/"><i className="fa-brands fa-linkedin fa-lg"></i></a>
