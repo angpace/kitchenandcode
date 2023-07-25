@@ -3,6 +3,7 @@ import { BlogLeadContainer, BlogCategory, Image, BlogCategoryContent } from './B
 import { CarouselHeading } from '../Carousel/CarouselElements'
 import { useNavigate } from 'react-router-dom'
 
+
 const Bloglead = () => {
     const nav = useNavigate()
 

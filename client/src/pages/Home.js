@@ -3,6 +3,7 @@ import Bloglead from "../components/BlogLead/Bloglead";
 import Carousel from "../components/Carousel/Carousel";
 import Header from "../components/Header/Header";
 import { useState,useEffect } from "react";
+import { animateScroll as scroll } from 'react-scroll';
  
 
 function Home () {
@@ -26,6 +27,7 @@ function Home () {
         console.log(id)
         navigate(`/${id}`)
     }
+    scroll.scrollToTop()
   }
 
     return (
