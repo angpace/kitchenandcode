@@ -64,20 +64,6 @@ function PostComment({currentUser, id}){
     <form onSubmit={submitComment}>
                     <div className="mb-3">
                         <br/>
-                            <label htmlFor="exampleFormControlInput1" 
-                                className="form-label"
-                                >Email
-                            </label>
-                            <input  
-                            type="email"
-                                name="email"
-                                className="form-control" 
-                                id="exampleFormControlInput1" 
-                                placeholder="Email"
-                                onChange={handleComment}
-                                readOnly
-                                />
-                            <small></small>
                             </div>
                             <div className="mb-3">
                                     <label htmlFor="exampleFormControlTextarea1" 
