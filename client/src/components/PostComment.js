@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
 
-function PostComment({currentUser, id}){
+function PostComment({currentUser, id, handleCommentUpdate}){
     const [comment, setComment] = useState({
         email: "",
         content: "",
@@ -27,7 +27,7 @@ function PostComment({currentUser, id}){
            })
         })
         .then(res => res.json())
-        .then(data => console.log(data))
+        .then(data => handleCommentUpdate(data))
         toast.success("Thank you for your comment!")
 
     }
