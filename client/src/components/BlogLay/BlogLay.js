@@ -14,7 +14,7 @@ function BlogLay ({currentUser}){
     const [likes, setLikes] = useState(blogPost.likes)
     const [isLiked, setIsLiked] = useState(false)
     const [leaveAComment, setLeaveAComment] = useState(false)
-    // const [updatedComments, setUpdatedComments] = useState([])
+    const [updatedComments, setUpdatedComments] = useState([])
 
 
     useEffect(() => {
@@ -24,6 +24,9 @@ function BlogLay ({currentUser}){
             setBlogPost(data);
             if (data.recipe !== undefined) {
               setRecipe(data.recipe);
+            }
+            if (data.comments !== undefined) {
+              setUpdatedComments(data.comments);
             }
           });
       }, []);
@@ -53,11 +56,15 @@ function BlogLay ({currentUser}){
          .then(res => res.json())
     }
 
+    function handleCommentUpdate(data){
+      setUpdatedComments([data, ...blogPost.comments])
+    }
+
     let displayComments = ["This post has no comments yet."]
 
 
     if (blogPost && blogPost.comments !== undefined){
-      displayComments = blogPost.comments.map((c) => {
+      displayComments = updatedComments.map((c) => {
         return  <Comments key={c.id} c={c} /> }) 
       }
      
@@ -111,7 +118,7 @@ function BlogLay ({currentUser}){
                      {leaveAComment?
                      
                         <>
-                            <PostComment id={id} currentUser={currentUser}/>
+                            <PostComment id={id} currentUser={currentUser} handleCommentUpdate={handleCommentUpdate}/>
                         </>
                         :
                         <></>
