@@ -21,7 +21,6 @@ function Login ({onLogin}){
 
       function handleLogin(e) {
         e.preventDefault();
-        console.log(login)
         fetch("/login", {
           method: "POST",
           headers: {

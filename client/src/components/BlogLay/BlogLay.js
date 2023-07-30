@@ -57,15 +57,22 @@ function BlogLay ({currentUser}){
     }
 
     function handleCommentUpdate(data){
-      setUpdatedComments([data, ...blogPost.comments])
+      setUpdatedComments((prevComments) => [data, ...prevComments]);
     }
+
+    function handleDelete(id){
+      let filteredComment = updatedComments.filter((c) => c.id !== id)
+      setUpdatedComments(filteredComment)
+    }
+
+    
 
     let displayComments = ["This post has no comments yet."]
 
 
     if (blogPost && blogPost.comments !== undefined){
       displayComments = updatedComments.map((c) => {
-        return  <Comments key={c.id} c={c} /> }) 
+        return  <Comments key={c.id} c={c} currentUser={currentUser} handleDelete={handleDelete}/> }) 
       }
      
     return(
