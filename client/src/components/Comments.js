@@ -17,6 +17,7 @@ function Comments({c, currentUser, handleDelete}){
     }
 
     let me = "angpace13@gmail.com"
+    
     if(currentUser){
         if(currentUser.id === c.user_id || currentUser.email === me ){
             return <div className="card">
@@ -28,8 +29,6 @@ function Comments({c, currentUser, handleDelete}){
           </div> 
         }
     }
-    
-
     
     return( 
     <div className="card">

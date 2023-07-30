@@ -11,7 +11,12 @@ export const MiniTitle = styled.h3`
 padding: 2%;
 `
 
+export const RecipeImageContainer = styled.div`
+display: flex;
+justify-content: center;
+padding: 5%;
+`
+
 export const RecipeImage = styled.img`
-width: 100%;
-padding: 2%;
+width: 70%;
 `
