@@ -24,7 +24,6 @@ function Home () {
 
   function getBlog(id){
     if (id){
-        console.log(id)
         navigate(`/${id}`)
     }
     scroll.scrollToTop()

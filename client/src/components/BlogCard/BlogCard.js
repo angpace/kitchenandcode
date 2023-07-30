@@ -37,8 +37,6 @@ function BlogCard ({b, currentUser, handleDelete, rerender}) {
       }
     }
 
- console.log(b)
-
     function handleSubmit(e) {
         e.preventDefault()
            fetch('/recipes', {

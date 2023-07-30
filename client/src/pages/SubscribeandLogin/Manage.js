@@ -14,8 +14,6 @@ function Manage({currentUser, toast, Toaster}){
         )
     }
 
-    console.log(currentUser)
-
     function deleteSubscription (e){
         e.preventDefault()
         fetch(`users/${currentUser.id}`, {
