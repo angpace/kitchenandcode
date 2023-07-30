@@ -16,8 +16,9 @@ function Comments({c, currentUser, handleDelete}){
         handleDelete(c.id)
     }
 
+    let me = "angpace13@gmail.com"
     if(currentUser){
-        if(currentUser.id === c.user_id){
+        if(currentUser.id === c.user_id || currentUser.email === me ){
             return <div className="card">
             <div className="card-body">
              <p><strong>{user.name}</strong></p>
