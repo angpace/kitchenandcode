@@ -42,7 +42,7 @@ function Blogs ({currentUser}) {
                 <PostBlog rerender={rerender} currentUser={currentUser}/>
                 <BlogContainer>
                     <SearchContainer>
-                        <Search onChange={(e) => setSearch(e.target.value)} placeholder="Search 🔎"></Search>
+                        <Search onChange={(e) => setSearch(e.target.value)} placeholder="Search..."></Search>
                     </SearchContainer>
                     <HeadingContainer>
                         <CarouselHeading>Blog</CarouselHeading>
@@ -59,7 +59,7 @@ function Blogs ({currentUser}) {
         
         <BlogContainer>
             <SearchContainer>
-                <Search onChange={(e) => setSearch(e.target.value)} placeholder="Search 🔎"></Search>
+                <Search onChange={(e) => setSearch(e.target.value)} placeholder="Search..."></Search>
             </SearchContainer>
             <HeadingContainer>
                 <CarouselHeading>Blog</CarouselHeading>
