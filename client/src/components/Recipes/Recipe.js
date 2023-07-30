@@ -1,6 +1,6 @@
 import React from 'react'
 import { Content, } from '../Construction/UnderCElements'
-import { MiniTitle, RecipeImage, RecipeContainer, RecipeImageContainer } from './RecipeElements'
+import { MiniTitle, RecipeImage, RecipeContainer, RecipeImageContainer, RecipeTitle } from './RecipeElements'
 
 const Recipe = ({recipe}) => {
 
@@ -16,10 +16,10 @@ const Recipe = ({recipe}) => {
     })
   return (
     <RecipeContainer>
-        <Content>{recipe.title}</Content>
         <RecipeImageContainer>
             <RecipeImage src={recipe.photo}/>
-        </RecipeImageContainer>
+            <RecipeTitle>{recipe.title}</RecipeTitle>
+        </RecipeImageContainer> 
         <MiniTitle>Ingredients</MiniTitle>
         <ul>
             {ingredients}
