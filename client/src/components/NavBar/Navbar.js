@@ -6,7 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import pom from './pom2.png';
-// import { animateScroll as scroll } from 'react-scroll';
+import { animateScroll as scroll } from 'react-scroll';
 
 
 
@@ -15,6 +15,7 @@ const NavBar = ({ currentUser, handleLogOut }) => {
 
   const handleLinkClick = () => {
     setExpanded(false);
+    scroll.scrollToTop();
   };
 
   return (
