@@ -12,7 +12,7 @@ padding: 5%;
 }
 `
 export const MiniTitle = styled.h3`
-padding: 2%;
+padding-top: 5%;
 `
 
 export const RecipeImageContainer = styled.div`
@@ -38,9 +38,12 @@ font-size: 22px;
 export const RecipeInformation = styled.div`
 display: flex;
 flex-direction: row;
-height: 20px;
 justify-content: center;
 /* justify-content: space-around */
+
+@media screen and (max-width: 440px){
+    flex-direction: column;
+}
 
 `
 export const RecipeDetails = styled.p`

@@ -12,7 +12,9 @@ function BlogCard ({b, currentUser, handleDelete, rerender}) {
         ingredients: [],
         method: [],
         blog_id: b.id,
-        photo: ""
+        photo: "",
+        time: "",
+        servings: 0,
     })
   
     function getBlogPost (b) {
@@ -47,7 +49,9 @@ function BlogCard ({b, currentUser, handleDelete, rerender}) {
             ingredients: recipe.ingredients,
             blog_id: b.id,
             method: recipe.method,
-            photo: recipe.photo
+            photo: recipe.photo,
+            time: recipe.time,
+            servings: recipe.servings
            })
         })
            .then(r => {
@@ -102,6 +106,16 @@ function BlogCard ({b, currentUser, handleDelete, rerender}) {
                               onChange={handleChange}
                               placeholder="Photo"
                               name="photo"
+                          />
+                          <input className='short_input'
+                              onChange={handleChange}
+                              placeholder="Time"
+                              name="time"
+                          />
+                           <input className='short_input'
+                              onChange={handleChange}
+                              placeholder="Servings"
+                              name="servings"
                           />
                           <button type="submit">Post Recipe</button>
                       </form> 
