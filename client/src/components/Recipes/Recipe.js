@@ -18,8 +18,9 @@ const Recipe = ({recipe}) => {
         <RecipeImageContainer>
             <RecipeImage src={recipe.photo}/>
             <RecipeTitle>{recipe.title}</RecipeTitle>
-        </RecipeImageContainer> {
-            recipe.servings === 0 ?
+        </RecipeImageContainer> 
+        {
+            recipe.time.length < 1 ?
             <></>
             :
             <RecipeInformation>
@@ -27,6 +28,7 @@ const Recipe = ({recipe}) => {
             <RecipeDetails>Servings: {recipe.servings}</RecipeDetails>
             </RecipeInformation>
         }
+
         <MiniTitle>Ingredients</MiniTitle>
         <ul>
             {ingredients}
