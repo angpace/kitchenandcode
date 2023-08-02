@@ -1,5 +1,4 @@
 import React from 'react'
-import { Content, } from '../Construction/UnderCElements'
 import { MiniTitle, RecipeImage, RecipeContainer, RecipeImageContainer, RecipeTitle, RecipeInformation, RecipeDetails } from './RecipeElements'
 
 const Recipe = ({recipe}) => {
@@ -19,11 +18,15 @@ const Recipe = ({recipe}) => {
         <RecipeImageContainer>
             <RecipeImage src={recipe.photo}/>
             <RecipeTitle>{recipe.title}</RecipeTitle>
-        </RecipeImageContainer> 
-        {/* <RecipeInformation>
-            <RecipeDetails>Cooking time:</RecipeDetails>
-            <RecipeDetails>Servings: </RecipeDetails>
-        </RecipeInformation> */}
+        </RecipeImageContainer> {
+            recipe.servings === 0 ?
+            <></>
+            :
+            <RecipeInformation>
+            <RecipeDetails>Prep time: {recipe.time}</RecipeDetails>
+            <RecipeDetails>Servings: {recipe.servings}</RecipeDetails>
+            </RecipeInformation>
+        }
         <MiniTitle>Ingredients</MiniTitle>
         <ul>
             {ingredients}
