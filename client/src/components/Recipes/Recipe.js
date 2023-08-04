@@ -20,7 +20,7 @@ const Recipe = ({recipe}) => {
             <RecipeTitle>{recipe.title}</RecipeTitle>
         </RecipeImageContainer> 
         {
-            recipe.id < 2 ?
+            recipe.id < 3 ?
             <></>
             :
             <RecipeInformation>
