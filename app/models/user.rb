@@ -41,7 +41,9 @@ Software Engineer | Kitchenandcode.com
         subject = 'Welcome a new subscriber!'
         content = Content.new(type: 'text/plain', value: "Hi #{self.name},
 
-We have a new subscriber! Welcome #{subscriber.name}.
+We have a new subscriber! Welcome #{subscriber.name}. You can reach them at #{subscriber.email}.
+
+You have #{User.count} subscribers now. :)
         ")
         mail = Mail.new(from, subject, to, content)
         
