@@ -3,7 +3,7 @@ import BlogCard from "../../components/BlogCard/BlogCard";
 import PostBlog from "../../components/PostBlog";
 import { CarouselHeading } from "../../components/Carousel/CarouselElements";
 import { BlogContainer } from "../../components/Category/CategoryElements";
-import { SearchContainer, Search, HeadingContainer } from "./BlogElements";
+import { SearchContainer, Search, HeadingContainer, KeyWordContainer, Keywords} from "./BlogElements";
 
 function Blogs ({currentUser}) {
     const [blogs, setBlogs] = useState([])
@@ -64,6 +64,11 @@ function Blogs ({currentUser}) {
             <HeadingContainer>
                 <CarouselHeading>Blog</CarouselHeading>
                 </HeadingContainer>
+                <KeyWordContainer>
+                        <Keywords onClick={(e) => setSearch("tech")}>Tech</Keywords>
+                        <Keywords onClick={(e) => setSearch("food")}>Food</Keywords>
+                        <Keywords>Most Popular</Keywords>
+                    </KeyWordContainer>
                 {createBlogCards}
                     
         </BlogContainer>
