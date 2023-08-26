@@ -3,7 +3,7 @@ import BlogCard from "../../components/BlogCard/BlogCard";
 import PostBlog from "../../components/PostBlog";
 import { CarouselHeading } from "../../components/Carousel/CarouselElements";
 import { BlogContainer } from "../../components/Category/CategoryElements";
-import { SearchContainer, Search, HeadingContainer, KeyWordContainer, Keywords} from "./BlogElements";
+import {Search, HeadingContainer, KeyWordContainer, Keywords, WelcomeText, KeywordFlex} from "./BlogElements";
 
 function Blogs ({currentUser}) {
     const [blogs, setBlogs] = useState([])
@@ -41,9 +41,9 @@ function Blogs ({currentUser}) {
                 
                 <PostBlog rerender={rerender} currentUser={currentUser}/>
                 <BlogContainer>
-                    <SearchContainer>
+                    {/* <SearchContainer>
                         <Search onChange={(e) => setSearch(e.target.value)} placeholder="Search..."></Search>
-                    </SearchContainer>
+                    </SearchContainer> */}
                     <HeadingContainer>
                         <CarouselHeading>Blog</CarouselHeading>
                     </HeadingContainer>
@@ -58,16 +58,24 @@ function Blogs ({currentUser}) {
     return (
         
         <BlogContainer>
-            <SearchContainer>
-                <Search onChange={(e) => setSearch(e.target.value)} placeholder="Search..."></Search>
-            </SearchContainer>
             <HeadingContainer>
                 <CarouselHeading>Blog</CarouselHeading>
                 </HeadingContainer>
+                <WelcomeText>
+                    <center>Welcome!
+                        <br/>
+                        Click on keywords below or browse all blogs.
+                        </center>
+                    </WelcomeText>
                 <KeyWordContainer>
-                        <Keywords onClick={(e) => setSearch("tech")}>Tech</Keywords>
-                        <Keywords onClick={(e) => setSearch("food")}>Food</Keywords>
+                <Search onChange={(e) => setSearch(e.target.value)} placeholder="Search..."></Search>
+                    <p>OR</p>
+                    <KeywordFlex>
+                        <Keywords onClick={() => setSearch("tech")}>Tech</Keywords>
+                        <Keywords onClick={() => setSearch("food")}>Food</Keywords>
+                        <Keywords onClick={() => setSearch("recipe")}>Recipes</Keywords>
                         {/* <Keywords>Most Popular</Keywords> */}
+                        </KeywordFlex>
                     </KeyWordContainer>
                 {createBlogCards}
                     

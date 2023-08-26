@@ -1,33 +1,45 @@
 import styled from "styled-components";
 
-export const SearchContainer = styled.div`
-position: absolute;
-`
+// export const SearchContainer = styled.div`
+// position: absolute;
+// `
 
 export const Search = styled.input`
 border-style: none;
-background-color: #fffef2
+/* background-color: #fffef2; */
+/* width: 10%; */
 `
 export const HeadingContainer = styled.div`
 
-@media screen and (max-width: 500px){
-    padding-top: 10%;
-}
+/* @media screen and (max-width: 500px){
+    padding-top: 5%;
+} */
 `
 
 export const KeyWordContainer = styled.div`
 display: flex;
-width: 400px;
-/* background-color: red; */
-gap: 5px;
-/* align-items: center; */
-/* align-self: center; */
 justify-content: center;
-padding-bottom: 3%;
+padding: 3%;
+gap: 10px;
+
+@media screen and (max-width: 400px){
+    flex-direction: column;
+    /* max-width: 50%; */
+    align-items: center
+}
+`
+
+export const KeywordFlex = styled.div`
+display: flex;
+gap: 10px;
 `
 
 export const Keywords = styled.button`
-font-size: 10px;
-background-color: lightgray;
+font-size: 12px;
+/* background-color: lightgray; */
 border-style: none;
+`
+
+export const WelcomeText = styled.p`
+margin: auto;
 `
