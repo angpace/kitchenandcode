@@ -74,8 +74,8 @@ function Blogs ({currentUser}) {
                         <Keywords onClick={() => setSearch("tech")}>Tech</Keywords>
                         <Keywords onClick={() => setSearch("food")}>Food</Keywords>
                         <Keywords onClick={() => setSearch("recipe")}>Recipes</Keywords>
-                        {/* <Keywords>Most Popular</Keywords> */}
-                        </KeywordFlex>
+                        <Keywords onClick={() => setSearch("")}>All</Keywords>
+                    </KeywordFlex>
                     </KeyWordContainer>
                 {createBlogCards}
                     
