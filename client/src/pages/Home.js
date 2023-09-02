@@ -4,7 +4,7 @@ import Carousel from "../components/Carousel/Carousel";
 import Header from "../components/Header/Header";
 import { useState,useEffect } from "react";
 import { animateScroll as scroll } from 'react-scroll';
-import Subscribe from '../components/Subscribe/Subscribe'
+
  
 
 function Home () {
@@ -35,7 +35,6 @@ function Home () {
             <Header/>
             <Carousel featured={featured} getBlog={getBlog}/>   
             <Bloglead/> 
-            <Subscribe/>
         </div>
         
     )

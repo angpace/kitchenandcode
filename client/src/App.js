@@ -12,6 +12,8 @@ import About from "./pages/About/About"
 import Footer from './components/Footer/Footer';
 import Category from './components/Category/Category';
 import Contact from './pages/Contact/Contact';
+import Subscribe from './components/Subscribe/Subscribe'
+
 
 
 function App() {
@@ -70,7 +72,7 @@ function App() {
           <Route path="/your_account" element={<Manage currentUser={currentUser} toast={toast} Toaster={Toaster}/>} />
           </Routes>
       
-      
+      <Subscribe/>
       <Footer/>
     </div>
   );

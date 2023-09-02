@@ -2,7 +2,7 @@ import { useState } from "react";
 import toast, { Toaster } from 'react-hot-toast';
 import { useNavigate } from "react-router-dom";
 // import { FormContainer } from "../../pages/Contact/ContactElements";
-import { SubscribeContainer, FormContainer, SubscribeButton } from "./SubscribeElements";
+import { SubscribeContainer, FormContainer, SubscribeButton, LoginOnSubscirbe, Form } from "./SubscribeElements";
 
 function Subscribe(){
   const nav = useNavigate()
@@ -46,33 +46,38 @@ function Subscribe(){
 
     return(
       <SubscribeContainer>
-         <Toaster
-              position="bottom-right"
-              reverseOrder={false}
-            />
-        <FormContainer id="subscribe" onSubmit={handleSubscription}>
-        <input
-          style={{backgroundColor: "#fffef2", border: "thin solid"}}
-          placeholder='Username'
-          onChange={handleChange}
-          name="name"
-          />
-          <input
-          style={{backgroundColor: "#fffef2", border: "thin solid"}}
-          placeholder='Email'
-          onChange={handleChange}
-          name="email"
+          <Toaster
+                position="bottom-right"
+                reverseOrder={false}
+              />
 
-          />
-          <input
-          style={{backgroundColor: "#fffef2", border: "thin solid"}}
-          placeholder='Password'
-          onChange={handleChange}
-          name="password"
-          type="password"
-          />
-          <SubscribeButton className='btn btn-secondary' type="submit">Subscribe</SubscribeButton>
+              <p>Interested in more? Subscribe here.</p>
+        <FormContainer>
+          <Form id="subscribe" onSubmit={handleSubscription}>
+              <input
+                style={{backgroundColor: "#fffef2", border: "thin solid"}}
+                placeholder='Username'
+                onChange={handleChange}
+                name="name"
+                />
+                <input
+                style={{backgroundColor: "#fffef2", border: "thin solid"}}
+                placeholder='Email'
+                onChange={handleChange}
+                name="email"
+
+                />
+                <input
+                style={{backgroundColor: "#fffef2", border: "thin solid"}}
+                placeholder='Password'
+                onChange={handleChange}
+                name="password"
+                type="password"
+                />
+                <SubscribeButton className='btn btn-secondary' type="submit">Subscribe</SubscribeButton>
+          </Form>
         </FormContainer>
+        <p>Already a subscriber? <LoginOnSubscirbe>Login.</LoginOnSubscirbe></p>
       </SubscribeContainer>
         // <LoginContainer>
         //   <Toaster
