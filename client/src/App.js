@@ -7,7 +7,6 @@ import { useEffect, useState } from 'react';
 import BlogLay from './components/BlogLay/BlogLay';
 import Nav from "./components/NavBar/Navbar.js"
 import Manage from './pages/SubscribeandLogin/Manage';
-import Subscribe from './pages/SubscribeandLogin/Subscribe'
 import toast, { Toaster } from 'react-hot-toast';
 import About from "./pages/About/About"
 import Footer from './components/Footer/Footer';
@@ -67,9 +66,10 @@ function App() {
           <Route path="/blogs/:id" element={<Category/>} />
           <Route path="/login" element={<Login onLogin={onLogin}/>} />
           <Route path="/:id" element={<BlogLay currentUser={currentUser}/>} />
-          <Route path="/subscribe" element={<Subscribe/>} />
+          {/* <Route path="/subscribe" element={<Subscribe/>} /> */}
           <Route path="/your_account" element={<Manage currentUser={currentUser} toast={toast} Toaster={Toaster}/>} />
           </Routes>
+      
       
       <Footer/>
     </div>
