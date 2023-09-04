@@ -51,7 +51,7 @@ function Subscribe(){
                 reverseOrder={false}
               />
 
-              <p>Interested in more? Subscribe here.</p>
+              <p>Interested in more Kitchen and Code? Subscribe below!</p>
         <FormContainer>
           <Form id="subscribe" onSubmit={handleSubscription}>
               <input
@@ -77,43 +77,8 @@ function Subscribe(){
                 <SubscribeButton className='btn btn-secondary' type="submit">Subscribe</SubscribeButton>
           </Form>
         </FormContainer>
-        <p>Already a subscriber? <LoginOnSubscirbe>Login.</LoginOnSubscirbe></p>
+        <p>Already a subscriber? <LoginOnSubscirbe onClick={() => nav("/login")}>Login here.</LoginOnSubscirbe></p>
       </SubscribeContainer>
-        // <LoginContainer>
-        //   <Toaster
-        //       position="bottom-right"
-        //       reverseOrder={false}
-        //     />
-        // <center className="sub_text">
-        // <h3>Thank you for your interest in Kitchen and Code!</h3>
-        // <p>Sign up to receive email updates for new blog posts.</p>
-        // </center>
-        // <Contain>
-        // <Form className="subscribe" id="subscribe" onSubmit={handleSubscription}>
-        //   <input
-        //   style={{backgroundColor: "#fffef2", border: "thin solid"}}
-        //   placeholder='Username'
-        //   onChange={handleChange}
-        //   name="name"
-        //   />
-        //   <input
-        //   style={{backgroundColor: "#fffef2", border: "thin solid"}}
-        //   placeholder='Email'
-        //   onChange={handleChange}
-        //   name="email"
-
-        //   />
-        //   <input
-        //   style={{backgroundColor: "#fffef2", border: "thin solid"}}
-        //   placeholder='Password'
-        //   onChange={handleChange}
-        //   name="password"
-        //   type="password"
-        //   />
-        //   <button className='btn btn-secondary' type="submit">Sign Up</button>
-        //   </Form>
-        //   </Contain>
-        // </LoginContainer>
     )
 }
 
