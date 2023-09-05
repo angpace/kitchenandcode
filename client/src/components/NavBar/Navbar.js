@@ -79,15 +79,15 @@ const NavBar = ({ currentUser, handleLogOut }) => {
                       </>
                      : 
                       <>
-                        {/* <NavDropdown.Item
+                        <NavDropdown.Item
                           className="dropdown-item"
                           as={Link}
                           to="/subscribe"
                           onClick={handleLinkClick}
                         >
                           Subscribe
-                        </NavDropdown.Item> */}
-                        {/* <NavDropdown.Divider /> */}
+                        </NavDropdown.Item>
+                        <NavDropdown.Divider />
                         <NavDropdown.Item
                           className="dropdown-item"
                           as={Link}
