@@ -13,9 +13,9 @@ const UnderConstruction = () => {
             my <a href='https://angelapace.tech/'>Portfolio</a>.</Content>
         </ContentContainer>
           
-        <ImageContainer>
+        {/* <ImageContainer>
           <Image src={img}></Image>
-        </ImageContainer>
+        </ImageContainer> */}
         </ConstructionPage>
   )
 }
