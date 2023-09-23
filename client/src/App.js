@@ -14,6 +14,7 @@ import Footer from './components/Footer/Footer';
 import Category from './components/Category/Category';
 import Contact from './pages/Contact/Contact';
 import NewNav from './components/NewNav/NewNav';
+import Welcome from './pages/Welcome/Welcome';
 
 
 function App() {
@@ -62,7 +63,8 @@ function App() {
 
         {/* Routes */}
         <Routes>
-          <Route exact path="/" element={<Home/>} />
+          <Route exact path="/" element={<Welcome/>} />
+          <Route exact path="/home" element={<Home/>} />
           <Route exact path="/about" element={<About/>}/>
           <Route exact path="/contact" element={<Contact/>}/>
           <Route path="/blogposts" element={<Blogs currentUser={currentUser}/>} />
@@ -73,7 +75,7 @@ function App() {
           <Route path="/your_account" element={<Manage currentUser={currentUser} toast={toast} Toaster={Toaster}/>} />
           </Routes>
       
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   );
 }

@@ -17,19 +17,18 @@ const NewNavBar = () => {
     <NavbarContainer>
       {['sm'].map((expand) => (
          <Navbar
-         key={expand}
-         expand={expand}
+         key={expanded}
+         expand={expanded}
          expanded={expanded}
        >
-        <Logo as={Link} to="/">Kitchen and Code</Logo>
-         <Navbar.Toggle
-              aria-controls={`offcanvasNavbar-expand-${expand}`}
+      <Navbar.Toggle
+               aria-controls={`offcanvasNavbar-expand-${expand}`}
               onClick={() => setExpanded(!expanded)}
-            />
+             />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
-              placement="end"
+              placement="start"
               show={expanded}
               onHide={() => setExpanded(false)}
             >
@@ -52,8 +51,9 @@ const NewNavBar = () => {
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
-            </Navbar>
-))}
+             </Navbar>
+// 
+)) }
     </NavbarContainer>
   )
 }
