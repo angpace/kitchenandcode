@@ -40,13 +40,14 @@ function Blogs ({currentUser}) {
             <>
                 
                 <PostBlog rerender={rerender} currentUser={currentUser}/>
+                <HeadingContainer>
+                        <CarouselHeading>Blog</CarouselHeading>
+                    </HeadingContainer>
                 <BlogContainer>
                     {/* <SearchContainer>
                         <Search onChange={(e) => setSearch(e.target.value)} placeholder="Search..."></Search>
                     </SearchContainer> */}
-                    <HeadingContainer>
-                        <CarouselHeading>Blog</CarouselHeading>
-                    </HeadingContainer>
+                  
                     {createBlogCards}
                             
                 </BlogContainer>
@@ -56,18 +57,14 @@ function Blogs ({currentUser}) {
     
 
     return (
-        
-        <BlogContainer>
-            <HeadingContainer>
-                <CarouselHeading>Blog</CarouselHeading>
-                </HeadingContainer>
-                <WelcomeText>
+        <>
+        {/* <WelcomeText>
                     <center>Welcome!
                         <br/>
                         Click on keywords below or browse all blogs.
                         </center>
-                    </WelcomeText>
-                <KeyWordContainer>
+                    </WelcomeText> */}
+                {/* <KeyWordContainer>
                 <Search onChange={(e) => setSearch(e.target.value)} placeholder="Search..."></Search>
                     <p>OR</p>
                     <KeywordFlex>
@@ -76,10 +73,16 @@ function Blogs ({currentUser}) {
                         <Keywords onClick={() => setSearch("recipe")}>Recipes</Keywords>
                         <Keywords onClick={() => setSearch("")}>All</Keywords>
                     </KeywordFlex>
-                    </KeyWordContainer>
+                    </KeyWordContainer> */}
+        
+        <BlogContainer>
+            {/* <HeadingContainer>
+                <CarouselHeading>Blog</CarouselHeading>
+                </HeadingContainer> */}
                 {createBlogCards}
                     
         </BlogContainer>
+        </>
     )
 }
 
