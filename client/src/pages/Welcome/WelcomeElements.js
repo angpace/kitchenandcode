@@ -5,7 +5,7 @@ background-color: #fffef2;
 display: flex;
 justify-content: flex-start;
   align-items: flex-end;
-  height: 86vh;
+  /* height: 86vh; */
 
 `
 export const WelcomeHeading = styled.h1`

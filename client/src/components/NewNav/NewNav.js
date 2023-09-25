@@ -28,17 +28,17 @@ const NewNavBar = () => {
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
-              placement="start"
+              placement="end"
               show={expanded}
               onHide={() => setExpanded(false)}
             >
               <Offcanvas.Header closeButton>
-                <Offcanvas.Title className="logo fs-1" id={`offcanvasNavbarLabel-expand-${expand}`}>
+                <Offcanvas.Title as={Link} to="/home" className="logo fs-2" id={`offcanvasNavbarLabel-expand-${expand}`}>
                   Kitchen and Code
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body >
-                <Nav className="navbar-nav ms-auto px-4">
+                <Nav >
                   <NavLink as={Link} to="/blogs/food" >
                     Food
                   </NavLink>

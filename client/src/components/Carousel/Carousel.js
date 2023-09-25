@@ -24,15 +24,15 @@ class Carousel extends React.Component {
   render() {
     return (
       <CarouselWrapper>
-        <CarouselHeading>Featured Posts</CarouselHeading>
+        {/* <CarouselHeading>Featured Posts</CarouselHeading> */}
         <AliceCarousel
           mouseTracking
           items={this.renderItems()}
           responsive={responsive}
           controlsStrategy="alternate"
-          disableDotsControls={true}
+          disableDotsControls={false}
           infinite
-        //   autoHeight="true"
+          autoHeight="true"
         />
       </CarouselWrapper>
     );
