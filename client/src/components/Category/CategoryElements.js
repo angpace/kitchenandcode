@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const BlogContainer = styled.div`
+display: flex;
+flex-direction: row;
 padding: 2%;
 margin-top: 40px;
 /* border-top: thin solid; */

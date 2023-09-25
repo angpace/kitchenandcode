@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-margin-left:10%;
+/* margin-left:10%; */
 
 &:hover{
     cursor: pointer;
@@ -15,10 +15,10 @@ margin-left:10%;
 `
 
 export const BlogCardContainer = styled.div`
-max-width: 90%;
+max-width: 100%;
 /* border-bottom: thin solid; */
 border-top: thin solid;
-padding: 10px;
+/* padding: 10px; */
 background-color: "#fffef2";
 
 
@@ -27,13 +27,13 @@ background-color: "#fffef2";
     padding: 5px;
 }
 `
-export const CardTitle = styled.h3`
-font-weight: 600;
-float: left;
+export const CardTitle = styled.p`
+font-weight: 400;
+/* float: left; */
 
 @media screen and (max-width: 400px){
-    padding-bottom: 0%;
-    font-size: 15px;
+    /* padding-bottom: 0%;
+    font-size: 15px; */
 }
 
 `
@@ -50,4 +50,11 @@ export const CardLikes = styled.p`
 color: gray; 
 font-size: 12px;
 /* font-style: italic; */
+`
+
+export const CardImage = styled.img`
+width: 300px;
+height: 300px;
+padding: 20px;
+border-radius: 10%;
 `

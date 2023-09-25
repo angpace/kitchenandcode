@@ -4,10 +4,10 @@ import Carousel from "../components/Carousel/Carousel";
 import Header from "../components/Header/Header";
 import { useState,useEffect } from "react";
 import { animateScroll as scroll } from 'react-scroll';
+import Blogs from "./Blogs/Blogs";
  
 
 function Home () {
-    // const FadeUp = batch(Fade(), Sticky());
     const navigate = useNavigate()
     const [featuredPosts, setFeaturedPosts] = useState([])
 
@@ -33,6 +33,7 @@ function Home () {
        <div>
             <Header/>
             <Carousel featured={featured} getBlog={getBlog}/>   
+            {/* <Blogs/> */}
             <Bloglead/> 
         </div>
         

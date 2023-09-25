@@ -4,6 +4,7 @@ import {useNavigate } from 'react-router-dom'
 import Carousel from '../../components/Carousel/Carousel'
 import { animateScroll as scroll } from 'react-scroll';
 import { useState,useEffect } from "react";
+import Blogs from '../Blogs/Blogs';
 
 
 const Welcome = () => {
@@ -27,7 +28,8 @@ const Welcome = () => {
 
   return (
     <>
-    <Carousel featured={featured} getBlog={getBlog}/>
+    <Blogs/>
+    {/* <Carousel featured={featured} getBlog={getBlog}/> */}
     <WelcomePage>
      
         <WelcomeHeading>Kitchen and Code</WelcomeHeading>
