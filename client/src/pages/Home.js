@@ -31,10 +31,6 @@ function Home () {
 
     return (
        <div>
-            <Header/>
-            <Carousel featured={featured} getBlog={getBlog}/>   
-            {/* <Blogs/> */}
-            <Bloglead/> 
         </div>
         
     )
