@@ -25,10 +25,10 @@ const NavBar = ({ currentUser, handleLogOut }) => {
           key={expand}
           expand={expand}
           expanded={expanded}
-          style={{ backgroundColor: '#fffef2', borderBottom: 'thin solid' }}
+          // style={{ backgroundColor: '#fffef2'}}
           fixed="top"
         >
-          <Container fluid>
+          <Container >
             <a className="navbar-brand" href="/">
               <img
                 src={pom}
@@ -50,12 +50,12 @@ const NavBar = ({ currentUser, handleLogOut }) => {
               show={expanded}
               onHide={() => setExpanded(false)}
             >
-              <Offcanvas.Header style={{ backgroundColor: '#fffef2' }} closeButton>
+              <Offcanvas.Header closeButton>
                 <Offcanvas.Title className="logo fs-1" id={`offcanvasNavbarLabel-expand-${expand}`}>
                   Kitchen and Code
                 </Offcanvas.Title>
               </Offcanvas.Header>
-              <Offcanvas.Body style={{ backgroundColor: '#fffef2' }}>
+              <Offcanvas.Body >
                 <Nav className="navbar-nav ms-auto px-3">
                   <NavDropdown title="Join" id={`offcanvasNavbarDropdown-expand-${expand}`}>
                     {currentUser ? 
@@ -102,15 +102,15 @@ const NavBar = ({ currentUser, handleLogOut }) => {
                   <Nav.Link as={Link} to="/" onClick={handleLinkClick}>
                     Home
                   </Nav.Link>
-                  <Nav.Link as={Link} to="/about" onClick={handleLinkClick}>
-                    About
+                  <Nav.Link as={Link} to="/blogs/tech" onClick={handleLinkClick}>
+                    Tech
                   </Nav.Link>
-                  <Nav.Link as={Link} to="/blogposts" onClick={handleLinkClick}>
-                    Blog
+                  <Nav.Link as={Link} to="/blogs/food" onClick={handleLinkClick}>
+                    Food
                   </Nav.Link>
-                  <Nav.Link as={Link} to="/contact" onClick={handleLinkClick}>
+                  {/* <Nav.Link as={Link} to="/contact" onClick={handleLinkClick}>
                     Contact
-                  </Nav.Link>
+                  </Nav.Link> */}
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>

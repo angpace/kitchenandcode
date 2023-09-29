@@ -57,14 +57,13 @@ function App() {
               position="bottom-right"
               reverseOrder={false}
             />
-       {/* <Nav currentUser={currentUser} handleLogOut={handleLogOut}/> */}
+       <Nav currentUser={currentUser} handleLogOut={handleLogOut}/>
        {/* <NewNav/> */}
         
 
         {/* Routes */}
         <Routes>
-          <Route exact path="/" element={<Welcome/>} />
-          <Route exact path="/home" element={<Home/>} />
+          <Route exact path="/" element={<Home/>} />
           <Route exact path="/about" element={<About/>}/>
           <Route exact path="/contact" element={<Contact/>}/>
           <Route path="/blogposts" element={<Blogs currentUser={currentUser}/>} />

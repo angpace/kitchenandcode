@@ -1,12 +1,25 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.div`
-border-top: thin solid;
+/* border-top: thin solid; */
 border-bottom: thin solid;
-padding: 10%;
-background-color: #333333;
-color: #fffef2;
-margin-top: 26px;
+/* background-color: #333333; */
+/* color: #fffef2; */
+/* margin-top: 26px; */
+padding: 2%;
+display: flex;
+max-height: 680px;
+overflow: hidden;
+
+`
+export const ImageContainer = styled.div`
+width: 50%;
+/* max-height: 90%; */
+`
+export const HeaderImage = styled.img`
+max-width: 100%;
+max-height: 1000px;
+/* padding: 2%; */
 
 `
 

@@ -5,7 +5,7 @@
   font-family: 'Pathway Extreme', sans-serif;
 } 
 
-html {background-color: #fffef2; margin-top: 30px;}
+html { margin-top: 30px;}
 
 /* .nav{
 border-bottom: thin solid;
@@ -32,9 +32,9 @@ flex-direction: column;
 };
 
 
-.input{
+/* .input{
   background-color: #fffef2;
-}
+} */
 
 .about a{
   text-decoration: none;
