@@ -26,13 +26,14 @@ class Carousel extends React.Component {
       <CarouselWrapper>
         {/* <CarouselHeading>Featured Posts</CarouselHeading> */}
         <AliceCarousel
+          
           mouseTracking
           items={this.renderItems()}
           responsive={responsive}
           controlsStrategy="alternate"
           disableDotsControls={false}
           infinite
-          autoHeight="true"
+          // autoHeight="true"
         />
       </CarouselWrapper>
     );
