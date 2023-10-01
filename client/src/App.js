@@ -14,7 +14,6 @@ import Footer from './components/Footer/Footer';
 import Category from './components/Category/Category';
 import Contact from './pages/Contact/Contact';
 import NewNav from './components/NewNav/NewNav';
-import Welcome from './pages/Welcome/Welcome';
 
 
 function App() {
