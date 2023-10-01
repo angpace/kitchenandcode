@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
 export const ConstructionPage = styled.div`
-   background-color: whitesmoke;
+   /* background-color: whitesmoke; */
    display: flex;
    max-height: 650px;
    /* overflow-y: scroll; */
    width: 100%;
-   background-color: #fffef2;
+   /* background-color: #fffef2; */
    /* border-top: thin solid; */
 
    @media screen and (max-width: 900px){
@@ -34,7 +34,6 @@ align-items: center;
 `
 
 export const Content = styled.h1`
-background-color: #fffef2;
 font-size: 30px;
 color: black;
 padding: 7% 0% 0% 4%;
