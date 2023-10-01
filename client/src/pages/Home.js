@@ -31,6 +31,7 @@ function Home () {
 
     return (
        <div>
+        <Carousel featured={featured} getBlog={getBlog}/>
         </div>
         
     )

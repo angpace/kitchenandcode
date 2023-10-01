@@ -1,16 +1,13 @@
 import styled from "styled-components";
 
 export const CarouselWrapper = styled.div`
-height: 50%;
-width: 100%;
-overflow: hidden;
-background-color: #fffef2;
-padding: 1%;
-/* border-bottom: thin solid; */
+width: 95%;
+padding: 3%;
+margin: auto
 
 `
 export const Item = styled.div`
-max-height: 400px;
+max-height: 250px;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -18,10 +15,7 @@ justify-content: center;
 `
 
 export const Image = styled.img`
-/* max-height: 100%; */
-max-width: 87%;
-object-fit: contain;
-
+max-width: 99%;
 &:hover{
  cursor: pointer;
 }
