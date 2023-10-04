@@ -13,7 +13,6 @@ import About from "./pages/About/About"
 import Footer from './components/Footer/Footer';
 import Category from './components/Category/Category';
 import Contact from './pages/Contact/Contact';
-import NewNav from './components/NewNav/NewNav';
 
 
 function App() {
@@ -57,7 +56,7 @@ function App() {
               reverseOrder={false}
             />
        <Nav currentUser={currentUser} handleLogOut={handleLogOut}/>
-       {/* <NewNav/> */}
+  
         
 
         {/* Routes */}

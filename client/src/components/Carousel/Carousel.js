@@ -6,8 +6,8 @@ import { CarouselWrapper, Item, Image, CarouselHeading } from './CarouselElement
 
 const responsive = {
   0: { items: 1 },
-  568: { items: 2 },
-  1024: { items: 3 },
+  400: { items: 2 },
+  600: { items: 3 },
 };
 
 class Carousel extends React.Component {
@@ -26,12 +26,12 @@ class Carousel extends React.Component {
       <CarouselWrapper>
         {/* <CarouselHeading>Featured Posts</CarouselHeading> */}
         <AliceCarousel
-          
+
           mouseTracking
           items={this.renderItems()}
           responsive={responsive}
           controlsStrategy="alternate"
-          disableDotsControls={false}
+          disableDotsControls={true}
           infinite
           // autoHeight="true"
         />
