@@ -17,6 +17,7 @@ import Contact from './pages/Contact/Contact';
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null)
+  const [search, setSearch] = useState("")
 
   
   useEffect(() => {
@@ -49,19 +50,20 @@ function App() {
     })
   }
 
+
   return (
     <div >
       <Toaster
               position="bottom-right"
               reverseOrder={false}
             />
-       <Nav currentUser={currentUser} handleLogOut={handleLogOut}/>
+       <Nav currentUser={currentUser} handleLogOut={handleLogOut} setSearch={setSearch}/>
   
         
 
         {/* Routes */}
         <Routes>
-          <Route exact path="/" element={<Home/>} />
+          <Route exact path="/" element={<Home search={search}/>} />
           <Route exact path="/about" element={<About/>}/>
           <Route exact path="/contact" element={<Contact/>}/>
           <Route path="/blogposts" element={<Blogs currentUser={currentUser}/>} />

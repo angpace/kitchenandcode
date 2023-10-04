@@ -10,7 +10,7 @@ import { animateScroll as scroll } from 'react-scroll';
 
 
 
-const NavBar = ({ currentUser, handleLogOut }) => {
+const NavBar = ({ currentUser, handleLogOut, setSearch }) => {
   const [expanded, setExpanded] = useState(false);
 
   const handleLinkClick = () => {
@@ -112,6 +112,9 @@ const NavBar = ({ currentUser, handleLogOut }) => {
                     Contact
                   </Nav.Link> */}
                 </Nav>
+                <form class="form-inline my-0 my-sm-0">
+                  <input class="form-control mr-sm-3" onChange={(e) => setSearch(e.target.value)} type="search" placeholder="Search" aria-label="Search"/>
+                </form>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
           </Container>
