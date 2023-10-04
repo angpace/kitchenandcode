@@ -3,7 +3,7 @@ import BlogCard from "../../components/BlogCard/BlogCard";
 import PostBlog from "../../components/PostBlog";
 import { CarouselHeading } from "../../components/Carousel/CarouselElements";
 import { BlogContainer } from "../../components/Category/CategoryElements";
-import {Search, HeadingContainer, KeyWordContainer, Keywords, WelcomeText, KeywordFlex} from "./BlogElements";
+import { Keywords, WelcomeText, KeywordFlex} from "./BlogElements";
 
 function Blogs ({currentUser, search}) {
     const [blogs, setBlogs] = useState([])
@@ -39,13 +39,7 @@ function Blogs ({currentUser, search}) {
             <>
                 
                 <PostBlog rerender={rerender} currentUser={currentUser}/>
-                <HeadingContainer>
-                        <CarouselHeading>Blog</CarouselHeading>
-                    </HeadingContainer>
                 <BlogContainer>
-                    {/* <SearchContainer>
-                        <Search onChange={(e) => setSearch(e.target.value)} placeholder="Search..."></Search>
-                    </SearchContainer> */}
                   
                     {createBlogCards}
                             
