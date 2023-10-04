@@ -32,7 +32,7 @@ function Home ({search}) {
     return (
        <div>
         <Carousel featured={featured} getBlog={getBlog}/>
-        {/* <Blogs search={search} /> */}
+        <Blogs search={search} />
         </div>
         
     )
