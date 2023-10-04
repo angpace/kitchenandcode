@@ -74,7 +74,7 @@ function App() {
           <Route path="/your_account" element={<Manage currentUser={currentUser} toast={toast} Toaster={Toaster}/>} />
           </Routes>
       
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   );
 }
