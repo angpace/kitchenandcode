@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import BlogCard from "../../components/BlogCard/BlogCard";
 import PostBlog from "../../components/PostBlog";
 import { CarouselHeading } from "../../components/Carousel/CarouselElements";
-import { BlogContainer } from "../../components/Category/CategoryElements";
 import { Keywords, WelcomeText, KeywordFlex} from "./BlogElements";
 
 function Blogs ({currentUser, search}) {
@@ -39,11 +38,11 @@ function Blogs ({currentUser, search}) {
             <>
                 
                 <PostBlog rerender={rerender} currentUser={currentUser}/>
-                <BlogContainer>
+
                   
                     {createBlogCards}
                             
-                </BlogContainer>
+            
             </>
         )
     }
@@ -51,30 +50,9 @@ function Blogs ({currentUser, search}) {
 
     return (
         <>
-        {/* <WelcomeText>
-                    <center>Welcome!
-                        <br/>
-                        Click on keywords below or browse all blogs.
-                        </center>
-                    </WelcomeText> */}
-                {/* <KeyWordContainer>
-                <Search onChange={(e) => setSearch(e.target.value)} placeholder="Search..."></Search>
-                    <p>OR</p>
-                    <KeywordFlex>
-                        <Keywords onClick={() => setSearch("tech")}>Tech</Keywords>
-                        <Keywords onClick={() => setSearch("food")}>Food</Keywords>
-                        <Keywords onClick={() => setSearch("recipe")}>Recipes</Keywords>
-                        <Keywords onClick={() => setSearch("")}>All</Keywords>
-                    </KeywordFlex>
-                    </KeyWordContainer> */}
-        
-        <BlogContainer>
-            {/* <HeadingContainer>
-                <CarouselHeading>Blog</CarouselHeading>
-                </HeadingContainer> */}
                 {createBlogCards}
                     
-        </BlogContainer>
+        
         </>
     )
 }

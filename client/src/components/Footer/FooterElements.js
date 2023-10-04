@@ -11,7 +11,7 @@ export const FooterContent = styled.div`
 padding: 5%;
 display: flex;
 justify-content: space-around;
-background-color: #fffef2;
+background-color: #FAF9F6;
 
 @media screen and (max-width: 820px){
     flex-direction: column;
