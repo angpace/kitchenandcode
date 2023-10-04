@@ -7,7 +7,7 @@ import { animateScroll as scroll } from 'react-scroll';
 import Blogs from "./Blogs/Blogs";
  
 
-function Home () {
+function Home ({search}) {
     const navigate = useNavigate()
     const [featuredPosts, setFeaturedPosts] = useState([])
 
@@ -17,7 +17,7 @@ function Home () {
     .then(data => setFeaturedPosts(data))
   }, [])
 
- 
+
   const featured = featuredPosts.filter((b) => b.featured === true)
 
   
@@ -32,6 +32,7 @@ function Home () {
     return (
        <div>
         <Carousel featured={featured} getBlog={getBlog}/>
+        {/* <Blogs search={search} /> */}
         </div>
         
     )

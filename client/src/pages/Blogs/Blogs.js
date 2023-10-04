@@ -5,9 +5,8 @@ import { CarouselHeading } from "../../components/Carousel/CarouselElements";
 import { BlogContainer } from "../../components/Category/CategoryElements";
 import {Search, HeadingContainer, KeyWordContainer, Keywords, WelcomeText, KeywordFlex} from "./BlogElements";
 
-function Blogs ({currentUser}) {
+function Blogs ({currentUser, search}) {
     const [blogs, setBlogs] = useState([])
-    const [search, setSearch] = useState("")
 
 
     useEffect(() => {
