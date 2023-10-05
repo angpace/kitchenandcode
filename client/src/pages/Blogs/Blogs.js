@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import BlogCard from "../../components/BlogCard/BlogCard";
 import PostBlog from "../../components/PostBlog";
 import { CarouselHeading } from "../../components/Carousel/CarouselElements";
-import { Keywords, WelcomeText, KeywordFlex} from "./BlogElements";
+import { BlogContainer} from "./BlogElements";
 
 function Blogs ({currentUser, search}) {
     const [blogs, setBlogs] = useState([])
@@ -49,11 +49,9 @@ function Blogs ({currentUser, search}) {
     
 
     return (
-        <>
+        <BlogContainer>
                 {createBlogCards}
-                    
-        
-        </>
+        </BlogContainer>
     )
 }
 

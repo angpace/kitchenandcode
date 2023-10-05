@@ -63,10 +63,9 @@ function App() {
 
         {/* Routes */}
         <Routes>
-          <Route exact path="/" element={<Home search={search}/>} />
+          <Route exact path="/" element={<Home search={search} currentUser={currentUser}/>} />
           <Route exact path="/about" element={<About/>}/>
           <Route exact path="/contact" element={<Contact/>}/>
-          <Route path="/blogposts" element={<Blogs currentUser={currentUser}/>} />
           <Route path="/blogs/:id" element={<Category/>} />
           <Route path="/login" element={<Login onLogin={onLogin}/>} />
           <Route path="/:id" element={<BlogLay currentUser={currentUser}/>} />

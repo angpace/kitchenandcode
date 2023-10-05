@@ -1,13 +1,12 @@
 import { useNavigate } from "react-router-dom";
 import Bloglead from "../components/BlogLead/Bloglead";
 import Carousel from "../components/Carousel/Carousel";
-import Header from "../components/Header/Header";
 import { useState,useEffect } from "react";
 import { animateScroll as scroll } from 'react-scroll';
-import Blogs from "./Blogs/Blogs";
+import BlogInfo from "../BlogInfo/BlogInfo";
  
 
-function Home ({search}) {
+function Home ({search, currentUser}) {
     const navigate = useNavigate()
     const [featuredPosts, setFeaturedPosts] = useState([])
 
@@ -32,7 +31,8 @@ function Home ({search}) {
     return (
        <div>
         <Carousel featured={featured} getBlog={getBlog}/>
-        <Blogs search={search} />
+        <BlogInfo currentUser={currentUser} search={search}/>
+    
         </div>
         
     )
