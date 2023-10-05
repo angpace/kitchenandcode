@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate} from "react-router-dom";
-import { BlogCardContainer, CardDate, CardTitle, CardPreview, CardLikes, Container, CardImage } from "./BlogCardElements";
+import { BlogCardContainer, CardDate, CardTitle, CardPreview, CardLikes, Container, ImgContainer, CardImage } from "./BlogCardElements";
 
 function BlogCard ({b, currentUser, handleDelete, rerender}) {
     const navigate = useNavigate();
@@ -127,11 +127,13 @@ function BlogCard ({b, currentUser, handleDelete, rerender}) {
 
                      }
                         <BlogCardContainer onClick={() => getBlogPost(b)}>
+                            <ImgContainer>
+                                 <CardImage src={b.feature}></CardImage>
+                            </ImgContainer>
                             <CardTitle>{b.title}</CardTitle>
-                            <CardImage src={b.feature}></CardImage>
-                            {/* <CardDate>{b.date}</CardDate> */}
-                            {/* <CardPreview>{b.preview}</CardPreview> */}
                             <CardLikes>{b.likes} ❤️</CardLikes>
+                            <CardDate>{b.date}</CardDate>
+                            <CardPreview>{b.preview}</CardPreview>
                         </BlogCardContainer>    
                         
                     </Container>

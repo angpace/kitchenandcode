@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import BlogCard from "../../components/BlogCard/BlogCard";
 import PostBlog from "../../components/PostBlog";
-import { CarouselHeading } from "../../components/Carousel/CarouselElements";
 import { BlogContainer} from "./BlogElements";
 
 function Blogs ({currentUser, search}) {
