@@ -1,25 +1,25 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-/* margin-left:10%; */
+background-color: #FAF9F6;
+border-radius: 20px;
+
 
 &:hover{
     cursor: pointer;
 }
 
 @media screen and (max-width: 500px){
-    margin-left:0%;
-    padding-top: 5%;
+   
 }
 
 `
 
 export const BlogCardContainer = styled.div`
-max-width: 100%;
-/* border-bottom: thin solid; */
-border-top: thin solid;
-/* padding: 10px; */
-background-color: "#fffef2";
+max-width: 94%;
+
+
+margin: auto;
 
 
 @media screen and (max-width: 500px){
@@ -27,7 +27,7 @@ background-color: "#fffef2";
     padding: 5px;
 }
 `
-export const CardTitle = styled.p`
+export const CardTitle = styled.h2`
 font-weight: 400;
 /* float: left; */
 
@@ -38,12 +38,13 @@ font-weight: 400;
 
 `
 export const CardDate = styled.p`
-float: right;
+
 `
 export const CardPreview = styled.p`
-padding-top: 10%;
+
+
 @media screen and (max-width: 400px){
-    padding-top: 15%;
+  
 }
 `
 export const CardLikes = styled.p`
@@ -52,9 +53,16 @@ font-size: 12px;
 /* font-style: italic; */
 `
 
+export const ImgContainer = styled.div`
+padding-top: 4%;
+overflow: hidden;
+max-height: 400px;
+
+`
+
 export const CardImage = styled.img`
-width: 300px;
-height: 300px;
-padding: 20px;
-border-radius: 10%;
+  width: 100%; /* Make the image 90% of the container's width */
+  max-height: 350px; /* Set the maximum height of the image */
+  object-fit: cover;
+  border-radius: 20px;
 `
