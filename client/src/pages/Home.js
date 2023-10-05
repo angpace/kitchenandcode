@@ -1,5 +1,4 @@
 import { useNavigate } from "react-router-dom";
-import Bloglead from "../components/BlogLead/Bloglead";
 import Carousel from "../components/Carousel/Carousel";
 import { useState,useEffect } from "react";
 import { animateScroll as scroll } from 'react-scroll';
