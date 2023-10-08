@@ -29,6 +29,7 @@ const Footer = () => {
                     <a  href="https://medium.com/@angpace13"><i className="fa-brands fa-medium fa-lg"></i></a>
                     <a  href="https://www.instagram.com/kitchenandcode/?hl=en"><i className="fa-brands fa-instagram fa-lg"></i></a>
                 </SocialMediaWrap>
+                
         </FooterContent>
        
         <center> <small>© Kitchen and Code</small></center>
