@@ -7,11 +7,11 @@ const BlogInfo = ({search, currentUser}) => {
   return (
     <BlogInfoContainer>
             <Blogs search={search} currentUser={currentUser}/>
-            <div style={{width: "40%"}}>
+            <div >
               <h2>
                hello
               </h2>
-               </div>
+            </div>
     </BlogInfoContainer>
   )
 }

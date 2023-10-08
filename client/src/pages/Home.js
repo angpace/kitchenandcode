@@ -31,7 +31,6 @@ function Home ({search, currentUser}) {
        <div>
         <Carousel featured={featured} getBlog={getBlog}/>
         <BlogInfo currentUser={currentUser} search={search}/>
-    
         </div>
         
     )

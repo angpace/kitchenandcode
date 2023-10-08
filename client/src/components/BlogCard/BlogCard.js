@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate} from "react-router-dom";
-import { BlogCardContainer, CardDate, CardTitle, CardPreview, CardLikes, Container, ImgContainer, CardImage } from "./BlogCardElements";
+import { BlogCardContainer, CardDate, CardTitle, CardPreview, CardLikes, Container, ImgContainer, CardImage, TitleandDate } from "./BlogCardElements";
 
 function BlogCard ({b, currentUser, handleDelete, rerender}) {
     const navigate = useNavigate();
@@ -130,10 +130,12 @@ function BlogCard ({b, currentUser, handleDelete, rerender}) {
                             <ImgContainer>
                                  <CardImage src={b.feature}></CardImage>
                             </ImgContainer>
+                            <TitleandDate>
                             <CardTitle>{b.title}</CardTitle>
-                            <CardLikes>{b.likes} ❤️</CardLikes>
                             <CardDate>{b.date}</CardDate>
+                            </TitleandDate>
                             <CardPreview>{b.preview}</CardPreview>
+                            <CardLikes>{b.likes} ❤️</CardLikes>
                         </BlogCardContainer>    
                         
                     </Container>
