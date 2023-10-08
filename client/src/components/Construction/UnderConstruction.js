@@ -1,6 +1,5 @@
 import React from 'react'
-import img from "./pom.jpg"
-import { ConstructionPage, ContentContainer, Content, ImageContainer, Image} from './UnderCElements'
+import { ConstructionPage, ContentContainer, Content } from './UnderCElements'
 
 
 const UnderConstruction = () => {

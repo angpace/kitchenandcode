@@ -57,7 +57,6 @@ export const ImgContainer = styled.div`
 padding-top: 4%;
 overflow: hidden;
 max-height: 400px;
-
 `
 
 export const CardImage = styled.img`
