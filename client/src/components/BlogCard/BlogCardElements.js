@@ -11,7 +11,7 @@ border-radius: 20px;
 `
 
 export const BlogCardContainer = styled.div`
-max-width: 94%;
+max-width: 90%;
 margin: auto;
 
 @media screen and (max-width: 500px){
@@ -62,7 +62,7 @@ padding-bottom: 2%;
 export const ImgContainer = styled.div`
 padding-top: 4%;
 overflow: hidden;
-max-height: 400px;
+max-height: 300px;
 display: flex;
     justify-content: center;
 `

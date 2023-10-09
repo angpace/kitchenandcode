@@ -1,17 +1,14 @@
 import React from 'react'
 import Blogs from '../pages/Blogs/Blogs'
 import { BlogInfoContainer } from './BlogInfoElements'
+import FeaturedColumn from '../FeaturedColumn/FeaturedColumn'
 
 
 const BlogInfo = ({search, currentUser}) => {
   return (
     <BlogInfoContainer>
             <Blogs search={search} currentUser={currentUser}/>
-            <div >
-              <h2>
-               hello
-              </h2>
-            </div>
+           <FeaturedColumn/>
     </BlogInfoContainer>
   )
 }
