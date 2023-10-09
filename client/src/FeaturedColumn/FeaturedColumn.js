@@ -1,24 +1,20 @@
 import React from 'react'
-import { Fixed, Box } from './FeaturedColumnElements'
+import { Fixed, Box, Card} from './FeaturedColumnElements'
 
 const FeaturedColumn = () => {
   return (
     <Fixed>
         <Box>
-            <h3>Most Recent</h3>
-            <ul>
-            <li>ehsotahegoiehga fkljfs ksjf</li>
-            <li>ehsotahegoiehga fkljfs ksjf</li>
-            <li>ehsotahegoiehga fkljfs ksjf</li>
-            </ul>
+          <h3>Most Recent</h3>
+            <Card>ehsotahegoiehga fkljfs ksjf</Card> 
+            <Card>ehsotahegoiehga fkljfs ksjf</Card>
+            <Card>ehsotahegoiehga fkljfs ksjf</Card>   
         </Box>
         <Box>
         <h3>Most Liked</h3>
-            <ul>
-            <li>ehsotahegoiehga fkljfs ksjf</li>
-            <li>ehsotahegoiehga fkljfs ksjf</li>
-            <li>ehsotahegoiehga fkljfs ksjf</li>
-            </ul>
+            <Card>ehsotahegoiehga fkljfs ksjf</Card>
+            <Card>ehsotahegoiehga fkljfs ksjf</Card>
+            <Card>ehsotahegoiehga fkljfs ksjf</Card>
         </Box>
     </Fixed>
   )

@@ -18,4 +18,13 @@ export const Box = styled.div`
 height: 49%;
 border-radius: 20px;
 background-color: #FAF9F6;
+padding: 1%;
+`
+export const Card = styled.p`
+height: 20%;
+background-color: white;
+padding: 1%;
+border-radius: 20px;
+
+
 `
