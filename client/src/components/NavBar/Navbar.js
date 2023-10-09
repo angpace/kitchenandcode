@@ -13,9 +13,10 @@ import { animateScroll as scroll } from 'react-scroll';
 const NavBar = ({ currentUser, handleLogOut, setSearch }) => {
   const [expanded, setExpanded] = useState(false);
 
-  const handleLinkClick = () => {
+  const handleLinkClick = (e) => {
     setExpanded(false);
     scroll.scrollToTop();
+    setSearch(e.target.text)
   };
 
   return (
@@ -102,10 +103,10 @@ const NavBar = ({ currentUser, handleLogOut, setSearch }) => {
                   <Nav.Link as={Link} to="/" onClick={handleLinkClick}>
                     Home
                   </Nav.Link>
-                  <Nav.Link as={Link} to="/blogs/tech" onClick={handleLinkClick}>
+                  <Nav.Link onClick={(e) => handleLinkClick(e)}>
                     Tech
                   </Nav.Link>
-                  <Nav.Link as={Link} to="/blogs/food" onClick={handleLinkClick}>
+                  <Nav.Link onClick={(e) => handleLinkClick(e)}>
                     Food
                   </Nav.Link>
                   {/* <Nav.Link as={Link} to="/contact" onClick={handleLinkClick}>
@@ -113,7 +114,7 @@ const NavBar = ({ currentUser, handleLogOut, setSearch }) => {
                   </Nav.Link> */}
                 </Nav>
                 <form class="form-inline my-0 my-sm-0">
-                  <input class="form-control mr-sm-3" onChange={(e) => setSearch(e.target.value)} type="search" placeholder="Search" aria-label="Search"/>
+                  <input class="form-control mr-sm-3" onChange={(e) => setSearch(e.target.value)} type="search" placeholder="Search keywords" aria-label="Search"/>
                 </form>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
