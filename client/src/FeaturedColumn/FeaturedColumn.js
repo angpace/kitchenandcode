@@ -4,8 +4,22 @@ import { Fixed, Box } from './FeaturedColumnElements'
 const FeaturedColumn = () => {
   return (
     <Fixed>
-        <Box>Box 1</Box>
-        <Box>Box 2</Box>
+        <Box>
+            <h3>Most Recent</h3>
+            <ul>
+            <li>ehsotahegoiehga fkljfs ksjf</li>
+            <li>ehsotahegoiehga fkljfs ksjf</li>
+            <li>ehsotahegoiehga fkljfs ksjf</li>
+            </ul>
+        </Box>
+        <Box>
+        <h3>Most Liked</h3>
+            <ul>
+            <li>ehsotahegoiehga fkljfs ksjf</li>
+            <li>ehsotahegoiehga fkljfs ksjf</li>
+            <li>ehsotahegoiehga fkljfs ksjf</li>
+            </ul>
+        </Box>
     </Fixed>
   )
 }
