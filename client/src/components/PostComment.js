@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import toast, { Toaster } from 'react-hot-toast';
 
 function PostComment({currentUser, id, handleCommentUpdate}){
@@ -79,7 +80,7 @@ function PostComment({currentUser, id, handleCommentUpdate}){
                                     >
                                 </textarea>
                                 <br/>
-                    
+                    <Link style={{textDecoration: "none", color: "black"}} to="/login" >Go to login →</Link>
                     </div>
                 </form>}
          </>
