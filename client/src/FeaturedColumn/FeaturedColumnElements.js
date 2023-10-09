@@ -6,8 +6,8 @@ display: flex;
 flex-direction: column;
 justify-content: space-between;
 width: 33%;
- position: sticky;
-  top: 0;
+ /* position: sticky;
+  top: 0; */
 
   @media screen and (max-width: 600px){
     width: 100%;
