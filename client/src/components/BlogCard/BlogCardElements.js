@@ -62,7 +62,7 @@ padding-bottom: 2%;
 export const ImgContainer = styled.div`
 padding-top: 4%;
 overflow: hidden;
-max-height: 300px;
+max-height: 250px;
 display: flex;
     justify-content: center;
 `
