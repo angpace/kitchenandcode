@@ -6,6 +6,7 @@ display: flex;
 flex-direction: column;
 justify-content: space-between;
 width: 33%;
+max-height: 650px;
  /* position: sticky;
   top: 0; */
 
@@ -22,11 +23,9 @@ background-color: #FAF9F6;
 padding-left: 2%;
 padding-right: 2%;
 `
-export const Card = styled.p`
-height: 20%;
-background-color: white;
-padding: 1%;
-border-radius: 20px;
-
-
-`
+// export const Card = styled.p`
+// height: 20%;
+// background-color: white;
+// padding: 1%;
+// border-radius: 20px;
+// `
