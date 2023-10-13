@@ -15,7 +15,7 @@ const Footer = () => {
               <FooterTitle>Kitchen and Code</FooterTitle>
                   <Link to="/" onClick={toggleHome}>Home</Link>
                   <Link to="about" onClick={toggleHome}>About</Link>
-                  <Link to="blogposts" onClick={toggleHome}>Blog</Link>
+                  {/* <Link to="blogposts" onClick={toggleHome}>Blog</Link> */}
             </FooterLinks>
             <FooterLinks>
               <FooterTitle>Account</FooterTitle>

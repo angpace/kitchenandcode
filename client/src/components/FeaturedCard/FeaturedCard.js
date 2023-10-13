@@ -5,7 +5,7 @@ const FeaturedCard = ({b}) => {
   return (
     <Card>
         <CardTitle>{b.title}</CardTitle>
-        <CardText>{b.preview}</CardText>
+        <CardText>{b.preview}...</CardText>
     </Card>
   )
 }
