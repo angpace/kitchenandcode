@@ -16,6 +16,9 @@ max-height: 650px;
 `
 
 export const Box = styled.div`
+display: flex;
+flex-direction: column;
+gap: 4%;
 height: 49%;
 border-radius: 15px;
 background-color: #FAF9F6;

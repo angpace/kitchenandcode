@@ -10,8 +10,8 @@ class BlogsController < ApplicationController
         render json: blog
     end
 
-    def specific 
-        blogs = Blog.where(category: params[:category])
+    def most_liked 
+        blogs = Blog.order(likes: :desc).limit(3)
         render json: blogs
     end
 
