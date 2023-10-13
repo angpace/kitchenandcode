@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import Carousel from "../components/Carousel/Carousel";
 import { useState,useEffect } from "react";
 import { animateScroll as scroll } from 'react-scroll';
-import BlogInfo from "../BlogInfo/BlogInfo";
+import BlogInfo from "../components/BlogInfo/BlogInfo";
  
 
 function Home ({search, currentUser}) {

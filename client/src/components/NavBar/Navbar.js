@@ -19,6 +19,10 @@ const NavBar = ({ currentUser, handleLogOut, setSearch }) => {
     setSearch(e.target.text)
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  }
+
   return (
     <div >
       {['sm'].map((expand) => (
@@ -113,7 +117,7 @@ const NavBar = ({ currentUser, handleLogOut, setSearch }) => {
                     Contact
                   </Nav.Link> */}
                 </Nav>
-                <form class="form-inline my-0 my-sm-0">
+                <form onSubmit={(e) => e.preventDefault()} class="form-inline my-0 my-sm-0">
                   <input class="form-control mr-sm-3" onChange={(e) => setSearch(e.target.value)} type="search" placeholder="Search keywords" aria-label="Search"/>
                 </form>
               </Offcanvas.Body>
