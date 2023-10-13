@@ -16,7 +16,7 @@ export const FooterContent = styled.div`
 padding: 5%;
 display: flex;
 justify-content: space-around;
-background-color: #FAF9F6;
+background-color: #e8e8ed;
 
 @media screen and (max-width: 820px){
     flex-direction: column;
@@ -24,14 +24,14 @@ background-color: #FAF9F6;
 `
 export const FooterTitle = styled.p`
 font-weight: 600;
-padding-top: 10px;
+padding-top: 6px;
 color: #333333;
 `
 
 export const FooterLinks = styled.div`
 display: flex;
 flex-direction: column;
-align-items: center;
+/* align-items: center; */
 `
 
 export const Link = styled(LinkS)`
@@ -50,7 +50,8 @@ align-items: center;
 max-width: 1100px;
 
 @media screen and (max-width: 820px){
-    gap: 1%;
+    padding-top: 2%;
+    gap: 3%;
 }
 `
 

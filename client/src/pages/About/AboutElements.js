@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 export const AboutContainer = styled.div`
-background-color: #fffef2;
-margin-top: 50px;
 padding: 10%;
 display: flex;
 justify-content: space-between;
@@ -10,7 +8,7 @@ max-height: 650px;
 max-width: 1600px;
 align-items: center;
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
     flex-direction: column;
     margin-top: 30px;
     max-height: 100%;
@@ -22,7 +20,7 @@ width: 40%;
 max-width: 400px;
 /* height: 40% */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
    width: 100%
 }
 `
@@ -30,7 +28,7 @@ export const AboutMeContent = styled.div`
 width: 50%;
 float: right;
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
    width: 100%
 }
 `

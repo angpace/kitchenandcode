@@ -19,10 +19,6 @@ const NavBar = ({ currentUser, handleLogOut, setSearch }) => {
     setSearch(e.target.text)
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  }
-
   return (
     <div >
       {['sm'].map((expand) => (
@@ -30,11 +26,11 @@ const NavBar = ({ currentUser, handleLogOut, setSearch }) => {
           key={expand}
           expand={expand}
           expanded={expanded}
-          style={{ backgroundColor: '#FAF9F6'}}
+          style={{ backgroundColor: 'rgba(232, 232, 237, 0.95)'}}
           fixed="top"
         >
           <Container >
-            <a className="navbar-brand" href="/">
+            <a className="navbar-brand" href="/" >
               <img
                 src={pom}
                 width="30"
@@ -61,7 +57,8 @@ const NavBar = ({ currentUser, handleLogOut, setSearch }) => {
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body >
-                <Nav className="navbar-nav ms-auto px-3">
+                <Nav className="navbar-nav ms-auto px-3"
+                >
                   <NavDropdown title="Join" id={`offcanvasNavbarDropdown-expand-${expand}`}>
                     {currentUser ? 
                       <>

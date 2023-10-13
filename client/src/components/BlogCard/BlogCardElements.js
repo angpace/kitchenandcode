@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-background-color: #FAF9F6;
+background-color: #f5f5f7;
 border-radius: 20px;
 
 &:hover{
@@ -31,21 +31,21 @@ display: flex;
 justify-content: space-between;
 padding-top: 1%;
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 600px){
     flex-direction: column;
     padding-left: 2%
 }
 
 `
 export const CardDate = styled.p`
-@media screen and (max-width: 400px){
+@media screen and (max-width: 600px){
     font-size: 13px;
 }
 
 `
 export const CardPreview = styled.p`
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 600px){
    padding-left: 2%
 }
 `
@@ -54,7 +54,7 @@ color: gray;
 font-size: 12px;
 padding-bottom: 2%;
 /* font-style: italic; */
-@media screen and (max-width: 400px){
+@media screen and (max-width: 600px){
    padding-left: 3%
 }
 `

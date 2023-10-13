@@ -12,6 +12,8 @@ max-height: 650px;
 
   @media screen and (max-width: 600px){
     width: 100%;
+    height: 100%;
+    gap: 5%;
   }
 `
 
@@ -21,10 +23,11 @@ flex-direction: column;
 gap: 4%;
 height: 49%;
 border-radius: 15px;
-background-color: #FAF9F6;
+background-color: #f5f5f7;
 /* padding: 1%; */
 padding-left: 2%;
 padding-right: 2%;
+contain: content;
 `
 // export const Card = styled.p`
 // height: 20%;
