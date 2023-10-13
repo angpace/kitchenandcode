@@ -3,15 +3,9 @@ import BlogCard from "../../components/BlogCard/BlogCard";
 import PostBlog from "../../components/PostBlog";
 import { BlogContainer} from "./BlogElements";
 
-function Blogs ({currentUser, search}) {
-    const [blogs, setBlogs] = useState([])
+function Blogs ({currentUser, search, blogs, setBlogs}) {
 
 
-    useEffect(() => {
-        fetch(`/blogs`)
-        .then(res => res.json())
-        .then(data => setBlogs(data))
-    }, [])
 
     function handleDelete(id){
         const updatedBlogsArray = blogs.filter(blog => blog.id !== id)
