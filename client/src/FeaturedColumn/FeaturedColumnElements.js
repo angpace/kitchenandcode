@@ -20,18 +20,19 @@ max-height: 650px;
 export const Box = styled.div`
 display: flex;
 flex-direction: column;
-gap: 4%;
+gap: 2%;
 height: 49%;
 border-radius: 15px;
-background-color: #f5f5f7;
+background-image: linear-gradient(150deg, #f5f5f7 5%, #f5f5f7 20%, #DCDCDC 100%);
+/* background-color: rgba(232, 232, 237, 0.95); */
 /* padding: 1%; */
 padding-left: 2%;
 padding-right: 2%;
 contain: content;
 `
-// export const Card = styled.p`
-// height: 20%;
-// background-color: white;
-// padding: 1%;
-// border-radius: 20px;
-// `
+
+export const BoxHeading = styled.h3`
+padding-top: 2%;
+padding-left: 2%;
+padding-bottom: 2%;
+`

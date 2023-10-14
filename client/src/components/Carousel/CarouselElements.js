@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const CarouselWrapper = styled.div`
 width: 80%;
-padding: 3%;
+padding-left: 3%;
+padding-right: 3%;
 margin: auto;
 padding-top: 5%;
 

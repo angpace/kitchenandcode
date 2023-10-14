@@ -31,8 +31,6 @@ const Footer = () => {
                 </SocialMediaWrap>
                 
         </FooterContent>
-       
-        <center> <small>© Kitchen and Code</small></center>
     </FooterFlex>
   )
 }

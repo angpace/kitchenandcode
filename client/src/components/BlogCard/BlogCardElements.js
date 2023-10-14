@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-background-color: #f5f5f7;
+background-image: linear-gradient(150deg, #f5f5f7 5%, #f5f5f7 20%, #DCDCDC 100%);
+/* background-color: #f5f5f7; */
 border-radius: 20px;
 
 &:hover{
