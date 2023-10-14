@@ -4,6 +4,7 @@ import styled from "styled-components";
 export const FooterFlex = styled.div`
 max-height: 200px;
 border-top: thin solid;
+
 /* max-width: 1100px; */
 
 @media screen and (max-width: 400px){

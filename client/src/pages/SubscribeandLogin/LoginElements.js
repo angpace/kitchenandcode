@@ -7,11 +7,12 @@ display: flex;
 flex-direction: column;
 align-items: center;
 padding: 10%;
-background-color: #fffef2;
+min-height: 450px;
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 500px){
     padding: 7% 0% 7% 0%;
     margin-top: 30px;
+    min-height: 320px;
 }
 ` 
 export const Contain = styled.div`
