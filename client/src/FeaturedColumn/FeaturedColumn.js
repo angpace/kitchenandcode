@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import { Fixed, Box } from './FeaturedColumnElements'
+import { Fixed, Box, BoxHeading } from './FeaturedColumnElements'
 import FeaturedCard from '../components/FeaturedCard/FeaturedCard'
 
 const FeaturedColumn = ({blogs}) => {
@@ -24,11 +24,11 @@ const FeaturedColumn = ({blogs}) => {
   return (
     <Fixed>
         <Box>
-          <h3>Most Recent</h3>  
+          <BoxHeading>Recent Blogs</BoxHeading>  
           {mostRecent}
         </Box>
         <Box>
-        <h3>Most Liked</h3>
+        <BoxHeading>Most Liked Blogs</BoxHeading>
         {likedCard}
         </Box>
     </Fixed>
