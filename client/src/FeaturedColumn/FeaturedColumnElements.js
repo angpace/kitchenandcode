@@ -32,7 +32,7 @@ contain: content;
 `
 
 export const BoxHeading = styled.h3`
-padding-top: 2%;
+padding-top: 4%;
 padding-left: 2%;
-padding-bottom: 2%;
+padding-bottom: 1%;
 `

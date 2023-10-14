@@ -57,20 +57,17 @@ function Subscribe(){
         <Contain>
         <Form className="subscribe" id="subscribe" onSubmit={handleSubscription}>
           <input
-          style={{backgroundColor: "#fffef2", border: "thin solid"}}
           placeholder='Username'
           onChange={handleChange}
           name="name"
           />
           <input
-          style={{backgroundColor: "#fffef2", border: "thin solid"}}
           placeholder='Email'
           onChange={handleChange}
           name="email"
 
           />
           <input
-          style={{backgroundColor: "#fffef2", border: "thin solid"}}
           placeholder='Password'
           onChange={handleChange}
           name="password"

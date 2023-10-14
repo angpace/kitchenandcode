@@ -61,14 +61,12 @@ function Login ({onLogin}){
         <Contain>
             <Form action="#" onSubmit={handleLogin}>
                 <input
-                    style={{backgroundColor: "#fffef2", border: "thin solid"}}
                     onChange={handleChange}
                     type="email"
                     placeholder="Email Address"
                     name="email"
                 />
                 <input
-                    style={{backgroundColor: "#fffef2", border: "thin solid"}}
                     onChange={handleChange}
                     type="password"
                     placeholder="Password"
