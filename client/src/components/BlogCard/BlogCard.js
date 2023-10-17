@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate} from "react-router-dom";
+import { animateScroll as scroll } from 'react-scroll';
 import { BlogCardContainer, CardDate, CardTitle, CardPreview, CardLikes, Container, ImgContainer, CardImage, TitleandDate } from "./BlogCardElements";
 
 function BlogCard ({b, currentUser, handleDelete, rerender}) {
@@ -19,6 +20,7 @@ function BlogCard ({b, currentUser, handleDelete, rerender}) {
   
     function getBlogPost (b) {
         navigate(`/${b.id}`)
+        scroll.scrollToTop();
     }
 
     function deletePost (e){
