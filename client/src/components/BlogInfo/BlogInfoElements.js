@@ -12,7 +12,7 @@ gap: 3%;
 
 @media screen and (max-width: 600px){
     flex-direction: column;
-    height: 200vh;
+    height: 300vh;
    /* gap: 10px; */
 }
 `
