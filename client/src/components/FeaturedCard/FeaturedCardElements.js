@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Card = styled.div`
 border-radius: 14px; 
-max-height: 85px;
+max-height: 70px;
 display: flex;
 flex-direction: column;
 background-color: white;
