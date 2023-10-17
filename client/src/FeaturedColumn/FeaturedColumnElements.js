@@ -6,6 +6,7 @@ display: flex;
 flex-direction: column;
 justify-content: space-between;
 width: 33%;
+max-height: 700px;
  /* position: sticky;
   top: 0; */
 
