@@ -149,7 +149,42 @@ function BlogLay ({currentUser}){
                <SecondImage src={blogPost.image_one}/>
             </SecondImgContainer>
             <p>{blogPost.paragraph_three}</p>
+            <>-------</>
+            <p>Like this post? Show some love or leave a comment below!
+                    <br/>
+                   <button className="like_btn" onClick={addLikesToPost}>
+                         <i className=
+                         {isLiked? 
+                            "fa-regular fa-solid fa-heart"
+                            :
+                            "fa-regular fa-heart"
+                          }
+                          >
+                            </i> {likes}</button>
+                    </p>
+                    <button type="button" className="btn btn-outline-secondary"  onClick={() => setLeaveAComment(!leaveAComment)}>Leave a Comment</button>
+                      {leaveAComment?
+                          <>
+                              <PostComment id={id} currentUser={currentUser} handleCommentUpdate={handleCommentUpdate}/>
+                          </>
+                          :
+                          <br/>
+                      }
+                     
+                     {displayComments? 
+                     
+                     <>
+                        <br/>
+                        {displayComments}
+                        <br/>
+                      </>
+
+                        :
+                        <></>
+                    }
+                  
           </BlogContent>
+         
         </BlogLayContainer>
     )
 }
