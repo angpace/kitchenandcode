@@ -10,6 +10,7 @@ padding-top: 5%;
 @media screen and (max-width: 800px){
     padding-top: 10%;
     margin-top: 26px;
+    width:90%;
 }
 `
 export const Item = styled.div`
