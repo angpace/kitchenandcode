@@ -1,6 +1,4 @@
-import { useEffect, useState } from "react";
 import BlogCard from "../../components/BlogCard/BlogCard";
-import PostBlog from "../../components/PostBlog";
 import { BlogContainer} from "./BlogElements";
 
 function Blogs ({currentUser, search, blogs, setBlogs}) {
@@ -23,25 +21,7 @@ function Blogs ({currentUser, search, blogs, setBlogs}) {
     })
 
     function rerender (data){
-        console.log("I was triggered!")
         setBlogs([...blogs, data])
-    }
-
-    const me = 'angpace13@gmail.com' 
-
-    if (currentUser && me === currentUser.email){
-        return (
-        
-            <>
-                
-                <PostBlog rerender={rerender} currentUser={currentUser}/>
-
-                  
-                    {createBlogCards}
-                            
-            
-            </>
-        )
     }
     
 

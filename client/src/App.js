@@ -12,6 +12,7 @@ import About from "./pages/About/About"
 import Footer from './components/Footer/Footer';
 import Contact from './pages/Contact/Contact';
 import Category from './components/Category/Category';
+import PostBlog from './pages/Post/PostBlog';
 
 
 function App() {
@@ -65,6 +66,7 @@ function App() {
           <Route exact path="/" element={<Home search={search} currentUser={currentUser}/>} />
           <Route exact path="/about" element={<About/>}/>
           <Route exact path="/contact" element={<Contact/>}/>
+          <Route exact path="/post" element={<PostBlog currentUser={currentUser}/>} />
           <Route path="/blogs/:id" element={<Category/>} />
           <Route path="/login" element={<Login onLogin={onLogin}/>} />
           <Route path="/:id" element={<BlogLay currentUser={currentUser}/>} />

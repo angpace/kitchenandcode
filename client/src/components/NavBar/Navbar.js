@@ -12,11 +12,14 @@ import { animateScroll as scroll } from 'react-scroll';
 
 const NavBar = ({ currentUser, handleLogOut, setSearch }) => {
   const [expanded, setExpanded] = useState(false);
+  const me = "angpace13@gmail.com";
 
   const handleLinkClick = () => {
     setExpanded(false);
     scroll.scrollToTop();
   };
+
+
 
   return (
     <div >
@@ -100,6 +103,14 @@ const NavBar = ({ currentUser, handleLogOut, setSearch }) => {
                       </>
                     }
                   </NavDropdown>
+                  {currentUser && me === currentUser.email?
+                   <Nav.Link as={Link} to="/post" onClick={handleLinkClick}>
+                      Post
+                  </Nav.Link>
+                 :
+                 <></>
+
+                  }
                   <Nav.Link as={Link} to="/" onClick={handleLinkClick}>
                     Home
                   </Nav.Link>
