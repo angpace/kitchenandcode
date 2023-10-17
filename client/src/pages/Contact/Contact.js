@@ -2,8 +2,7 @@ import React from 'react'
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { ContactMeContainer, ContactMeHeading, FormContainer, Form } from './ContactElements';
-import { ConstructionPage, ImageContainer, Image } from '../../components/Construction/UnderCElements';
-
+import { BlogLayContainer, FeatureContain, Feature } from '../../components/BlogLay/BloglayElements';
 
 
 const Contact = () => {
@@ -18,22 +17,23 @@ const Contact = () => {
   };
 
   return (
-    <ConstructionPage>
-        <ImageContainer>
-            <Image src="https://images.pexels.com/photos/5946062/pexels-photo-5946062.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"/>
-        </ImageContainer>
+    <BlogLayContainer>
+      <FeatureContain>
+          <Feature src="https://images.pexels.com/photos/5946058/pexels-photo-5946058.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"/>
+      </FeatureContain>
+
     <ContactMeContainer>
       <ContactMeHeading>Contact Me</ContactMeHeading>
       <FormContainer>
         <Form ref={form} onSubmit={sendEmail}>
-          <input style={{backgroundColor: "#fffef2", border: "thin solid"}} type="text" name='name' placeholder='Your Full Name' required />
-          <input style={{backgroundColor: "#fffef2", border: "thin solid"}}type="email" name='email' placeholder='Your Email' required />
-          <textarea style={{backgroundColor: "#fffef2", border: "thin solid"}}name="message" rows="7" placeholder='Your Message' required ></textarea>
+          <input  type="text" name='name' placeholder='Your Full Name' required />
+          <input type="email" name='email' placeholder='Your Email' required />
+          <textarea name="message" rows="7" placeholder='Your Message' required ></textarea>
           <button  type='submit' className='btn btn-secondary'>Send Message</button>
         </Form>
       </FormContainer>
     </ContactMeContainer>
-    </ConstructionPage>
+    </BlogLayContainer>
   )
 }
 
