@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import BlogCard from "../../components/BlogCard/BlogCard";
-import { CategoryPage, CardHolder } from './CategoryElements';
+import { CategoryPage, CategoryHeading, CardHolder } from './CategoryElements';
 
 const Category = () => {
     const params = useParams()
@@ -21,7 +21,7 @@ const Category = () => {
     if(params.id === "tech"){
         return (
             <CategoryPage>
-            <h1>Blogs about Technology</h1>
+            <CategoryHeading>Technology Blogs</CategoryHeading>
               <CardHolder>
                 {cards}
                 </CardHolder>
@@ -30,7 +30,7 @@ const Category = () => {
     }
   return (
     <CategoryPage>
-        <h1>Blogs about Food</h1>
+        <CategoryHeading>Food Blogs</CategoryHeading>
           <CardHolder>
           {cards}
           </CardHolder>
