@@ -1,8 +1,9 @@
 import { useNavigate } from "react-router-dom";
-import Carousel from "../components/Carousel/Carousel";
+import Carousel from "../../components/Carousel/Carousel";
 import { useState,useEffect } from "react";
 import { animateScroll as scroll } from 'react-scroll';
-import BlogInfo from "../components/BlogInfo/BlogInfo";
+import BlogInfo from "../../components/BlogInfo/BlogInfo";
+import { HomeDiv } from "./HomeElements";
  
 
 function Home ({search, currentUser}) {
@@ -28,10 +29,10 @@ function Home ({search, currentUser}) {
   }
 
     return (
-       <div>
+       <HomeDiv>
         <Carousel featured={featured} getBlog={getBlog}/>
         <BlogInfo currentUser={currentUser} search={search}/>
-        </div>
+        </HomeDiv>
         
     )
 }

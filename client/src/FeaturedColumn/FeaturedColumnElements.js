@@ -23,7 +23,7 @@ flex-direction: column;
 gap: 2%;
 height: 49%;
 border-radius: 15px;
-background-image: linear-gradient(150deg, #f5f5f7 5%, #f5f5f7 20%, #DCDCDC 100%);
+background-image: linear-gradient(150deg, #DCDCDC 5%, #f5f5f7 20%, #DCDCDC 100%);
 /* background-color: rgba(232, 232, 237, 0.95); */
 /* padding: 1%; */
 padding-left: 2%;
