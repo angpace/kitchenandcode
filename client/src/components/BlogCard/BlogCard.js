@@ -19,8 +19,8 @@ function BlogCard ({b, currentUser, handleDelete, rerender}) {
     })
   
     function getBlogPost (b) {
-        navigate(`/${b.id}`)
         scroll.scrollToTop();
+        navigate(`/${b.id}`)
     }
 
     function deletePost (e){
