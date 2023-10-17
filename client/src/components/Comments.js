@@ -38,8 +38,7 @@ function Comments({c, currentUser, handleDelete}){
             <div className="card-body">
              <p><strong>{user.name}</strong></p>
              <p>{c.content}</p>
-             <button onClick={deleteComment}>delete</button>
-             {/* <button onClick={(e) => likeComment(e)}>{c.likes}</button> */}
+             <button className="btn btn-outline-secondary" onClick={deleteComment}>delete</button>
              </div>
           </div> 
         }

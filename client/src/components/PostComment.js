@@ -30,6 +30,7 @@ function PostComment({currentUser, id, handleCommentUpdate}){
         .then(res => res.json())
         .then(data => handleCommentUpdate(data))
         toast.success("Thank you for your comment!")
+        e.target.reset()
 
     }
 
