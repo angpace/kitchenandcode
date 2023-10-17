@@ -143,12 +143,31 @@ function BlogLay ({currentUser}){
           </FeatureContain>
           <BlogContent>
             <BlogTitle>{blogPost.title}</BlogTitle>
+            {recipe? 
+
+               
+         <ButtonContainer>
+         <JumpToRecipe className="btn btn-outline-secondary" onClick={() => scrollToSection("recipe")}>Jump to recipe</JumpToRecipe>
+         </ButtonContainer>
+      
+         :
+         <></>
+     }
             <p>{blogPost.paragraph_one}</p>
             <p>{blogPost.paragraph_two}</p>
             <SecondImgContainer>
                <SecondImage src={blogPost.image_one}/>
             </SecondImgContainer>
             <p>{blogPost.paragraph_three}</p>
+            {recipe? 
+                
+                        <section id="recipe">
+                        <Recipe recipe={recipe}/>
+                         </section>
+        
+                       :
+                        <></>
+                  }
             <>-------</>
             <p>Like this post? Show some love or leave a comment below!
                     <br/>
