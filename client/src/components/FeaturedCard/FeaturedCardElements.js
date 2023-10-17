@@ -2,12 +2,12 @@ import styled from 'styled-components';
 
 export const Card = styled.div`
 border-radius: 14px; 
-max-height: 70px;
+max-height: 85px;
 display: flex;
 flex-direction: column;
 background-color: white;
 padding: 2%;
-contain: content;
+overflow: hidden;
 
 :hover{
 cursor: pointer;
