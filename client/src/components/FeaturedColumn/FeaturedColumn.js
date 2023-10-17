@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import { Fixed, Box, BoxHeading } from './FeaturedColumnElements'
-import FeaturedCard from '../components/FeaturedCard/FeaturedCard'
+import FeaturedCard from '../FeaturedCard/FeaturedCard'
 
 const FeaturedColumn = ({blogs}) => {
   const [mostLiked, setMostLiked] = useState([])
