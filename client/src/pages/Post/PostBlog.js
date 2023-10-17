@@ -1,6 +1,9 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
+import toast, { Toaster } from 'react-hot-toast';
+import { PostContainer, Form } from './PostElements';
 
-function PostBlog ({rerender, currentUser}) {
+function PostBlog ({currentUser}) {
+    const form = useRef()
     const [newPost, setNewPost] = useState({
         title: "",
         preview: "",
@@ -14,6 +17,7 @@ function PostBlog ({rerender, currentUser}) {
         featured: "",
         keywords: ""
     })
+    
 
 
     function handleChange(e) {
@@ -47,7 +51,8 @@ function PostBlog ({rerender, currentUser}) {
            .then(r => {
              if (r.status === 200){
                r.json()
-               .then(data => rerender(data))
+               .then(data => console.log(data))
+               .then(toast.success("Blog posted successfully"))
            }
            else if (r.status === 422) {
                r.json()
@@ -58,67 +63,77 @@ function PostBlog ({rerender, currentUser}) {
        
 
     return (
-        <div className='blog_post'>
+        
+        <PostContainer>
+            <Toaster
+                position="bottom-right"
+                reverseOrder={false}
+            />
             <h2>Post a New Blog</h2>   
-            <form onSubmit={handleSubmit}>
-                          <input className='short_input'
+            <Form ref={form} onSubmit={handleSubmit}>
+                          <input
                               onChange={handleChange}
                               placeholder="Blog Title"
                               name="title"
                           />
-                          <input className='short_input'
+                          <input 
                               onChange={handleChange}
                               placeholder="Preview"
                               name="preview"
                           />
-                          <input className='short_input'
+                          <input 
                               onChange={handleChange}
                               placeholder="Date"
                               name="date"
                           />
-                          <input className='short_input'
+                          <input 
                               onChange={handleChange}
                               placeholder="Feature"
                               name="feature"
                           />
-                          <input className='short_input'
+                          <input 
                               onChange={handleChange}
                               placeholder="image"
                               name="image_one"
                           />
-                           <input className='short_input'
+                           <input 
                               onChange={handleChange}
                               placeholder="Category"
                               name="category"
                           />
-                          <input className='lrg_input'
+                          <textarea
+                            rows="7"
                               onChange={handleChange}
                               placeholder="Intro"
                               name="paragraph_one"
                           />
-                          <input className='lrg_input'
+                          <textarea
+                            rows="7"
                               onChange={handleChange}
                               placeholder="Body"
                               name="paragraph_two"
                           />
-                          <input className='lrg_input'
+                          <textarea 
+                            rows="7"
                               onChange={handleChange}
                               placeholder="Conclusion"
                               name="paragraph_three"
                           />
-                           <input className='lrg_input'
+                           <textarea 
+                                rows="7"
                               onChange={handleChange}
                               placeholder="featured"
                               name="featured"
                           />
-                           <input className='lrg_input'
+                           <textarea
+                                rows="7"
                               onChange={handleChange}
                               placeholder="Keywords"
                               name="keywords"
                           />
                           <button type="submit">Post Blog</button>
-                      </form> 
-        </div>
+                      </Form> 
+        </PostContainer>
     )
 }
 

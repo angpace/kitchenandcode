@@ -76,9 +76,9 @@ function BlogCard ({b, currentUser, handleDelete, rerender}) {
                    <Container>
                    {me?
                     <div>
-                         <button onClick={deletePost}>Delete</button>
-                         <button onClick={() => setEdit(!edit)}>Edit</button>
-                         <button onClick={() => setPostRecipe(!postRecipe)}>Add Recipe</button>
+                         <button className="btn btn-outline-secondary" onClick={deletePost}>Delete</button>
+                         <button className="btn btn-outline-secondary" onClick={() => setEdit(!edit)}>Edit</button>
+                         <button className="btn btn-outline-secondary" onClick={() => setPostRecipe(!postRecipe)}>Add Recipe</button>
                          </div>
                         :
                         <></>
@@ -87,39 +87,37 @@ function BlogCard ({b, currentUser, handleDelete, rerender}) {
 
                      <div>
                          <form onSubmit={handleSubmit}>
-                          <input className='short_input'
+                          <input 
                               onChange={handleChange}
                               placeholder="Title"
                               name="title"
                           />
                           <textarea
-                                className='short_input'
                                 onChange={handleChange}
                                 placeholder="Ingredients (one per line)"
                                 name="ingredients"
                             />
                             <textarea
-                                className='short_input'
                                 onChange={handleChange}
                                 placeholder="Method (one step per line)"
                                 name="method"
                             /> 
-                          <input className='short_input'
+                          <input 
                               onChange={handleChange}
                               placeholder="Photo"
                               name="photo"
                           />
-                          <input className='short_input'
+                          <input 
                               onChange={handleChange}
                               placeholder="Time"
                               name="time"
                           />
-                           <input className='short_input'
+                           <input 
                               onChange={handleChange}
                               placeholder="Servings"
                               name="servings"
                           />
-                          <button type="submit">Post Recipe</button>
+                          <button className="btn btn-outline-secondary" type="submit">Post Recipe</button>
                       </form> 
                      </div>
 
