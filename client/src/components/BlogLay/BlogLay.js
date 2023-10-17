@@ -2,8 +2,7 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Comments from '../Comments';
 import PostComment from '../PostComment';
-import { ConstructionPage, Content, ContentContainer, Image, ImageContainer } from '../Construction/UnderCElements';
-import { BodyContainer, JumpToRecipe, ButtonContainer } from './BloglayElements';
+import { BlogLayContainer, FeatureContain, Feature, BlogContent, JumpToRecipe, ButtonContainer, BlogTitle, SecondImgContainer, SecondImage } from './BloglayElements';
 import Recipe from '../Recipes/Recipe';
 import LoadingPage from '../LoadingPage/LoadingPage'
 
@@ -76,68 +75,82 @@ function BlogLay ({currentUser}){
       }
      
     return(
-        <ConstructionPage>
-             <ImageContainer>
-                <Image src={blogPost.feature}></Image>
-                </ImageContainer>
-            <ContentContainer>
-                <Content>{blogPost.title}</Content>
-                <br/>
-                <BodyContainer>
-                {recipe? 
+        // <ConstructionPage>
+        //      <ImageContainer>
+        //         <Image src={blogPost.feature}></Image>
+        //         </ImageContainer>
+        //     <ContentContainer>
+        //         <Content>{blogPost.title}</Content>
+        //         <br/>
+        //         <BodyContainer>
+        //         {recipe? 
 
                
-                <ButtonContainer>
-                <JumpToRecipe onClick={() => scrollToSection("recipe")}>Jump to recipe</JumpToRecipe>
-                </ButtonContainer>
+        //         <ButtonContainer>
+        //         <JumpToRecipe onClick={() => scrollToSection("recipe")}>Jump to recipe</JumpToRecipe>
+        //         </ButtonContainer>
               
-                :
-                <></>
-            }
+        //         :
+        //         <></>
+        //     }
                 
-                <p>{blogPost.paragraph_one}</p>
-                <p>{blogPost.paragraph_two}</p>
-                <img className="feature_image" alt="imageOne" src={blogPost.image_one} />
-                <p>{blogPost.paragraph_three}</p>
-                {recipe? 
+        //         <p>{blogPost.paragraph_one}</p>
+        //         <p>{blogPost.paragraph_two}</p>
+        //         <img className="feature_image" alt="imageOne" src={blogPost.image_one} />
+        //         <p>{blogPost.paragraph_three}</p>
+        //         {recipe? 
                 
-                <section id="recipe">
-                <Recipe recipe={recipe}/>
-                </section>
+        //         <section id="recipe">
+        //         <Recipe recipe={recipe}/>
+        //         </section>
 
-                :
-                <></>
-            }
+        //         :
+        //         <></>
+        //     }
                 
-                <p>Like this post? Show some love <br/> or leave a comment below!
-                    <br/>
-                    <button className="like_btn" onClick={addLikesToPost}>
-                        <i className=
-                         {isLiked? 
-                            "fa-regular fa-solid fa-heart"
-                            :
-                            "fa-regular fa-heart"
-                         }
-                         >
-                            </i> {likes}</button>
-                    </p>
-                    <button type="button" className="btn btn-outline-secondary"  onClick={() => setLeaveAComment(!leaveAComment)}>Leave a Comment</button>
-                     {leaveAComment?
+        //         <p>Like this post? Show some love <br/> or leave a comment below!
+        //             <br/>
+        //             <button className="like_btn" onClick={addLikesToPost}>
+        //                 <i className=
+        //                  {isLiked? 
+        //                     "fa-regular fa-solid fa-heart"
+        //                     :
+        //                     "fa-regular fa-heart"
+        //                  }
+        //                  >
+        //                     </i> {likes}</button>
+        //             </p>
+        //             <button type="button" className="btn btn-outline-secondary"  onClick={() => setLeaveAComment(!leaveAComment)}>Leave a Comment</button>
+        //              {leaveAComment?
                      
-                        <>
-                            <PostComment id={id} currentUser={currentUser} handleCommentUpdate={handleCommentUpdate}/>
-                        </>
-                        :
-                        <></>
-                     }
-                     <br/>
-                     <>
-                     <br/>
-                        {displayComments}
-                     </>
-                </BodyContainer>
-                </ContentContainer>
-        </ConstructionPage>
+        //                 <>
+        //                     <PostComment id={id} currentUser={currentUser} handleCommentUpdate={handleCommentUpdate}/>
+        //                 </>
+        //                 :
+        //                 <></>
+        //              }
+        //              <br/>
+        //              <>
+        //              <br/>
+        //                 {displayComments}
+        //              </>
+        //         </BodyContainer>
+        //         </ContentContainer>
+        // </ConstructionPage>
+        <BlogLayContainer>
+          <FeatureContain>
+            <Feature src={blogPost.feature} /> 
+          </FeatureContain>
+          <BlogContent>
+            <BlogTitle>{blogPost.title}</BlogTitle>
+            <p>{blogPost.paragraph_one}</p>
+            <p>{blogPost.paragraph_two}</p>
+            <SecondImgContainer>
+               <SecondImage src={blogPost.image_one}/>
+            </SecondImgContainer>
+            <p>{blogPost.paragraph_three}</p>
+          </BlogContent>
+        </BlogLayContainer>
     )
 }
 
