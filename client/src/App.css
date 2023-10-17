@@ -15,12 +15,18 @@ html { margin-top: 30px;}
 
   }
 };
+.about a{
+  text-decoration: none;
+  color: #333333;
+  padding: 3px;
+  font-size: 14px;
+}
 
-.card{
- &:hover{
-  cursor: pointer;
- }
-};
+.feature_image{
+  width: 70%;
+  height: 70%;
+  padding-bottom: 2%;
+}
 
 .like_btn{
   background-color: white;
