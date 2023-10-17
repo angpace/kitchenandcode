@@ -7,15 +7,6 @@
 
 html { margin-top: 30px;}
 
-/* .nav{
-border-bottom: thin solid;
-} */
-
-.home{
-display: flex;
-flex-direction: column;
-}
-
 .fa-brands{
   color:#aa1334e5;
 
@@ -30,40 +21,6 @@ flex-direction: column;
   cursor: pointer;
  }
 };
-
-
-/* .input{
-  background-color: #fffef2;
-} */
-
-.about a{
-  text-decoration: none;
-  color: #333333;
-  padding: 3px;
-  font-size: 14px;
-}
-
-.about a:hover{
-  color: white;
-  font-weight: 600;
-}
-
-.about button{
-  background-color: #afb7b538;
-  padding: 3px;
-  border: none;
-  border-radius: 3px;
-}
-
-.about button:hover{
-  background-color: #960e1eb0;
-}
-
-.feature_image{
-  width: 70%;
-  height: 70%;
-  padding-bottom: 2%;
-}
 
 .like_btn{
   background-color: white;
@@ -86,9 +43,4 @@ flex-direction: column;
   color: pink;
 }
 
-
-
-.nav-bar-text{
-color: white;
-}
 
