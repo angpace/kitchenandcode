@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const BlogLayContainer = styled.div`
+background-color: white;
 width: 100%;
 margin: auto;
 margin-top: 26px;
