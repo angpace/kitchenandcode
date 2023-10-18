@@ -19,12 +19,12 @@ margin: auto;
     max-width: 100%;
 }
 `
-export const CardTitle = styled.h2`
-font-weight: 400;
+export const CardTitle = styled.h3`
+font-weight: 200;
 
 @media screen and (max-width: 400px){
-   font-weight: 200px;
-   font-size: 20px;
+   font-weight: 300px;
+   font-size: 18px;
 }
 
 `
@@ -41,6 +41,7 @@ padding-top: 1%;
 
 `
 export const CardDate = styled.p`
+font-size: 15px;
 @media screen and (max-width: 600px){
     font-size: 13px;
 }

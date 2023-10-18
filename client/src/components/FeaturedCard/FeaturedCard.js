@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Card, CardTitle, CardText } from './FeaturedCardElements'
+import { Card, CardText } from './FeaturedCardElements'
 
 const FeaturedCard = ({b}) => {
   const nav = useNavigate()
