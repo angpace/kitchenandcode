@@ -1,5 +1,6 @@
 import BlogCard from "../../components/BlogCard/BlogCard";
-import { BlogContainer} from "./BlogElements";
+import { BlogContainer, BlogHeading, Icons, Icon} from "./BlogElements";
+
 
 function Blogs ({currentUser, search, blogs, setBlogs}) {
 
@@ -27,6 +28,16 @@ function Blogs ({currentUser, search, blogs, setBlogs}) {
 
     return (
         <BlogContainer>
+            <BlogHeading>
+                <h3>All Blogs</h3>
+                <Icons>
+                <Icon width="32" height="32" src="https://img.icons8.com/plasticine/100/ingredients.png" alt="ingredients"/>
+                <Icon width="32" height="32" src="https://img.icons8.com/plasticine/100/000000/cookie.png" alt="cookie"/>
+                <Icon width="32" height="32" src="https://img.icons8.com/plasticine/100/vegan-symbol.png" alt="vegan-symbol"/>
+                <Icon width="32" height="32" src="https://img.icons8.com/plasticine/100/chinese-noodle.png" alt="chinese-noodle"/>
+                </Icons>
+            </BlogHeading>
+            
                 {createBlogCards}
         </BlogContainer>
     )

@@ -8,7 +8,7 @@ max-width: 85%;
 margin: auto;
 justify-content: space-around;
 padding: 2%;
-gap: 3%;
+gap: 2%;
 
 @media screen and (max-width: 700px){
     flex-direction: column;

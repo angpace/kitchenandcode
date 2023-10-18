@@ -24,7 +24,7 @@ const FeaturedColumn = ({blogs}) => {
   return (
     <Fixed>
         <Box>
-          <BoxHeading>Recent Blogs</BoxHeading>  
+          <BoxHeading>Most Recent Blogs</BoxHeading>  
           {mostRecent}
         </Box>
         <Box>

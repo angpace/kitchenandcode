@@ -5,7 +5,8 @@
   font-family: 'Pathway Extreme', sans-serif;
 } 
 
-html { margin-top: 30px; background-color: white;}
+html { margin-top: 30px; 
+  background-color: white; }
 
 .fa-brands{
   color:#aa1334e5;

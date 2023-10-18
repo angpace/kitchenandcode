@@ -6,15 +6,13 @@ display: flex;
 flex-direction: column;
 justify-content: space-between;
 width: 33%;
-height: 100vh;
-/* height: 100%; */
- /* position: sticky;
-  top: 0; */
+height: 90vh;
+
 
   @media screen and (max-width: 700px){
     width: 100%;
-    min-height: 700px;
-    gap: 5%;
+    min-height: 600px;
+    gap: 2%;
   }
 `
 
@@ -23,12 +21,12 @@ display: flex;
 flex-direction: column;
 gap: 2%;
 height: 49%;
-border-radius: 15px;
-background-image: linear-gradient(150deg, #DCDCDC 5%, #DCDCDC 0%, #DCDCDC 100%);
-/* background-color: rgba(232, 232, 237, 0.95); */
-/* padding: 1%; */
+/* border: thin solid;
+border-color: rgba(233,188,68,0.6895351890756303);
+border-radius: 20px; */
 padding-left: 2%;
 padding-right: 2%;
+
 
 `
 

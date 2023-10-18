@@ -28,7 +28,7 @@ const NavBar = ({ currentUser, handleLogOut, setSearch }) => {
           key={expand}
           expand={expand}
           expanded={expanded}
-          style={{ backgroundColor: 'rgba(232, 232, 237, 0.95)'}}
+          style={{ backgroundColor: "rgba(238,194,183,0.9668461134453782)"}}
           fixed="top"
         >
           <Container >
