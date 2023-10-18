@@ -26,7 +26,7 @@ width: 80%;
 max-width: 900px;
 
 @media screen and (max-width: 600px) {
-    width: 95%
+    width: 90%
 }
 `
 
@@ -36,7 +36,7 @@ padding-top: 5%;
 padding-bottom: 3%;
 
 @media screen and (max-width: 600px) {
-   font-size: 40px;
+   font-size: 30px;
 }
 `
 export const SecondImgContainer = styled.div`

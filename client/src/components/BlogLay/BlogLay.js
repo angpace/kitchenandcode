@@ -190,7 +190,7 @@ function BlogLay ({currentUser}){
                           <br/>
                       }
                      
-                     {displayComments? 
+                     {displayComments && displayComments.length > 0 ? 
                      
                      <>
                      
@@ -201,7 +201,9 @@ function BlogLay ({currentUser}){
                       </>
 
                         :
-                        <></>
+                        
+                        <br/>
+                        
                     }
                   
           </BlogContent>
