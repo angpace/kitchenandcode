@@ -1,13 +1,12 @@
 import styled from 'styled-components';
 
 export const Card = styled.div`
-border-radius: 14px; 
-max-height: 85px;
-display: flex;
-flex-direction: column;
-background-color: white;
-padding: 2%;
-overflow: hidden;
+  border-radius: 20px; 
+  /* max-height: 85px; */
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 2%;
 
 :hover{
 cursor: pointer;
@@ -15,13 +14,11 @@ cursor: pointer;
 
 `
 
-export const CardTitle = styled.strong`
-padding-left: 3%;
-`
-
 export const CardText = styled.p`
-font-size: 12px;
-padding-left: 3%;
-padding-right: 1%;
-padding-bottom: 1%;
+    padding: 2%;
+    margin: 0; /* Remove any default margins from the paragraph */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
 `
