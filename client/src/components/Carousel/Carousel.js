@@ -6,8 +6,8 @@ import { CarouselWrapper, Item, Image} from './CarouselElements';
 
 const responsive = {
   0: { items: 1 },
-  400: { items: 2 },
-  600: { items: 3 },
+  500: { items: 2 },
+  700: { items: 3 },
 };
 
 class Carousel extends React.Component {

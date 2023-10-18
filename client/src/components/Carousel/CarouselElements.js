@@ -1,20 +1,20 @@
 import styled from "styled-components";
 
 export const CarouselWrapper = styled.div`
-width: 80%;
+width: 90%;
 padding-left: 3%;
 padding-right: 3%;
 margin: auto;
-padding-top: 5%;
+padding-top: 3%;
 
 @media screen and (max-width: 800px){
     padding-top: 10%;
     margin-top: 26px;
-    width:90%;
+    width:95%;
 }
 `
 export const Item = styled.div`
-max-height: 250px;
+max-height: 230px;
 display: flex;
 align-items: center;
 justify-content: center;

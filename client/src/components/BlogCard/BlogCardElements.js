@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-background-image: linear-gradient(150deg, #DCDCDC 5%, #f5f5f7 100%, #DCDCDC 100%);
-/* background-color: #f5f5f7; */
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 15px 0 rgba(0, 0, 0, 0.19);background-color: white;
+border: thin solid;
+border-color: rgba(233,188,68,0.9808517156862745);
 border-radius: 20px;
 
 &:hover{
@@ -71,6 +72,7 @@ overflow: hidden;
 max-height: 250px;
 display: flex;
     justify-content: center;
+    
 `
 
 export const CardImage = styled.img`
@@ -78,6 +80,7 @@ export const CardImage = styled.img`
   max-height: 350px; /* Set the maximum height of the image */
   object-fit: cover;
   border-radius: 20px;
+  /* border: thin solid; */
 
   @media screen and (max-width: 500px){
     width: 90%;

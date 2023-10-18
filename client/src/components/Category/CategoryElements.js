@@ -20,8 +20,11 @@ padding-top: 5%;
 `
 
 export const CardHolder = styled.div`
+display: flex;
+flex-direction: column;
 padding-top: 20px;
 width:60%;
+gap: 10px;
 
 @media screen and (max-width: 700px){
     margin: auto;
