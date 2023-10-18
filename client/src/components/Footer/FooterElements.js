@@ -4,6 +4,7 @@ import styled from "styled-components";
 export const FooterFlex = styled.div`
 max-height: 200px;
 border-top: thin solid;
+background-color: rgba(238,194,183,0.9668461134453782);
 
 /* max-width: 1100px; */
 
@@ -17,7 +18,8 @@ export const FooterContent = styled.div`
 padding: 5%;
 display: flex;
 justify-content: space-around;
-background-color: #e8e8ed;
+background-color: rgba(238,194,183,0.9668461134453782);
+/* background-color: #e8e8ed; */
 
 @media screen and (max-width: 820px){
     flex-direction: column;
