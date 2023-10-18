@@ -1,7 +1,7 @@
 import React from 'react'
 import Blogs from '../../pages/Blogs/Blogs'
 import { BlogInfoContainer } from './BlogInfoElements'
-import FeaturedColumn from '../../FeaturedColumn/FeaturedColumn'
+import FeaturedColumn from '../FeaturedColumn/FeaturedColumn'
 import { useState, useEffect } from 'react'
 
 

@@ -168,7 +168,7 @@ function BlogLay ({currentUser}){
                        :
                         <></>
                   }
-            <>-------</>
+
             <p>Like this post? Show some love or leave a comment below!
                     <br/>
                    <button className="like_btn" onClick={addLikesToPost}>
@@ -193,7 +193,9 @@ function BlogLay ({currentUser}){
                      {displayComments? 
                      
                      <>
+                     
                         <br/>
+                        <p>Comments</p>
                         {displayComments}
                         <br/>
                       </>
