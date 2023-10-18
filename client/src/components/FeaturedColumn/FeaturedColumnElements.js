@@ -29,7 +29,6 @@ background-image: linear-gradient(150deg, #DCDCDC 5%, #DCDCDC 0%, #DCDCDC 100%);
 /* padding: 1%; */
 padding-left: 2%;
 padding-right: 2%;
-contain: content;
 
 `
 

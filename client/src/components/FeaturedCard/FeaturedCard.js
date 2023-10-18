@@ -11,8 +11,7 @@ const FeaturedCard = ({b}) => {
 
   return (
     <Card onClick={handleClick}>
-        <CardTitle>{b.title}</CardTitle>
-        <CardText>{b.preview}...</CardText>
+        <CardText><strong>{b.title}</strong> <br/>{b.preview}</CardText>
     </Card>
   )
 }
