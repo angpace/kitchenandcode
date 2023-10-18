@@ -24,6 +24,7 @@ font-weight: 400;
 
 @media screen and (max-width: 400px){
    font-weight: 200px;
+   font-size: 20px;
 }
 
 `
@@ -34,7 +35,8 @@ padding-top: 1%;
 
 @media screen and (max-width: 600px){
     flex-direction: column;
-    padding-left: 2%
+    padding-left: 4%;
+    font-size: 14px;
 }
 
 `
@@ -47,13 +49,15 @@ export const CardDate = styled.p`
 export const CardPreview = styled.p`
 
 @media screen and (max-width: 600px){
-   padding-left: 2%
+   padding-left: 4%;
+   padding-right: 2%;
+   font-size: 13px;
 }
 `
 export const CardLikes = styled.p`
 color: gray; 
-font-size: 12px;
-padding-bottom: 2%;
+font-size: 10px;
+padding-bottom: 3%;
 /* font-style: italic; */
 @media screen and (max-width: 600px){
    padding-left: 3%

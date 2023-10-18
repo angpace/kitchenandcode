@@ -10,7 +10,7 @@ justify-content: space-around;
 padding: 2%;
 gap: 3%;
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 700px){
     flex-direction: column;
     height: 300vh;
    /* gap: 10px; */
