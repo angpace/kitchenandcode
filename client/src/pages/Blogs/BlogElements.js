@@ -25,6 +25,7 @@ gap: 8px;
 `
 export const Icon = styled.img`
 border: thin solid;
+padding: 1%;
 border-radius: 50%;
 :hover{
     cursor: pointer;
