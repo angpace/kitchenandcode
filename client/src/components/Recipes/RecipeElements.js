@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const RecipeContainer = styled.div`
 margin-top: 10%;
 padding-top: 10%;
-border: thin solid;
+/* border: thin solid; */
 padding: 5%;
 
 
