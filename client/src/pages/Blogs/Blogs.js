@@ -31,10 +31,10 @@ function Blogs ({currentUser, search, blogs, setBlogs}) {
             <BlogHeading>
                 <h3>All Blogs</h3>
                 <Icons>
-                <Icon width="32" height="32" src="https://img.icons8.com/plasticine/100/ingredients.png" alt="ingredients"/>
-                <Icon width="32" height="32" src="https://img.icons8.com/plasticine/100/000000/cookie.png" alt="cookie"/>
-                <Icon width="32" height="32" src="https://img.icons8.com/plasticine/100/vegan-symbol.png" alt="vegan-symbol"/>
-                <Icon width="32" height="32" src="https://img.icons8.com/plasticine/100/chinese-noodle.png" alt="chinese-noodle"/>
+                <Icon width="35" height="35" src="https://img.icons8.com/plasticine/100/ingredients.png" alt="ingredients"/>
+                <Icon width="35" height="35" src="https://img.icons8.com/plasticine/100/000000/cookie.png" alt="cookie"/>
+                <Icon width="35" height="35" src="https://img.icons8.com/plasticine/100/vegan-symbol.png" alt="vegan-symbol"/>
+                <Icon width="35" height="35" src="https://img.icons8.com/plasticine/100/chinese-noodle.png" alt="chinese-noodle"/>
                 </Icons>
             </BlogHeading>
             
