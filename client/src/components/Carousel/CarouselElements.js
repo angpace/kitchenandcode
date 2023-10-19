@@ -5,7 +5,7 @@ width: 90%;
 padding-left: 3%;
 padding-right: 3%;
 margin: auto;
-padding-top: 3%;
+padding-top: 5%;
 
 @media screen and (max-width: 800px){
     padding-top: 10%;
@@ -14,7 +14,7 @@ padding-top: 3%;
 }
 `
 export const Item = styled.div`
-max-height: 230px;
+max-height: 300px;
 display: flex;
 align-items: center;
 justify-content: center;

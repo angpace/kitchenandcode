@@ -7,6 +7,8 @@ flex-direction: column;
 gap: 20px;
 width: 65%;
 overflow-y: scroll;
+padding-left: 2%; padding-right: 2%; padding-bottom: 2%;
+
 
 
 @media screen and (max-width: 700px){
