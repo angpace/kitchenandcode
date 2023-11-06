@@ -33,12 +33,12 @@ function Blogs ({currentUser, search, blogs, setBlogs, setSearch}) {
         <BlogContainer>
             <BlogHeading>
                 <h3>All Blogs</h3>
-                <Icons>
+                {/* <Icons>
                 <Icon width="35" height="35" src="https://img.icons8.com/plasticine/100/ingredients.png" onClick={(e) => console.log(e.target.alt)} alt="recipe"/>
                 <Icon width="35" height="35" src="https://img.icons8.com/plasticine/100/000000/cookie.png" onClick={(e) => console.log(e.target.alt)} alt="sweet"/>
                 <Icon width="35" height="35" src="https://img.icons8.com/plasticine/100/vegan-symbol.png" onClick={(e) => console.log(e.target.alt)} alt="tech"/>
                 <Icon width="35" height="35" src="https://img.icons8.com/plasticine/100/chinese-noodle.png" onClick={(e) => console.log(e.target.alt)} alt="rec"/>
-                </Icons>
+                </Icons> */}
             </BlogHeading>
             {filteredBlogs.length > 1? 
             

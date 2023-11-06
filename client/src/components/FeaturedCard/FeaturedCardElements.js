@@ -6,10 +6,10 @@ export const Card = styled.div`
   display: flex;
   flex-direction: column;
   background-color: white;
-  border: thin solid;
-  border-color: rgba(233,188,68,0.9808517156862745);
+  /* border: thin solid;
+  border-color: rgba(233,188,68,0.9808517156862745); */
 border-radius: 20px;
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 15px 0 rgba(0, 0, 0, 0.19);
+box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 3px 15px 0 rgba(0, 0, 0, 0.19);
   padding: 2%;
 
 :hover{
