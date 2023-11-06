@@ -18,7 +18,7 @@ export const FooterContent = styled.div`
 padding: 5%;
 display: flex;
 justify-content: space-around;
-background-color: rgba(238,194,183,0.9668461134453782);
+background-color: rgba(259,259,259,0.92);
 /* background-color: #e8e8ed; */
 
 @media screen and (max-width: 820px){

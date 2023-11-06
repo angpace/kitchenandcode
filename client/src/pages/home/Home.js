@@ -6,7 +6,7 @@ import BlogInfo from "../../components/BlogInfo/BlogInfo";
 import { HomeDiv } from "./HomeElements";
  
 
-function Home ({search, currentUser}) {
+function Home ({search, currentUser, setSearch}) {
     const navigate = useNavigate()
     const [featuredPosts, setFeaturedPosts] = useState([])
 
@@ -31,7 +31,7 @@ function Home ({search, currentUser}) {
     return (
        <HomeDiv>
         <Carousel featured={featured} getBlog={getBlog}/>
-        <BlogInfo currentUser={currentUser} search={search}/>
+        <BlogInfo currentUser={currentUser} search={search} setSearch={setSearch}/>
         </HomeDiv>
         
     )

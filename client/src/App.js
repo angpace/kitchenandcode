@@ -63,7 +63,7 @@ function App() {
 
         {/* Routes */}
         <Routes>
-          <Route exact path="/" element={<Home search={search} currentUser={currentUser}/>} />
+          <Route exact path="/" element={<Home search={search} setSearch={setSearch} currentUser={currentUser}/>} />
           <Route exact path="/about" element={<About/>}/>
           <Route exact path="/contact" element={<Contact/>}/>
           <Route exact path="/post" element={<PostBlog currentUser={currentUser}/>} />

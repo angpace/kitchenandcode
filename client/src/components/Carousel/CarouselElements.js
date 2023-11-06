@@ -21,7 +21,7 @@ justify-content: center;
 
 
 @media screen and (max-width: 800px){
-    max-height: 200px;
+    max-height: 250px;
 }
 
 @media screen and (max-width: 370px){
