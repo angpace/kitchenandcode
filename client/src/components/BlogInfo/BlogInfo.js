@@ -5,7 +5,7 @@ import FeaturedColumn from '../FeaturedColumn/FeaturedColumn'
 import { useState, useEffect } from 'react'
 
 
-const BlogInfo = ({search, currentUser}) => {
+const BlogInfo = ({search, currentUser, setSearch}) => {
   const [blogs, setBlogs] = useState([])
 
   useEffect(() => {
@@ -17,7 +17,7 @@ const BlogInfo = ({search, currentUser}) => {
   return (
     <BlogInfoContainer>
            <FeaturedColumn blogs={blogs}/>
-           <Blogs search={search} currentUser={currentUser} blogs={blogs} setBlogs={setBlogs}/>
+           <Blogs search={search} setSearch={setSearch} currentUser={currentUser} blogs={blogs} setBlogs={setBlogs}/>
     </BlogInfoContainer>
   )
 }

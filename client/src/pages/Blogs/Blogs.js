@@ -2,7 +2,7 @@ import BlogCard from "../../components/BlogCard/BlogCard";
 import { BlogContainer, BlogHeading, Icons, Icon} from "./BlogElements";
 
 
-function Blogs ({currentUser, search, blogs, setBlogs}) {
+function Blogs ({currentUser, search, blogs, setBlogs, setSearch}) {
 
 
 
@@ -14,7 +14,7 @@ function Blogs ({currentUser, search, blogs, setBlogs}) {
     const filteredBlogs = blogs.filter((b) => b.keywords.toLowerCase().includes(search.toLowerCase()))
 
     if(filteredBlogs.length < 1){
-        return ( <p>No blogs with those keywords</p>)
+       
     }
 
     const createBlogCards = filteredBlogs.map((b) => { 
@@ -25,20 +25,32 @@ function Blogs ({currentUser, search, blogs, setBlogs}) {
         setBlogs([...blogs, data])
     }
     
+    // function iconFilter(data){
+    //     setSearch([...search,data])
+    // }
 
     return (
         <BlogContainer>
             <BlogHeading>
                 <h3>All Blogs</h3>
                 <Icons>
-                <Icon width="35" height="35" src="https://img.icons8.com/plasticine/100/ingredients.png" alt="ingredients"/>
-                <Icon width="35" height="35" src="https://img.icons8.com/plasticine/100/000000/cookie.png" alt="cookie"/>
-                <Icon width="35" height="35" src="https://img.icons8.com/plasticine/100/vegan-symbol.png" alt="vegan-symbol"/>
-                <Icon width="35" height="35" src="https://img.icons8.com/plasticine/100/chinese-noodle.png" alt="chinese-noodle"/>
+                <Icon width="35" height="35" src="https://img.icons8.com/plasticine/100/ingredients.png" onClick={(e) => console.log(e.target.alt)} alt="recipe"/>
+                <Icon width="35" height="35" src="https://img.icons8.com/plasticine/100/000000/cookie.png" onClick={(e) => console.log(e.target.alt)} alt="sweet"/>
+                <Icon width="35" height="35" src="https://img.icons8.com/plasticine/100/vegan-symbol.png" onClick={(e) => console.log(e.target.alt)} alt="tech"/>
+                <Icon width="35" height="35" src="https://img.icons8.com/plasticine/100/chinese-noodle.png" onClick={(e) => console.log(e.target.alt)} alt="rec"/>
                 </Icons>
             </BlogHeading>
+            {filteredBlogs.length > 1? 
             
-                {createBlogCards}
+            <>
+            {createBlogCards}
+            </>
+            : 
+            <p>No blogs with those keywords</p>
+        
+            }
+
+               
         </BlogContainer>
     )
 }

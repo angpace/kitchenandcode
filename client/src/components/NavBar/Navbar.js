@@ -28,7 +28,7 @@ const NavBar = ({ currentUser, handleLogOut, setSearch }) => {
           key={expand}
           expand={expand}
           expanded={expanded}
-          style={{ backgroundColor: "rgba(238,194,183,0.9668461134453782)"}}
+          style={{ backgroundColor: "rgba(259,259,259,0.96)"}}
           fixed="top"
         >
           <Container >
@@ -59,8 +59,24 @@ const NavBar = ({ currentUser, handleLogOut, setSearch }) => {
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body >
-                <Nav className="navbar-nav ms-auto px-3"
-                >
+                <Nav className="navbar-nav ms-auto px-3">
+                  {currentUser && me === currentUser.email?
+                   <Nav.Link as={Link} to="/post" onClick={handleLinkClick}>
+                      Post
+                  </Nav.Link>
+                 :
+                 <></>
+
+                  }
+                  <Nav.Link as={Link} to="/" onClick={handleLinkClick}>
+                    Home
+                  </Nav.Link>
+                  <Nav.Link as={Link} to="/blogs/tech" onClick={handleLinkClick}>
+                    Tech
+                  </Nav.Link>
+                  <Nav.Link as={Link} to="/blogs/food" onClick={handleLinkClick}>
+                    Food
+                  </Nav.Link>
                   <NavDropdown title="Join" id={`offcanvasNavbarDropdown-expand-${expand}`}>
                     {currentUser ? 
                       <>
@@ -103,23 +119,6 @@ const NavBar = ({ currentUser, handleLogOut, setSearch }) => {
                       </>
                     }
                   </NavDropdown>
-                  {currentUser && me === currentUser.email?
-                   <Nav.Link as={Link} to="/post" onClick={handleLinkClick}>
-                      Post
-                  </Nav.Link>
-                 :
-                 <></>
-
-                  }
-                  <Nav.Link as={Link} to="/" onClick={handleLinkClick}>
-                    Home
-                  </Nav.Link>
-                  <Nav.Link as={Link} to="/blogs/tech" onClick={handleLinkClick}>
-                    Tech
-                  </Nav.Link>
-                  <Nav.Link as={Link} to="/blogs/food" onClick={handleLinkClick}>
-                    Food
-                  </Nav.Link>
                 </Nav>
                 <form onSubmit={(e) => e.preventDefault()} class="form-inline my-0 my-sm-0">
                   <input class="form-control mr-sm-3" onChange={(e) => setSearch(e.target.value)} type="search" placeholder="Search keywords" aria-label="Search"/>

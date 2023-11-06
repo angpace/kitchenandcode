@@ -13,11 +13,11 @@ const FeaturedColumn = ({blogs}) => {
   }, [])
 
   const likedCard = mostLiked.map((b) => {
-    return ( <FeaturedCard b={b} />)
+    return ( <FeaturedCard b={b} key={b.id}/>)
   })
 
   const mostRecent = blogs.slice(0,3).map((b) => {
-    return ( <FeaturedCard b={b} />)
+    return ( <FeaturedCard b={b} key={b.id} />)
   })
 
 
