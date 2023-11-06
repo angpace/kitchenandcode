@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const BlogInfoContainer = styled.div`
 display: flex;
 height: 125vh;
-max-width: 85%;
+max-width: 90%;
 margin: auto;
 justify-content: space-around;
 padding: 2%;

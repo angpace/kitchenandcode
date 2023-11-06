@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 15px 0 rgba(0, 0, 0, 0.19);background-color: white;
-border: thin solid;
-border-color: rgba(233,188,68,0.9808517156862745);
+box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 3px 15px 0 rgba(0, 0, 0, 0.19);background-color: white;
+/* border: thin solid; */
+/* border-color: rgba(233,188,68,0.9808517156862745); */
 border-radius: 20px;
 
 &:hover{

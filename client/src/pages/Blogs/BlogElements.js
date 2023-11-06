@@ -19,6 +19,7 @@ padding-left: 2%; padding-right: 2%; padding-bottom: 2%;
 export const BlogHeading = styled.div`
 display: flex;
 justify-content: space-between;
+position: sticky;
 padding: 1%;
 `
 export const Icons = styled.div`
