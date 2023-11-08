@@ -5,7 +5,7 @@ width: 90%;
 padding-left: 3%;
 padding-right: 3%;
 margin: auto;
-padding-top: 5%;
+padding-top: 3%;
 
 @media screen and (max-width: 800px){
     padding-top: 10%;
