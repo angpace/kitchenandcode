@@ -12,7 +12,7 @@ puts "...Seeding"
 # Blog.destroy_all
 # User.destroy_all
 
-# angela = User.find_by(email: "angpace13@gmail.com")
+# angela = User.create!(email: "angpace13@gmail.com", password: "kitchcode", name: "Angela Pace")
 
 # first = Blog.create!(title: "Welcome Back!", user_id: angela.id, preview: "I'm excited to share Kitchen and Code v2.0! I put a lot of work into the rebranding of the site and I cant wait for you to see it.", paragraph_one: " 
 # Welcome to my blog where I blend my passion for technology and cooking! As someone who loves to experiment in the kitchen and explore the latest advancements in technology, I created this space to share my insights, tips, and experiences with you. 
@@ -29,6 +29,6 @@ puts "...Seeding"
 
 
 
-# # # comment_test = Comment.create(user_id: user.id, blog_id: blog.id, content: "Comments coming soon!" )
+# # comment_test = Comment.create(user_id: user.id, blog_id: blog.id, content: "Comments coming soon!" )
 
-# puts "Done seeding!"
+puts "Done seeding!"
