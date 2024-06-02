@@ -30,8 +30,8 @@ function Home ({search, currentUser, setSearch}) {
 
     return (
        <HomeDiv>
-        <Carousel featured={featured} getBlog={getBlog}/>
-        <BlogInfo currentUser={currentUser} search={search} setSearch={setSearch}/>
+        {/* <Carousel featured={featured} getBlog={getBlog}/>
+        <BlogInfo currentUser={currentUser} search={search} setSearch={setSearch}/> */}
         </HomeDiv>
         
     )

@@ -4,7 +4,7 @@ import { Routes, Route} from "react-router-dom";
 import Login from './pages/SubscribeandLogin/Login'
 import { useEffect, useState } from 'react';
 import BlogLay from './components/BlogLay/BlogLay';
-import Nav from "./components/NavBar/Navbar.js"
+import Navbar from "./components/NavBar/Navbar.js"
 import Manage from './pages/SubscribeandLogin/Manage';
 import Subscribe from './pages/SubscribeandLogin/Subscribe'
 import toast, { Toaster } from 'react-hot-toast';
@@ -13,6 +13,7 @@ import Footer from './components/Footer/Footer';
 import Contact from './pages/Contact/Contact';
 import Category from './components/Category/Category';
 import PostBlog from './pages/Post/PostBlog';
+import Nav from './components/NewNav/Nav.js';
 
 
 function App() {
@@ -57,7 +58,10 @@ function App() {
               position="bottom-right"
               reverseOrder={false}
             />
-       <Nav currentUser={currentUser} handleLogOut={handleLogOut} setSearch={setSearch}/>
+
+            <Nav/>
+
+       {/* <Navbar currentUser={currentUser} handleLogOut={handleLogOut} setSearch={setSearch}/> */}
   
         
 
