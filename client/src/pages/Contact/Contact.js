@@ -1,8 +1,7 @@
 import React from 'react'
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import { ContactMeContainer, ContactMeHeading, FormContainer, Form } from './ContactElements';
-import { BlogLayContainer, FeatureContain, Feature } from '../../components/BlogLay/BloglayElements';
+import { ContactMeContainer, ContactMeHeading, FormContainer, Form, ContactMeContent, SendButton } from './ContactElements';
 
 
 const Contact = () => {
@@ -17,23 +16,25 @@ const Contact = () => {
   };
 
   return (
-    <BlogLayContainer>
-      <FeatureContain>
-          <Feature src="https://images.pexels.com/photos/5946058/pexels-photo-5946058.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"/>
-      </FeatureContain>
-
     <ContactMeContainer>
-      <ContactMeHeading>Contact Me</ContactMeHeading>
-      <FormContainer>
-        <Form ref={form} onSubmit={sendEmail}>
-          <input  type="text" name='name' placeholder='Your Full Name' required />
-          <input type="email" name='email' placeholder='Your Email' required />
-          <textarea name="message" rows="7" placeholder='Your Message' required ></textarea>
-          <button  type='submit' className='btn btn-secondary'>Send Message</button>
-        </Form>
-      </FormContainer>
+      <ContactMeContent>
+          <ContactMeHeading>Get in Touch</ContactMeHeading>
+          <FormContainer>
+            <Form ref={form} onSubmit={sendEmail}>
+                <label for="name">Name</label>
+                <input  type="text" name='name' required />
+
+                <label for="email">Email</label>
+                <input type="email" name='email' label='Email' required />
+
+                <label for="message">Message</label>
+                <textarea name="message" rows="7" required ></textarea> 
+
+                <SendButton  type='submit'>Send</SendButton>
+            </Form>
+          </FormContainer>
+      </ContactMeContent>
     </ContactMeContainer>
-    </BlogLayContainer>
   )
 }
 
