@@ -4,35 +4,43 @@ export const  ContactMeContainer = styled.div`
 width: 100%;
 display: flex;
 flex-direction: column;
-/* align-items: center; */
+align-items: center;
 padding: 3%;
 
-@media screen and (max-width: 400px){
-    padding: 7% 0% 7% 0%;
+@media screen and (max-width: 550px){
+    // padding: 7% 0% 7% 0%;
     margin-top: 30px;
 }
 `
 
+export const ContactMeContent = styled.div`
+width: 60%;
+display: flex;
+flex-direction: column;
+
+@media screen and (max-width: 550px){
+    width: 100%
+}
+`
+
 export const ContactMeHeading = styled.h1`
-font-weight: 600px;
+font-weight: bold;
+float: left;
 `
 
 export const FormContainer = styled.div`
-max-width: 500px;
-width: 60%;
-
-@media screen and (max-width: 500px){
-    width: 100%;
-    padding: 5px;
-   
-}
-
+max-width: 600px
 `
-
 export const Form = styled.form`
 display: flex;
 flex-direction: column;
-gap: 10px;
+gap: 5px;
 
+`
 
+export const SendButton = styled.button`
+max-width: 20%;
+border: none;
+background-color: black;
+color: white;
 `

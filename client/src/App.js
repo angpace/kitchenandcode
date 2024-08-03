@@ -59,7 +59,7 @@ function App() {
               reverseOrder={false}
             />
 
-            <Nav/>
+            <Nav currentUser={currentUser} handleLogOut={handleLogOut} setSearch={setSearch} />
 
        {/* <Navbar currentUser={currentUser} handleLogOut={handleLogOut} setSearch={setSearch}/> */}
   
