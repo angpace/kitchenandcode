@@ -4,7 +4,6 @@ import { Routes, Route} from "react-router-dom";
 import Login from './pages/SubscribeandLogin/Login'
 import { useEffect, useState } from 'react';
 import BlogLay from './components/BlogLay/BlogLay';
-import Navbar from "./components/NavBar/Navbar.js"
 import Manage from './pages/SubscribeandLogin/Manage';
 import Subscribe from './pages/SubscribeandLogin/Subscribe'
 import toast, { Toaster } from 'react-hot-toast';
